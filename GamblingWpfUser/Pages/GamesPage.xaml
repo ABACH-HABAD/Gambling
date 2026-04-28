@@ -1,0 +1,45 @@
+﻿<Page x:Class="GamblingWpfUser.Pages.GamesPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GamblingWpfUser.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Выбор игры">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Resources/Images/Казино_2.jpg"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Border
+            BorderThickness="3"
+            CornerRadius="20"
+            Margin="200,50,200,50" 
+            Background="#FF9779AD" 
+            BorderBrush="#FF160B3C">
+            <TextBlock 
+                Style="{StaticResource WelcomePageTextBlock}" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center" 
+                FontWeight="Bold"
+                Foreground="#FFFFA400">
+            Выбери игру
+            </TextBlock>
+        </Border>
+        <Grid Grid.Row="1" Margin="50">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Margin="20" x:Name="SlotsButton" Content="Слоты" Grid.Column="0" Click="SlotsButton_Click"/>
+            <Button Margin="20" x:Name="BlackJackButton" Content="Блекджек" Grid.Column="1" Click="BlackJackButton_Click"/>
+            <Button Margin="20" x:Name="Roulette" Content="Рулетка" Grid.Column="2" Click="Roulette_Click"/>
+        </Grid>
+    </Grid>
+</Page>

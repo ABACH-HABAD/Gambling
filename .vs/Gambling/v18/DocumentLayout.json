@@ -1,0 +1,1079 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B974E43D-A22B-0290-8246-50BB42140653}|GamblingWpfUser\\GamblingWpfUser.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\gamblingwpfuser\\pages\\gamespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B974E43D-A22B-0290-8246-50BB42140653}|GamblingWpfUser\\GamblingWpfUser.csproj|solutionrelative:gamblingwpfuser\\pages\\gamespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B974E43D-A22B-0290-8246-50BB42140653}|GamblingWpfUser\\GamblingWpfUser.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\gamblingwpfuser\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B974E43D-A22B-0290-8246-50BB42140653}|GamblingWpfUser\\GamblingWpfUser.csproj|solutionrelative:gamblingwpfuser\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C393C39E-434B-21C1-6C56-7AC4E694B8B1}|TestProject\\TestProject.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\testproject\\testproject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C393C39E-434B-21C1-6C56-7AC4E694B8B1}|TestProject\\TestProject.csproj|solutionrelative:testproject\\testproject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F83C93C5-E806-114E-B88A-4875F1422B5E}|DataBaseClasses\\DataBaseClasses.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\databaseclasses\\repository\\sessionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F83C93C5-E806-114E-B88A-4875F1422B5E}|DataBaseClasses\\DataBaseClasses.csproj|solutionrelative:databaseclasses\\repository\\sessionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\businesslogic\\apiservices\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\apiservices\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\businesslogic\\auth\\serversessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\auth\\serversessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\businesslogic\\auth\\serveraccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\auth\\serveraccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\businesslogic\\token\\jwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\token\\jwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\businesslogic\\token\\ijwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\token\\ijwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\businesslogic\\token\\tokenstorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\token\\tokenstorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\businesslogic\\token\\accesstokenstorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\token\\accesstokenstorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\businesslogic\\token\\refreshtokenstorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\token\\refreshtokenstorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\businesslogic\\token\\refreshedtokens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\token\\refreshedtokens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B974E43D-A22B-0290-8246-50BB42140653}|GamblingWpfUser\\GamblingWpfUser.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\gamblingwpfuser\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B974E43D-A22B-0290-8246-50BB42140653}|GamblingWpfUser\\GamblingWpfUser.csproj|solutionrelative:gamblingwpfuser\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B974E43D-A22B-0290-8246-50BB42140653}|GamblingWpfUser\\GamblingWpfUser.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\gamblingwpfuser\\pages\\registrationpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B974E43D-A22B-0290-8246-50BB42140653}|GamblingWpfUser\\GamblingWpfUser.csproj|solutionrelative:gamblingwpfuser\\pages\\registrationpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\businesslogic\\auth\\isessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\auth\\isessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F83C93C5-E806-114E-B88A-4875F1422B5E}|DataBaseClasses\\DataBaseClasses.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\databaseclasses\\repository\\interfaces\\isessionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F83C93C5-E806-114E-B88A-4875F1422B5E}|DataBaseClasses\\DataBaseClasses.csproj|solutionrelative:databaseclasses\\repository\\interfaces\\isessionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F83C93C5-E806-114E-B88A-4875F1422B5E}|DataBaseClasses\\DataBaseClasses.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\databaseclasses\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F83C93C5-E806-114E-B88A-4875F1422B5E}|DataBaseClasses\\DataBaseClasses.csproj|solutionrelative:databaseclasses\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F83C93C5-E806-114E-B88A-4875F1422B5E}|DataBaseClasses\\DataBaseClasses.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\databaseclasses\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F83C93C5-E806-114E-B88A-4875F1422B5E}|DataBaseClasses\\DataBaseClasses.csproj|solutionrelative:databaseclasses\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F83C93C5-E806-114E-B88A-4875F1422B5E}|DataBaseClasses\\DataBaseClasses.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\databaseclasses\\entity\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F83C93C5-E806-114E-B88A-4875F1422B5E}|DataBaseClasses\\DataBaseClasses.csproj|solutionrelative:databaseclasses\\entity\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F83C93C5-E806-114E-B88A-4875F1422B5E}|DataBaseClasses\\DataBaseClasses.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\databaseclasses\\entity\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F83C93C5-E806-114E-B88A-4875F1422B5E}|DataBaseClasses\\DataBaseClasses.csproj|solutionrelative:databaseclasses\\entity\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{238633F3-D745-848E-5BFE-757A8B87F269}|GamblingWebApi\\GamblingWebApi.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\gamblingwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{238633F3-D745-848E-5BFE-757A8B87F269}|GamblingWebApi\\GamblingWebApi.csproj|solutionrelative:gamblingwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\businesslogic\\auth\\clientloginchecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\auth\\clientloginchecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B974E43D-A22B-0290-8246-50BB42140653}|GamblingWpfUser\\GamblingWpfUser.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\gamblingwpfuser\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B974E43D-A22B-0290-8246-50BB42140653}|GamblingWpfUser\\GamblingWpfUser.csproj|solutionrelative:gamblingwpfuser\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\businesslogic\\auth\\clientaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\auth\\clientaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\businesslogic\\auth\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\auth\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\businesslogic\\apiservices\\iapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\apiservices\\iapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\businesslogic\\auth\\loginresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\auth\\loginresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B974E43D-A22B-0290-8246-50BB42140653}|GamblingWpfUser\\GamblingWpfUser.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\gamblingwpfuser\\pages\\registrationpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B974E43D-A22B-0290-8246-50BB42140653}|GamblingWpfUser\\GamblingWpfUser.csproj|solutionrelative:gamblingwpfuser\\pages\\registrationpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B974E43D-A22B-0290-8246-50BB42140653}|GamblingWpfUser\\GamblingWpfUser.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\gamblingwpfuser\\pages\\authpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B974E43D-A22B-0290-8246-50BB42140653}|GamblingWpfUser\\GamblingWpfUser.csproj|solutionrelative:gamblingwpfuser\\pages\\authpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\businesslogic\\apiservices\\apisettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\apiservices\\apisettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\businesslogic\\apiservices\\requests\\refreshtokenrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\apiservices\\requests\\refreshtokenrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\businesslogic\\apiservices\\requests\\roulettespinrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\apiservices\\requests\\roulettespinrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\businesslogic\\apiservices\\requests\\baserequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\apiservices\\requests\\baserequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\businesslogic\\apiservices\\requests\\spinslotrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\apiservices\\requests\\spinslotrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\businesslogic\\apiservices\\requests\\registraterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\apiservices\\requests\\registraterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\businesslogic\\apiservices\\requests\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\apiservices\\requests\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C393C39E-434B-21C1-6C56-7AC4E694B8B1}|TestProject\\TestProject.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\testproject\\testserviceprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C393C39E-434B-21C1-6C56-7AC4E694B8B1}|TestProject\\TestProject.csproj|solutionrelative:testproject\\testserviceprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\businesslogic\\servicenotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\servicenotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\businesslogic\\token\\itokenstorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\token\\itokenstorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\businesslogic\\auth\\iloginchecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\auth\\iloginchecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F83C93C5-E806-114E-B88A-4875F1422B5E}|DataBaseClasses\\DataBaseClasses.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\databaseclasses\\repository\\gamerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F83C93C5-E806-114E-B88A-4875F1422B5E}|DataBaseClasses\\DataBaseClasses.csproj|solutionrelative:databaseclasses\\repository\\gamerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F83C93C5-E806-114E-B88A-4875F1422B5E}|DataBaseClasses\\DataBaseClasses.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\databaseclasses\\repository\\userstatusesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F83C93C5-E806-114E-B88A-4875F1422B5E}|DataBaseClasses\\DataBaseClasses.csproj|solutionrelative:databaseclasses\\repository\\userstatusesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F83C93C5-E806-114E-B88A-4875F1422B5E}|DataBaseClasses\\DataBaseClasses.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\databaseclasses\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F83C93C5-E806-114E-B88A-4875F1422B5E}|DataBaseClasses\\DataBaseClasses.csproj|solutionrelative:databaseclasses\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F83C93C5-E806-114E-B88A-4875F1422B5E}|DataBaseClasses\\DataBaseClasses.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\databaseclasses\\databaseconnectionstring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F83C93C5-E806-114E-B88A-4875F1422B5E}|DataBaseClasses\\DataBaseClasses.csproj|solutionrelative:databaseclasses\\databaseconnectionstring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F83C93C5-E806-114E-B88A-4875F1422B5E}|DataBaseClasses\\DataBaseClasses.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\databaseclasses\\exceptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F83C93C5-E806-114E-B88A-4875F1422B5E}|DataBaseClasses\\DataBaseClasses.csproj|solutionrelative:databaseclasses\\exceptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B974E43D-A22B-0290-8246-50BB42140653}|GamblingWpfUser\\GamblingWpfUser.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\gamblingwpfuser\\pages\\games\\roulettepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B974E43D-A22B-0290-8246-50BB42140653}|GamblingWpfUser\\GamblingWpfUser.csproj|solutionrelative:gamblingwpfuser\\pages\\games\\roulettepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B974E43D-A22B-0290-8246-50BB42140653}|GamblingWpfUser\\GamblingWpfUser.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\gamblingwpfuser\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B974E43D-A22B-0290-8246-50BB42140653}|GamblingWpfUser\\GamblingWpfUser.csproj|solutionrelative:gamblingwpfuser\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\businesslogic\\game\\slots\\serverslotsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\game\\slots\\serverslotsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{238633F3-D745-848E-5BFE-757A8B87F269}|GamblingWebApi\\GamblingWebApi.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\gamblingwebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{238633F3-D745-848E-5BFE-757A8B87F269}|GamblingWebApi\\GamblingWebApi.csproj|solutionrelative:gamblingwebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\businesslogic\\game\\roulette\\clientrouletteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\game\\roulette\\clientrouletteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\businesslogic\\game\\slots\\clientslotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\game\\slots\\clientslotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B974E43D-A22B-0290-8246-50BB42140653}|GamblingWpfUser\\GamblingWpfUser.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\gamblingwpfuser\\pages\\games\\slotspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B974E43D-A22B-0290-8246-50BB42140653}|GamblingWpfUser\\GamblingWpfUser.csproj|solutionrelative:gamblingwpfuser\\pages\\games\\slotspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\businesslogic\\token\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\token\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\businesslogic\\encryption\\encryption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\encryption\\encryption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B974E43D-A22B-0290-8246-50BB42140653}|GamblingWpfUser\\GamblingWpfUser.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\gamblingwpfuser\\pages\\games\\slotspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B974E43D-A22B-0290-8246-50BB42140653}|GamblingWpfUser\\GamblingWpfUser.csproj|solutionrelative:gamblingwpfuser\\pages\\games\\slotspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\businesslogic\\game\\roulette\\irouletteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\game\\roulette\\irouletteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B974E43D-A22B-0290-8246-50BB42140653}|GamblingWpfUser\\GamblingWpfUser.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\gamblingwpfuser\\pages\\games\\roulettepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B974E43D-A22B-0290-8246-50BB42140653}|GamblingWpfUser\\GamblingWpfUser.csproj|solutionrelative:gamblingwpfuser\\pages\\games\\roulettepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B974E43D-A22B-0290-8246-50BB42140653}|GamblingWpfUser\\GamblingWpfUser.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\gamblingwpfuser\\pages\\authpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B974E43D-A22B-0290-8246-50BB42140653}|GamblingWpfUser\\GamblingWpfUser.csproj|solutionrelative:gamblingwpfuser\\pages\\authpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B974E43D-A22B-0290-8246-50BB42140653}|GamblingWpfUser\\GamblingWpfUser.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\gamblingwpfuser\\navigation\\navigationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B974E43D-A22B-0290-8246-50BB42140653}|GamblingWpfUser\\GamblingWpfUser.csproj|solutionrelative:gamblingwpfuser\\navigation\\navigationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B974E43D-A22B-0290-8246-50BB42140653}|GamblingWpfUser\\GamblingWpfUser.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\gamblingwpfuser\\navigation\\inavigationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B974E43D-A22B-0290-8246-50BB42140653}|GamblingWpfUser\\GamblingWpfUser.csproj|solutionrelative:gamblingwpfuser\\navigation\\inavigationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B974E43D-A22B-0290-8246-50BB42140653}|GamblingWpfUser\\GamblingWpfUser.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\gamblingwpfuser\\navigation\\ipagegetter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B974E43D-A22B-0290-8246-50BB42140653}|GamblingWpfUser\\GamblingWpfUser.csproj|solutionrelative:gamblingwpfuser\\navigation\\ipagegetter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\businesslogic\\encryption\\iencryption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\encryption\\iencryption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\businesslogic\\encryption\\iuseridextraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\encryption\\iuseridextraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\businesslogic\\encryption\\ipasswordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E30B25-F83B-04BE-47BF-65C6F329008E}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\encryption\\ipasswordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C393C39E-434B-21C1-6C56-7AC4E694B8B1}|TestProject\\TestProject.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\testproject\\games\\slots\\serverslotstestswithaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C393C39E-434B-21C1-6C56-7AC4E694B8B1}|TestProject\\TestProject.csproj|solutionrelative:testproject\\games\\slots\\serverslotstestswithaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GamesPage.xaml",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWpfUser\\Pages\\GamesPage.xaml",
+              "RelativeDocumentMoniker": "GamblingWpfUser\\Pages\\GamesPage.xaml",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWpfUser\\Pages\\GamesPage.xaml",
+              "RelativeToolTip": "GamblingWpfUser\\Pages\\GamesPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-27T18:57:29.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TestProject.csproj",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\TestProject\\TestProject.csproj",
+              "RelativeDocumentMoniker": "TestProject\\TestProject.csproj",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\TestProject\\TestProject.csproj",
+              "RelativeToolTip": "TestProject\\TestProject.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-27T18:57:06.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ServerAccountService.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Auth\\ServerAccountService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Auth\\ServerAccountService.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Auth\\ServerAccountService.cs",
+              "RelativeToolTip": "BusinessLogic\\Auth\\ServerAccountService.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAcwEYAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T11:47:04.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApiClient.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\ApiServices\\ApiClient.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\ApiServices\\ApiClient.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\ApiServices\\ApiClient.cs",
+              "RelativeToolTip": "BusinessLogic\\ApiServices\\ApiClient.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T12:00:04.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SessionRepository.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\DataBaseClasses\\Repository\\SessionRepository.cs",
+              "RelativeDocumentMoniker": "DataBaseClasses\\Repository\\SessionRepository.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\DataBaseClasses\\Repository\\SessionRepository.cs",
+              "RelativeToolTip": "DataBaseClasses\\Repository\\SessionRepository.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAASwC4AAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T17:43:41.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AccessTokenStorageService.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Token\\AccessTokenStorageService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Token\\AccessTokenStorageService.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Token\\AccessTokenStorageService.cs",
+              "RelativeToolTip": "BusinessLogic\\Token\\AccessTokenStorageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T11:52:11.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TokenStorageService.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Token\\TokenStorageService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Token\\TokenStorageService.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Token\\TokenStorageService.cs",
+              "RelativeToolTip": "BusinessLogic\\Token\\TokenStorageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T18:47:11.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWpfUser\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "GamblingWpfUser\\MainWindow.xaml",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWpfUser\\MainWindow.xaml",
+              "RelativeToolTip": "GamblingWpfUser\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-26T15:57:14.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IJwtTokenGenerator.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Token\\IJwtTokenGenerator.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Token\\IJwtTokenGenerator.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Token\\IJwtTokenGenerator.cs",
+              "RelativeToolTip": "BusinessLogic\\Token\\IJwtTokenGenerator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T11:42:04.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "JwtTokenGenerator.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Token\\JwtTokenGenerator.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Token\\JwtTokenGenerator.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Token\\JwtTokenGenerator.cs",
+              "RelativeToolTip": "BusinessLogic\\Token\\JwtTokenGenerator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T13:09:41.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ServerSessionService.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Auth\\ServerSessionService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Auth\\ServerSessionService.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Auth\\ServerSessionService.cs",
+              "RelativeToolTip": "BusinessLogic\\Auth\\ServerSessionService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAwwC4AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T13:33:34.66Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RefreshTokenStorageService.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Token\\RefreshTokenStorageService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Token\\RefreshTokenStorageService.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Token\\RefreshTokenStorageService.cs",
+              "RelativeToolTip": "BusinessLogic\\Token\\RefreshTokenStorageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T18:47:08.392Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RefreshedTokens.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Token\\RefreshedTokens.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Token\\RefreshedTokens.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Token\\RefreshedTokens.cs",
+              "RelativeToolTip": "BusinessLogic\\Token\\RefreshedTokens.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T17:55:50.691Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWpfUser\\App.xaml.cs",
+              "RelativeDocumentMoniker": "GamblingWpfUser\\App.xaml.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWpfUser\\App.xaml.cs",
+              "RelativeToolTip": "GamblingWpfUser\\App.xaml.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAASwGAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T11:36:04.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ISessionRepository.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\DataBaseClasses\\Repository\\Interfaces\\ISessionRepository.cs",
+              "RelativeDocumentMoniker": "DataBaseClasses\\Repository\\Interfaces\\ISessionRepository.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\DataBaseClasses\\Repository\\Interfaces\\ISessionRepository.cs",
+              "RelativeToolTip": "DataBaseClasses\\Repository\\Interfaces\\ISessionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T17:43:25.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWebApi\\Program.cs",
+              "RelativeDocumentMoniker": "GamblingWebApi\\Program.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWebApi\\Program.cs",
+              "RelativeToolTip": "GamblingWebApi\\Program.cs",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAIwJ8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T11:43:51.49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\DataBaseClasses\\Entity\\User.cs",
+              "RelativeDocumentMoniker": "DataBaseClasses\\Entity\\User.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\DataBaseClasses\\Entity\\User.cs",
+              "RelativeToolTip": "DataBaseClasses\\Entity\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T18:35:22.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Entity.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\DataBaseClasses\\Entity\\Entity.cs",
+              "RelativeDocumentMoniker": "DataBaseClasses\\Entity\\Entity.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\DataBaseClasses\\Entity\\Entity.cs",
+              "RelativeToolTip": "DataBaseClasses\\Entity\\Entity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T18:35:31.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RegistrationPage.xaml.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWpfUser\\Pages\\RegistrationPage.xaml.cs",
+              "RelativeDocumentMoniker": "GamblingWpfUser\\Pages\\RegistrationPage.xaml.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWpfUser\\Pages\\RegistrationPage.xaml.cs",
+              "RelativeToolTip": "GamblingWpfUser\\Pages\\RegistrationPage.xaml.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAqwEYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T18:45:48.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\DataBaseClasses\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "DataBaseClasses\\Repository\\UserRepository.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\DataBaseClasses\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "DataBaseClasses\\Repository\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAACKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T18:39:44.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ISessionService.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Auth\\ISessionService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Auth\\ISessionService.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Auth\\ISessionService.cs",
+              "RelativeToolTip": "BusinessLogic\\Auth\\ISessionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T17:52:27.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ClientLoginChecker.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Auth\\ClientLoginChecker.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Auth\\ClientLoginChecker.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Auth\\ClientLoginChecker.cs",
+              "RelativeToolTip": "BusinessLogic\\Auth\\ClientLoginChecker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T13:32:39.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Session.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\DataBaseClasses\\Entity\\Session.cs",
+              "RelativeDocumentMoniker": "DataBaseClasses\\Entity\\Session.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\DataBaseClasses\\Entity\\Session.cs",
+              "RelativeToolTip": "DataBaseClasses\\Entity\\Session.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T17:42:53.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWpfUser\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "GamblingWpfUser\\MainWindow.xaml.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWpfUser\\MainWindow.xaml.cs",
+              "RelativeToolTip": "GamblingWpfUser\\MainWindow.xaml.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAIwCMAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T11:36:58.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ClientAccountService.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Auth\\ClientAccountService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Auth\\ClientAccountService.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Auth\\ClientAccountService.cs",
+              "RelativeToolTip": "BusinessLogic\\Auth\\ClientAccountService.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAowHkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T12:00:24.067Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IAccountService.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Auth\\IAccountService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Auth\\IAccountService.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Auth\\IAccountService.cs",
+              "RelativeToolTip": "BusinessLogic\\Auth\\IAccountService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T18:55:42.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IApiClient.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\ApiServices\\IApiClient.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\ApiServices\\IApiClient.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\ApiServices\\IApiClient.cs",
+              "RelativeToolTip": "BusinessLogic\\ApiServices\\IApiClient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T15:20:15.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "LoginResult.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Auth\\LoginResult.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Auth\\LoginResult.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Auth\\LoginResult.cs",
+              "RelativeToolTip": "BusinessLogic\\Auth\\LoginResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T18:42:42.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "RegistrationPage.xaml",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWpfUser\\Pages\\RegistrationPage.xaml",
+              "RelativeDocumentMoniker": "GamblingWpfUser\\Pages\\RegistrationPage.xaml",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWpfUser\\Pages\\RegistrationPage.xaml",
+              "RelativeToolTip": "GamblingWpfUser\\Pages\\RegistrationPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-27T14:11:57.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AuthPage.xaml",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWpfUser\\Pages\\AuthPage.xaml",
+              "RelativeDocumentMoniker": "GamblingWpfUser\\Pages\\AuthPage.xaml",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWpfUser\\Pages\\AuthPage.xaml",
+              "RelativeToolTip": "GamblingWpfUser\\Pages\\AuthPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-27T14:11:48.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "RefreshTokenRequest.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\ApiServices\\Requests\\RefreshTokenRequest.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\ApiServices\\Requests\\RefreshTokenRequest.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\ApiServices\\Requests\\RefreshTokenRequest.cs",
+              "RelativeToolTip": "BusinessLogic\\ApiServices\\Requests\\RefreshTokenRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T11:20:20.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "RouletteSpinRequest.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\ApiServices\\Requests\\RouletteSpinRequest.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\ApiServices\\Requests\\RouletteSpinRequest.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\ApiServices\\Requests\\RouletteSpinRequest.cs",
+              "RelativeToolTip": "BusinessLogic\\ApiServices\\Requests\\RouletteSpinRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T12:00:45.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "BaseRequest.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\ApiServices\\Requests\\BaseRequest.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\ApiServices\\Requests\\BaseRequest.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\ApiServices\\Requests\\BaseRequest.cs",
+              "RelativeToolTip": "BusinessLogic\\ApiServices\\Requests\\BaseRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T10:55:52.243Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "SpinSlotRequest.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\ApiServices\\Requests\\SpinSlotRequest.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\ApiServices\\Requests\\SpinSlotRequest.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\ApiServices\\Requests\\SpinSlotRequest.cs",
+              "RelativeToolTip": "BusinessLogic\\ApiServices\\Requests\\SpinSlotRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T11:59:29.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ApiSettings.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\ApiServices\\ApiSettings.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\ApiServices\\ApiSettings.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\ApiServices\\ApiSettings.cs",
+              "RelativeToolTip": "BusinessLogic\\ApiServices\\ApiSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T15:19:56.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "RegistrateRequest.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\ApiServices\\Requests\\RegistrateRequest.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\ApiServices\\Requests\\RegistrateRequest.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\ApiServices\\Requests\\RegistrateRequest.cs",
+              "RelativeToolTip": "BusinessLogic\\ApiServices\\Requests\\RegistrateRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T11:57:30.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\ApiServices\\Requests\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\ApiServices\\Requests\\LoginRequest.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\ApiServices\\Requests\\LoginRequest.cs",
+              "RelativeToolTip": "BusinessLogic\\ApiServices\\Requests\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T11:33:36.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "TestServiceProvider.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\TestProject\\TestServiceProvider.cs",
+              "RelativeDocumentMoniker": "TestProject\\TestServiceProvider.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\TestProject\\TestServiceProvider.cs",
+              "RelativeToolTip": "TestProject\\TestServiceProvider.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAIwC4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T18:58:00.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ServiceNotFoundException.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\ServiceNotFoundException.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\ServiceNotFoundException.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\ServiceNotFoundException.cs",
+              "RelativeToolTip": "BusinessLogic\\ServiceNotFoundException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T18:50:56.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ITokenStorageService.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Token\\ITokenStorageService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Token\\ITokenStorageService.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Token\\ITokenStorageService.cs",
+              "RelativeToolTip": "BusinessLogic\\Token\\ITokenStorageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T11:52:10.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "ILoginChecker.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Auth\\ILoginChecker.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Auth\\ILoginChecker.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Auth\\ILoginChecker.cs",
+              "RelativeToolTip": "BusinessLogic\\Auth\\ILoginChecker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T17:52:28.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "GameRepository.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\DataBaseClasses\\Repository\\GameRepository.cs",
+              "RelativeDocumentMoniker": "DataBaseClasses\\Repository\\GameRepository.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\DataBaseClasses\\Repository\\GameRepository.cs",
+              "RelativeToolTip": "DataBaseClasses\\Repository\\GameRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T17:44:17.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "UserStatusesRepository.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\DataBaseClasses\\Repository\\UserStatusesRepository.cs",
+              "RelativeDocumentMoniker": "DataBaseClasses\\Repository\\UserStatusesRepository.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\DataBaseClasses\\Repository\\UserStatusesRepository.cs",
+              "RelativeToolTip": "DataBaseClasses\\Repository\\UserStatusesRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T17:44:10.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Exceptions.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\DataBaseClasses\\Exceptions.cs",
+              "RelativeDocumentMoniker": "DataBaseClasses\\Exceptions.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\DataBaseClasses\\Exceptions.cs",
+              "RelativeToolTip": "DataBaseClasses\\Exceptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T17:42:27.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "RoulettePage.xaml",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWpfUser\\Pages\\Games\\RoulettePage.xaml",
+              "RelativeDocumentMoniker": "GamblingWpfUser\\Pages\\Games\\RoulettePage.xaml",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWpfUser\\Pages\\Games\\RoulettePage.xaml",
+              "RelativeToolTip": "GamblingWpfUser\\Pages\\Games\\RoulettePage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-26T16:06:38.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "DataBaseConnectionString.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\DataBaseClasses\\DataBaseConnectionString.cs",
+              "RelativeDocumentMoniker": "DataBaseClasses\\DataBaseConnectionString.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\DataBaseClasses\\DataBaseConnectionString.cs",
+              "RelativeToolTip": "DataBaseClasses\\DataBaseConnectionString.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T13:46:53.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ApplicationContext.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\DataBaseClasses\\ApplicationContext.cs",
+              "RelativeDocumentMoniker": "DataBaseClasses\\ApplicationContext.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\DataBaseClasses\\ApplicationContext.cs",
+              "RelativeToolTip": "DataBaseClasses\\ApplicationContext.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T13:47:31.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "ClientSlotService.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Game\\Slots\\ClientSlotService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Game\\Slots\\ClientSlotService.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Game\\Slots\\ClientSlotService.cs",
+              "RelativeToolTip": "BusinessLogic\\Game\\Slots\\ClientSlotService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T11:59:39.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWpfUser\\appsettings.json",
+              "RelativeDocumentMoniker": "GamblingWpfUser\\appsettings.json",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWpfUser\\appsettings.json",
+              "RelativeToolTip": "GamblingWpfUser\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-26T15:19:05.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "ServerSlotsService.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Game\\Slots\\ServerSlotsService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Game\\Slots\\ServerSlotsService.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Game\\Slots\\ServerSlotsService.cs",
+              "RelativeToolTip": "BusinessLogic\\Game\\Slots\\ServerSlotsService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBwAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T12:27:52.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "SlotsPage.xaml.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWpfUser\\Pages\\Games\\SlotsPage.xaml.cs",
+              "RelativeDocumentMoniker": "GamblingWpfUser\\Pages\\Games\\SlotsPage.xaml.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWpfUser\\Pages\\Games\\SlotsPage.xaml.cs",
+              "RelativeToolTip": "GamblingWpfUser\\Pages\\Games\\SlotsPage.xaml.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwDIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T12:15:55.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "JwtSettings.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Token\\JwtSettings.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Token\\JwtSettings.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Token\\JwtSettings.cs",
+              "RelativeToolTip": "BusinessLogic\\Token\\JwtSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T13:48:08.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWebApi\\appsettings.json",
+              "RelativeDocumentMoniker": "GamblingWebApi\\appsettings.json",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWebApi\\appsettings.json",
+              "RelativeToolTip": "GamblingWebApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-26T13:08:58.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "ClientRouletteService.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Game\\Roulette\\ClientRouletteService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Game\\Roulette\\ClientRouletteService.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Game\\Roulette\\ClientRouletteService.cs",
+              "RelativeToolTip": "BusinessLogic\\Game\\Roulette\\ClientRouletteService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T12:40:04.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "IPageGetter.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWpfUser\\Navigation\\IPageGetter.cs",
+              "RelativeDocumentMoniker": "GamblingWpfUser\\Navigation\\IPageGetter.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWpfUser\\Navigation\\IPageGetter.cs",
+              "RelativeToolTip": "GamblingWpfUser\\Navigation\\IPageGetter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T12:08:59.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "INavigationService.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWpfUser\\Navigation\\INavigationService.cs",
+              "RelativeDocumentMoniker": "GamblingWpfUser\\Navigation\\INavigationService.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWpfUser\\Navigation\\INavigationService.cs",
+              "RelativeToolTip": "GamblingWpfUser\\Navigation\\INavigationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T12:08:57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "Encryption.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Encryption\\Encryption.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Encryption\\Encryption.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Encryption\\Encryption.cs",
+              "RelativeToolTip": "BusinessLogic\\Encryption\\Encryption.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T11:39:06.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "SlotsPage.xaml",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWpfUser\\Pages\\Games\\SlotsPage.xaml",
+              "RelativeDocumentMoniker": "GamblingWpfUser\\Pages\\Games\\SlotsPage.xaml",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWpfUser\\Pages\\Games\\SlotsPage.xaml",
+              "RelativeToolTip": "GamblingWpfUser\\Pages\\Games\\SlotsPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-26T12:22:06.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "NavigationService.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWpfUser\\Navigation\\NavigationService.cs",
+              "RelativeDocumentMoniker": "GamblingWpfUser\\Navigation\\NavigationService.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWpfUser\\Navigation\\NavigationService.cs",
+              "RelativeToolTip": "GamblingWpfUser\\Navigation\\NavigationService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwCIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T12:09:02.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "RoulettePage.xaml.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWpfUser\\Pages\\Games\\RoulettePage.xaml.cs",
+              "RelativeDocumentMoniker": "GamblingWpfUser\\Pages\\Games\\RoulettePage.xaml.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWpfUser\\Pages\\Games\\RoulettePage.xaml.cs",
+              "RelativeToolTip": "GamblingWpfUser\\Pages\\Games\\RoulettePage.xaml.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAIwJAAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T12:15:24.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "AuthPage.xaml.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWpfUser\\Pages\\AuthPage.xaml.cs",
+              "RelativeDocumentMoniker": "GamblingWpfUser\\Pages\\AuthPage.xaml.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\GamblingWpfUser\\Pages\\AuthPage.xaml.cs",
+              "RelativeToolTip": "GamblingWpfUser\\Pages\\AuthPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T11:36:22.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "IRouletteService.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Game\\Roulette\\IRouletteService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Game\\Roulette\\IRouletteService.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Game\\Roulette\\IRouletteService.cs",
+              "RelativeToolTip": "BusinessLogic\\Game\\Roulette\\IRouletteService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T12:04:07.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "IUserIdExtraction.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Encryption\\IUserIdExtraction.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Encryption\\IUserIdExtraction.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Encryption\\IUserIdExtraction.cs",
+              "RelativeToolTip": "BusinessLogic\\Encryption\\IUserIdExtraction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T11:41:34.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "IPasswordHasher.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Encryption\\IPasswordHasher.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Encryption\\IPasswordHasher.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Encryption\\IPasswordHasher.cs",
+              "RelativeToolTip": "BusinessLogic\\Encryption\\IPasswordHasher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T11:39:27.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "IEncryption.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Encryption\\IEncryption.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Encryption\\IEncryption.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\BusinessLogic\\Encryption\\IEncryption.cs",
+              "RelativeToolTip": "BusinessLogic\\Encryption\\IEncryption.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T11:39:04.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "ServerSlotsTestsWithAccount.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\TestProject\\Games\\Slots\\ServerSlotsTestsWithAccount.cs",
+              "RelativeDocumentMoniker": "TestProject\\Games\\Slots\\ServerSlotsTestsWithAccount.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\TestProject\\Games\\Slots\\ServerSlotsTestsWithAccount.cs",
+              "RelativeToolTip": "TestProject\\Games\\Slots\\ServerSlotsTestsWithAccount.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAAAIUAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T11:36:26.908Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

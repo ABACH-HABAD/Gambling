@@ -1,0 +1,28 @@
+[
+  {
+    "Name": "Админ",
+    "Projects": [
+      {
+        "Path": "GamblingWebApi\\GamblingWebApi.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "GamblingWpfAdmin\\GamblingWpfAdmin.csproj",
+        "Action": "Start"
+      }
+    ]
+  },
+  {
+    "Name": "Пользователь",
+    "Projects": [
+      {
+        "Path": "GamblingWebApi\\GamblingWebApi.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "GamblingWpfUser\\GamblingWpfUser.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

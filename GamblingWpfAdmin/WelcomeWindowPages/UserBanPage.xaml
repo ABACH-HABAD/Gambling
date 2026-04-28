@@ -1,0 +1,67 @@
+﻿<Page x:Class="GamblingWpfAdmin.WelcomeWindowPages.UserBanPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GamblingWpfAdmin.WelcomeWindowPages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="UserBanPage">
+
+    <Grid>
+        <StackPanel 
+    Width="550"
+    HorizontalAlignment="Center"
+    VerticalAlignment="Center">
+            <Grid Style="{StaticResource WelcomePageGrid}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock 
+            Text="ID аккаунта"
+            Style="{StaticResource WelcomePageTextBlock}"/>
+                <TextBox 
+            Name="AccountId" 
+            Grid.Column="1"
+            Style="{StaticResource WelcomePageTextBox}"/>
+            </Grid>
+            <Grid Style="{StaticResource WelcomePageGrid}">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock 
+            Text="Причина:"
+            Style="{StaticResource WelcomePageTextBlock}"/>
+                <TextBox 
+                    Margin="5"
+            Name="Reason" 
+                    Grid.Row="1"
+            Grid.Column="1"
+             HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="100"/>
+            </Grid>
+            <TextBlock x:Name="CaptchaPlace" Margin="0,5,0,5" FontSize="25" HorizontalAlignment="Center">
+        Капча
+            </TextBlock>
+            <Grid Style="{StaticResource WelcomePageGrid}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock 
+            Text="Капча"
+            Style="{StaticResource WelcomePageTextBlock}"/>
+                <TextBox 
+            Name="CaptchaAnswer" 
+            Grid.Column="1"
+            Style="{StaticResource WelcomePageTextBox}"/>
+            </Grid>
+            <Button 
+        Grid.Row="0" 
+        x:Name="Authorization" 
+        Content="Заблокировать пользователя" 
+        Style="{StaticResource WelcomePageButton}"/>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,41 @@
+﻿using System.Windows;
+using System.Windows.Controls;
+using BusinessLogic.Auth;
+using GamblingWpfUser.Navigation;
+using GamblingWpfUser.Pages.Games;
+
+namespace GamblingWpfUser.Pages;
+
+/// <summary>
+/// Логика взаимодействия для GamesPage.xaml
+/// </summary>
+public partial class GamesPage : Page
+{
+    private readonly INavigationService _navigationService;
+    private readonly IAccountService _accountService;
+
+    public GamesPage(IAccountService accountService)
+    {
+        _navigationService = new NavigationService();
+        _navigationService.SetFrame(MainWindow.Instance.MainFrame);
+        _accountService = accountService;
+
+        InitializeComponent();
+    }
+
+
+    private void SlotsButton_Click(object sender, RoutedEventArgs e)
+    {
+        _navigationService.NavigateTo<SlotsPage>();
+    }
+
+    private void BlackJackButton_Click(object sender, RoutedEventArgs e)
+    {
+        _navigationService.NavigateTo<BlackjackPage>();
+    }
+
+    private void Roulette_Click(object sender, RoutedEventArgs e)
+    {
+        _navigationService.NavigateTo<RoulettePage>();
+    }
+}

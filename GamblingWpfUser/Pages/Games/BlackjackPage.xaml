@@ -1,0 +1,68 @@
+﻿<Page x:Class="GamblingWpfUser.Pages.Games.BlackjackPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GamblingWpfUser.Pages.Games"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Блэкджек">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="7*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0">
+                    Карты противника:
+                </TextBlock>
+                <TextBlock Grid.Column="1" x:Name="EnemyScorce">
+                    Очки
+                </TextBlock>
+            </Grid>
+            <StackPanel Grid.Row="1" Name="EnemyCards">
+
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="7*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0">
+                   Ваши карты:
+                </TextBlock>
+                <TextBlock Grid.Column="1" x:Name="YourScorce">
+                    Очки
+                </TextBlock>
+            </Grid>
+            <StackPanel Grid.Row="1" Name="YourCards">
+
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Content="Взять карту" Name="TakeCard"/>
+            <Button Grid.Column="1" Content="Не брать" Name="Pass"/>
+        </Grid>
+    </Grid>
+</Page>
