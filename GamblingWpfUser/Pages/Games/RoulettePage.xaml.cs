@@ -1,5 +1,5 @@
 ﻿using BusinessLogic.Game.Roulette;
-using DataBaseClasses;
+using DataBaseClasses.Exceptions;
 using GamblingWpfUser.Navigation;
 using GamblingWpfUser.RouletteServices;
 using System.Collections.ObjectModel;
@@ -18,10 +18,9 @@ namespace GamblingWpfUser.Pages.Games
     {
         private readonly IRouletteService _rouletteService;
         private readonly IElementAnimator _rouletteAnimatorService;
-        private readonly INavigationService _navigationService;
 
         private static readonly int[] numbers =
-            [0, 26, 3, 35, 12, 28, 7, 29, 18, 22, 9, 31, 14, 20, 1, 33, 16, 24, 5, 10, 23, 8, 30, 11, 36, 13, 21, 6, 34, 17, 25, 2, 21, 4, 19, 15, 32];
+            [0, 26, 3, 35, 12, 28, 7, 29, 18, 22, 9, 31, 14, 20, 1, 33, 16, 24, 5, 10, 23, 8, 30, 11, 36, 13, 27, 6, 34, 17, 25, 2, 21, 4, 19, 15, 32];
         //[0, 32, 15, 19, 4, 21, 2, 25, 17, 34, 6, 21, 13, 36, 11, 30, 8, 32, 10, 5, 24, 16, 33, 1, 20, 14, 31, 9, 22, 18, 29, 7, 28, 12, 35, 3, 26];
 
         private static readonly Color SELECTED_COLOR = Color.FromRgb(200, 200, 0);
@@ -29,7 +28,7 @@ namespace GamblingWpfUser.Pages.Games
         private SolidColorBrush? BufferBrush;
         private Button? SelectedButton;
 
-        private readonly ObservableCollection<RouletteBid> RouletterBids = [];
+        private readonly ObservableCollection<RouletteBid> RouletteBids = [];
         private readonly List<RouletteBid> LastBids = [];
         private RouletteBid? TempBid;
 
@@ -39,7 +38,6 @@ namespace GamblingWpfUser.Pages.Games
         {
             _rouletteService = rouletteService;
             _rouletteAnimatorService = new RouletteAnimator();
-            _navigationService = new GamblingWpfUser.Navigation.NavigationService();
 
             InitializeComponent();
 
@@ -97,6 +95,12 @@ namespace GamblingWpfUser.Pages.Games
             Clickable.Add(Even);
             Clickable.Add(Red);
             Clickable.Add(Black);
+            Clickable.Add(Bet100);
+            Clickable.Add(Bet500);
+            Clickable.Add(Bet1000);
+            Clickable.Add(HalfBet);
+            Clickable.Add(MaxBet);
+            Clickable.Add(DropBet);
         }
 
         private bool TryGetBid(out double bid)
@@ -129,12 +133,18 @@ namespace GamblingWpfUser.Pages.Games
 
         private async Task SpinRoulette()
         {
+            if (RouletteBids.Count == 0)
+            {
+                MessageBox.Show("Вы не сделали ставку");
+                return;
+            }
+
             foreach (UIElement element in Clickable) element.IsEnabled = false;
 
             Number.Text = "Крутится";
 
             LastBids.Clear();
-            foreach (RouletteBid rouletteBid in RouletterBids)
+            foreach (RouletteBid rouletteBid in RouletteBids)
             {
                 LastBids.Add(rouletteBid);
             }
@@ -142,7 +152,7 @@ namespace GamblingWpfUser.Pages.Games
             RouletteGameResult? result;
             try
             {
-                result = await _rouletteService.Spin(0, [.. RouletterBids]);
+                result = await _rouletteService.Spin(0, [.. RouletteBids]);
             }
             catch (InsufficientFundsException)
             {
@@ -173,7 +183,7 @@ namespace GamblingWpfUser.Pages.Games
                 {
                     await _rouletteAnimatorService.AnimateElement(RouletteImage, 0, 360, duration);
                 }
-                await _rouletteAnimatorService.AnimateElement(RouletteImage, 0, (9.7297 * (winElementId)), duration); //
+                await _rouletteAnimatorService.AnimateElement(RouletteImage, 0, (360 / numbers.Length * (winElementId)), duration); //
 
 
                 if (result.Result)
@@ -187,10 +197,10 @@ namespace GamblingWpfUser.Pages.Games
 
         endgame:
             foreach (UIElement element in Clickable) element.IsEnabled = true;
-            MainWindow.Instance.UpdateProfileInfo();
+            await MainWindow.Instance.UpdateProfileInfo();
             Bid.Text = string.Empty;
-            RouletterBids.Clear();
-            Bids.ItemsSource = RouletterBids;
+            RouletteBids.Clear();
+            Bids.ItemsSource = RouletteBids;
             //Bids.Items.Clear();
         }
 
@@ -203,8 +213,14 @@ namespace GamblingWpfUser.Pages.Games
                 if (TempBid != null)
                 {
                     TempBid.BidCount = bid;
-                    RouletterBids.Add(TempBid);
-                    Bids.ItemsSource = RouletterBids;
+                    RouletteBid oldBid = RouletteBids.First(bid => bid.Type == TempBid.Type);
+                    if (oldBid != null)
+                    {
+                        oldBid.BidCount += bid;
+                    }
+                    else RouletteBids.Add(TempBid);
+                    //Bids.ItemsSource = RouletteBids;
+                    Bids.Items.Refresh();
                 }
                 else MessageBox.Show("Выберите, на что ставить");
             }
@@ -213,11 +229,11 @@ namespace GamblingWpfUser.Pages.Games
 
         private void LastBid_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            RouletterBids.Clear();
+            RouletteBids.Clear();
             foreach (RouletteBid rouletteBid in LastBids)
             {
-                RouletterBids.Add(rouletteBid);
-                Bids.ItemsSource = RouletterBids;
+                RouletteBids.Add(rouletteBid);
+                Bids.ItemsSource = RouletteBids;
             }
         }
 
@@ -249,6 +265,19 @@ namespace GamblingWpfUser.Pages.Games
 
         }
 
+        private void DeleteBetButton_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            if (sender is Button button)
+            {
+                if (button.CommandParameter is RouletteBid bid)
+                {
+                    RouletteBids.Remove(bid);
+                    Bids.Items.Refresh();
+                }
+            }
+            else throw new ArgumentException("sender может быть только кнопкой", ((FrameworkElement)sender).Name);
+        }
+
         private void ThirdColumn_Click(object sender, System.Windows.RoutedEventArgs e) => BidClick(sender, "третья колонка", ((FrameworkElement)sender).Name);
 
         private void SecondColumn_Click(object sender, System.Windows.RoutedEventArgs e) => BidClick(sender, "вторая колонка", ((FrameworkElement)sender).Name);
@@ -272,5 +301,28 @@ namespace GamblingWpfUser.Pages.Games
         private void Red_Click(object sender, System.Windows.RoutedEventArgs e) => BidClick(sender, "красный", ((FrameworkElement)sender).Name);
 
         private void Black_Click(object sender, System.Windows.RoutedEventArgs e) => BidClick(sender, "чёрный", ((FrameworkElement)sender).Name);
+
+        private void AddToBet(double count)
+        {
+            if (double.TryParse(Bid.Text, out double bet))
+            {
+                SetBet(bet + count);
+            }
+            else SetBet(count);
+        }
+
+        private void SetBet(double count) => Bid.Text = count.ToString();
+
+        private void Bet100_Click(object sender, RoutedEventArgs e) => AddToBet(100);
+
+        private void Bet500_Click(object sender, RoutedEventArgs e) => AddToBet(500);
+
+        private void Bet1000_Click(object sender, RoutedEventArgs e) => AddToBet(1000);
+
+        private void HalfBet_Click(object sender, RoutedEventArgs e) => SetBet(Math.Round(MainWindow.Instance.CurrentBalance / 2));
+
+        private void MaxBet_Click(object sender, RoutedEventArgs e) => SetBet(MainWindow.Instance.CurrentBalance);
+
+        private void DropBet_Click(object sender, RoutedEventArgs e) => SetBet(0);
     }
 }

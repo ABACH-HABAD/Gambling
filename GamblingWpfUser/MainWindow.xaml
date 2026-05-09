@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         ResizeMode="CanResize"
         WindowStartupLocation="CenterScreen"
-        Title="MainWindow" 
-        MinHeight="450" MinWidth="800"
+        Title="Азартные игры" 
+        MinHeight="800" MinWidth="1300"
         Closed="OnClosed"
         Loaded="OnLoaded">
     <Grid>
@@ -18,7 +18,7 @@
         </Grid.RowDefinitions>
         <Grid 
             x:Name="ProfileInfo" 
-            Visibility="Visible">
+            Visibility="Hidden">
             <Grid.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF21075D" Offset="1"/>
@@ -27,10 +27,11 @@
                 </LinearGradientBrush>
             </Grid.Background>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="11*"/>
             </Grid.ColumnDefinitions>
             <Button 
+                Style="{StaticResource HeaderButton}"
                 Grid.Row="0" 
                 Margin="10,15,10,15" 
                 Content="Вернуться на главную" 
@@ -46,18 +47,27 @@
                 BorderThickness="5"
                 CornerRadius="20"
                 BorderBrush="#FF0B0C3A">
-                <StackPanel 
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="3*"/>
+                        <RowDefinition Height="5*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock FontSize="18" x:Name="UserName" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                    <StackPanel 
+                        Grid.Row="1"
                     Orientation="Horizontal"
                     HorizontalAlignment="Right">
-                    <TextBlock Margin="5" x:Name="UserName" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <TextBlock Margin="5" x:Name="Balance" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <Button Margin="5" Content="Выйти" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                </StackPanel>
+                        <Button Margin="5,2,5,2" Style="{StaticResource HeaderButton}" Content="Пополнит баланс" Name="AddToBalance" Click="AddToBalance_Click"/>
+                        <Button Margin="5,2,5,2" Style="{StaticResource HeaderButton}" Content="Личный кабинет" Name="ProfileButton" Click="ProfileButton_Click"/>
+                        <TextBlock FontSize="18" Margin="5,2,5,2" x:Name="Balance" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <Button Margin="5,2,5,2" Name="LogoutButton" Style="{StaticResource HeaderButton}"  Content="Выйти" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Logout_Click"/>
+                    </StackPanel>
+                </Grid>
             </Border>
         </Grid>
         <Frame 
-            Name="MainFrame"
             Grid.Row="1"
+            Name="MainFrame"
             Navigated="MainFrame_Navigated">
             <Frame.NavigationUIVisibility>Hidden</Frame.NavigationUIVisibility>
         </Frame>

@@ -1,17 +1,26 @@
-﻿using BusinessLogic.ApiServices;
-using BusinessLogic.ApiServices.Requests;
-using BusinessLogic.Auth.Validation;
-using BusinessLogic.Encryption;
-using DataBaseClasses.Entity;
+﻿using Microsoft.Extensions.DependencyInjection;
 using System.Net.Http.Json;
 using System.Net.Sockets;
+using DataBaseClasses.Entity;
+using BusinessLogic.ApiServices;
+using BusinessLogic.ApiServices.Requests;
+using BusinessLogic.Encryption;
+using BusinessLogic.Token;
+using BusinessLogic.Validation;
 
 namespace BusinessLogic.Auth;
 
-public class ClientAccountService(IApiClient apiClient, IValidation emailValidation, ITwoPasswordsValidation passwordValidation, IPasswordHasher passwordHasher) : IAccountService
+public class ClientAccountService(
+    IApiClient apiClient, 
+    IValidation emailValidation, 
+    ITwoPasswordsValidation passwordValidation, 
+    IPasswordHasher passwordHasher,
+    [FromKeyedServices("refresh")] ITokenStorageService tokenStorage)
+    : IAccountService
 {
     public async Task<LoginResult> RegistrateAsync(string login, string rawPassword, string repeatPassword, DeviceType deviceType, string? ip)
     {
+        if (emailValidation is not EmailValidation) throw new Exception("Валидация почты не настроена");
         //валидация
         if (!emailValidation.Validate(login, out string loginError)) return new LoginResult(null, false, loginError);
         if (!passwordValidation.ValidateTwoPasswords(rawPassword, repeatPassword, out string passwordError)) return new LoginResult(null, false, passwordError);
@@ -53,7 +62,7 @@ public class ClientAccountService(IApiClient apiClient, IValidation emailValidat
         HttpResponseMessage response;
         try
         {
-            response = await apiClient.PostAsync("login", new LoginRequest(login, passwordHasher.HashPassword(rawPassword), deviceTypeId));
+            response = await apiClient.PostAsync("login", new LoginRequest(login, passwordHasher.HashPassword(rawPassword), deviceTypeId, loginAsAdmin));
         }
         catch (HttpRequestException ex) when (ex.InnerException is SocketException)
         {
@@ -77,11 +86,13 @@ public class ClientAccountService(IApiClient apiClient, IValidation emailValidat
 
     public async Task<LoginResult> AutoLoginAsync(string refreshToken, DeviceType deviceType, string? ip = null)
     {
-        //ц
+        if (refreshToken == null || refreshToken == string.Empty) refreshToken = await tokenStorage.GetTokenAsync() ?? throw new Exception("Сессия не найдена");
+
+        //запрос
         HttpResponseMessage response;
         try
         {
-            response = await apiClient.PostAsync("login", new RefreshTokenRequest(refreshToken, (int)deviceType));
+            response = await apiClient.PostAsync("autoLogin", new RefreshTokenRequest(refreshToken, (int)deviceType));
         }
         catch (HttpRequestException ex) when (ex.InnerException is SocketException)
         {
@@ -103,54 +114,65 @@ public class ClientAccountService(IApiClient apiClient, IValidation emailValidat
         else return new LoginResult(null, false, "Ошибка при чтении ответа с сервера");
     }
 
-    public async Task<bool> CheckRegistrationAsync(string login)
+    public async Task LogoutAsync(string refreshToken, DeviceType deviceType, string? ip = null)
+    {
+        if (refreshToken == null || refreshToken == string.Empty) refreshToken = await tokenStorage.GetTokenAsync() ?? throw new Exception("Сессия не найдена");
+
+        await apiClient.PostAsync("logout", new RefreshTokenRequest(refreshToken, (int)deviceType));
+
+        await tokenStorage.SaveTokenAsync(null!);
+        await apiClient.SetTokenAsync(null!);
+    }
+
+    public async Task<User?> GetUserDataAsync(int userId)
+    {
+        HttpResponseMessage response;
+        try
+        {
+            response = await apiClient.GetAsync($"userData");
+
+            if (response.StatusCode == System.Net.HttpStatusCode.OK)
+            {
+                return await response.Content.ReadFromJsonAsync<User>();
+            }
+            else return null;
+        }
+        catch
+        {
+            return null;
+        }
+    }
+
+    public async Task<List<User>> GetAllUsersAsync(int adminId)
     {
         //запрос
         HttpResponseMessage response;
         try
         {
-            response = await apiClient.PostAsync("checkRegistration", login);
-        }
-        catch (HttpRequestException ex) when (ex.InnerException is SocketException)
-        {
-            return false;
-        }
+            response = await apiClient.GetAsync("getAllUsers");
 
-        //ответ
-        LoginResult? result = await response.Content.ReadFromJsonAsync<LoginResult>();
-        if (result != null) return result.Result;
-        else return false;
-    }
-
-    public async Task<User?> GetUserData(int userId)
-    {
-        HttpResponseMessage message;
-        try
-        {
-            message = await apiClient.GetAsync($"getUserData?userId={userId}");
-
-            if (message.StatusCode == System.Net.HttpStatusCode.OK)
+            if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                return await message.Content.ReadFromJsonAsync<User>();
+                return await response.Content.ReadFromJsonAsync<List<User>>() ?? [];
             }
-            else return null;
+            else return [];
         }
         catch
         {
-            return null;
+            return [];
         }
     }
 
     public async Task<User?> UpdateUserDataAsync(User user)
     {
-        HttpResponseMessage message;
+        HttpResponseMessage responce;
         try
         {
-            message = await apiClient.PutAsync("putUserData", user);
+            responce = await apiClient.PutAsync("userData", user);
 
-            if (message.StatusCode == System.Net.HttpStatusCode.OK)
+            if (responce.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                return await message.Content.ReadFromJsonAsync<User>();
+                return await responce.Content.ReadFromJsonAsync<User>();
             }
             else return null;
         }
@@ -160,7 +182,7 @@ public class ClientAccountService(IApiClient apiClient, IValidation emailValidat
         }
     }
 
-    public Task<bool> TopUpBalance(int userId, double sum)
+    public Task<bool> ChangeBalanceAsync(int userId, double sum)
     {
         throw new NotImplementedException();
     }

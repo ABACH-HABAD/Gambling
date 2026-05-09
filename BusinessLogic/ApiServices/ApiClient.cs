@@ -1,4 +1,5 @@
-﻿using BusinessLogic.Token;
+﻿using BusinessLogic.ApiServices.Requests;
+using BusinessLogic.Token;
 using Microsoft.Extensions.DependencyInjection;
 using System.Net.Http.Headers;
 using System.Net.Http.Json;
@@ -45,7 +46,7 @@ public class ApiClient : IApiClient
                 _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _jwtToken);
                 await _accessTokenStorageService.SaveTokenAsync(token.AccessToken);
 
-                
+
             }
             if (token.RefreshToken != null && token.RefreshToken != string.Empty)
             {

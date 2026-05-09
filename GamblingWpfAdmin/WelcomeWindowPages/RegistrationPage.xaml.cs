@@ -53,7 +53,7 @@ namespace GamblingWpfAdmin.WelcomeWindowPages
                 return;
             }
 
-            LoginResult loginResult = await _accountService.RegistrateAsync(Login.Text, Password.Password, RepeatPassword.Password);
+            LoginResult loginResult = await _accountService.RegistrateAsync(Login.Text, Password.Password, RepeatPassword.Password, DeviceType.Windows);
             if (loginResult.Result)
             {
                 Login.Text = string.Empty;

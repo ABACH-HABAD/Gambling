@@ -1,18 +1,19 @@
 ﻿using BusinessLogic.ApiServices;
+using BusinessLogic.ApiServices.Requests;
 using System.Net.Http.Json;
 using System.Net.Sockets;
 
 namespace BusinessLogic.Game.Roulette;
 
-public class ClientRouletteService(IApiClient apiClient) : IRouletteService, IGameService
+public class ClientRouletteService(IApiClient apiClient) : ClientGameService(apiClient, GameType.Roulette), IRouletteService, IGameService
 {
-    public async Task<RouletteGameResult?> Spin(int userId, List<RouletteBid> bids)
+    public async Task<RouletteGameResult?> Spin(int userId, List<RouletteBid> bets)
     {
         HttpResponseMessage responseMessage;
 
         try
         {
-            responseMessage = await apiClient.PostAsync("spinRoulette", new { bids });
+            responseMessage = await _apiClient.PostAsync("spinRoulette", new RouletteSpinRequest(bets.PrepareToJson()));
         }
         catch (HttpRequestException ex) when (ex.InnerException is SocketException)
         {

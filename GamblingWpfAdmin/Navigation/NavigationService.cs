@@ -3,9 +3,8 @@ using System.Windows.Controls;
 
 namespace GamblingWpfAdmin.Navigation;
 
-public class NavigationService(IServiceProvider serviceProvider) : INavigationService, IPageGetter
+public class NavigationService : INavigationService, IPageGetter
 {
-    private readonly IServiceProvider _serviceProvider = serviceProvider;
     private Frame? _navigationFrame;
 
     public void SetFrame(Frame frame)
@@ -16,11 +15,25 @@ public class NavigationService(IServiceProvider serviceProvider) : INavigationSe
     public void NavigateTo<T>() where T : Page
     {
         if (_navigationFrame == null) throw new InvalidOperationException("Frame не установлен, для установки вызовете SetFrame(Frame)");
-        _navigationFrame.Navigate(GetPage<T>());
+        Page p = GetPage<T>();
+        _navigationFrame.Navigate(p);
     }
 
     public Page GetPage<T>() where T : Page
     {
-        return _serviceProvider.GetRequiredService<T>();
+        Page? p;
+        try
+        {
+            p = App.Services.GetService<T>();
+        }
+        catch
+        {
+            throw new InvalidOperationException();
+        }
+            
+        if (p == null) 
+            throw new InvalidOperationException();
+        return p;
+
     }
 }

@@ -15,11 +15,11 @@ public class ApplicationContext : DbContext
     internal DbSet<GameType> Game_types => Set<GameType>();
     internal DbSet<DeviceType> Device_types => Set<DeviceType>();
     internal DbSet<UserStatus> User_statuses => Set<UserStatus>();
+    internal DbSet<PromotionalCode> Promotional_codes => Set<PromotionalCode>();
 
     public ApplicationContext(DataBaseConnectionString connectionString)
     {
         dataBaseConnectionString = connectionString.ConnectionString;
-
         IsConnected = Connect();
     }
 

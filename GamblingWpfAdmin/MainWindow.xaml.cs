@@ -12,10 +12,13 @@ public partial class MainWindow : Window
 {
     public const string IS_NAME = "Информационная система"; //ИС Азартные игры (для администраторов)
 
+    public static MainWindow Instance { get; private set; } = null!;
+
     private INavigationService _navigationService = null!;
 
     public MainWindow()
     {
+        Instance = this;
         InitializeComponent();
     }
 
@@ -27,14 +30,6 @@ public partial class MainWindow : Window
         NavigateToAuthorizationPage();
         //NavigateToChangePasswordPage();
         //NavigateToUserBanPage();
-
-        MilkProduction milkProduction = new();
-        milkProduction.Show();
-    }
-
-    private void OnClosed(object sender, EventArgs e)
-    {
-        Application.Current.Shutdown();
     }
 
     public void NavigateToAuthorizationPage()
@@ -43,23 +38,10 @@ public partial class MainWindow : Window
         _navigationService.NavigateTo<AuthPage>();
     }
 
-    public void NavigateToChangePasswordPage()
-    {
-        Title = $"{IS_NAME} - Смена пароля";
-        _navigationService.NavigateTo<PasswordChangePage>();
-    }
-
-    public void NavigateToUserBanPage()
-    {
-        Title = $"{IS_NAME} - Блокировка пользователя";
-        _navigationService.NavigateTo<UserBanPage>();
-    }
-
     public void LoginIntoAdminAccount()
     {
-        DataTablesWindow dataTablesWindow = new();
+        DataTablesWindow dataTablesWindow = App.Services.GetRequiredService<DataTablesWindow>();
         dataTablesWindow.Show();
-        Close();
+        this.Close();
     }
-
 }

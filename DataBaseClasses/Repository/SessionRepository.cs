@@ -1,6 +1,6 @@
 ﻿using DataBaseClasses.Entity;
 using DataBaseClasses.Repository.Interfaces;
-using Microsoft.EntityFrameworkCore;
+using DataBaseClasses.Exceptions;
 
 namespace DataBaseClasses.Repository;
 

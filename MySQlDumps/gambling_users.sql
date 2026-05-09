@@ -41,7 +41,7 @@ CREATE TABLE `users` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `email_UNIQUE` (`email`),
   UNIQUE KEY `id_UNIQUE` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -50,7 +50,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'admin@casino.ru','2CSU8F1pF7oC96qilonMtES7c/IDgIdssF0fN1N7eJI=',NULL,2,0,1,0,0,0,NULL,NULL,NULL),(7,'MegaVanya315@gmail.com','FeKw08M4keuw8e9gnsQZQgwg4yDOlMZfvIwzEkSOsiU=','Vanya',1,0,1,0,0,0,NULL,NULL,NULL),(8,'asd@hhj.jh','FeKw08M4keuw8e9gnsQZQgwg4yDOlMZfvIwzEkSOsiU=',NULL,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(9,'popa@mail.dot','NkSjHwqXVdy8NrpHmCNOwqgzISgWvBHjSWyhef9yBhI=',NULL,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(10,'Zhopa@Popa.tt','FeKw08M4keuw8e9gnsQZQgwg4yDOlMZfvIwzEkSOsiU=',NULL,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(11,'GAVNO@kakashka.ru','FeKw08M4keuw8e9gnsQZQgwg4yDOlMZfvIwzEkSOsiU=',NULL,0,0,1,50000,0,0,0,0,0),(12,'GAVNO228@kakashka.ru','FeKw08M4keuw8e9gnsQZQgwg4yDOlMZfvIwzEkSOsiU=',NULL,0,0,1,33910,22,568,1620,16225,0);
+INSERT INTO `users` VALUES (1,'admin@casino.ru','2CSU8F1pF7oC96qilonMtES7c/IDgIdssF0fN1N7eJI=',NULL,3,0,1,0,0,0,NULL,NULL,NULL),(7,'MegaVanya315@gmail.com','FeKw08M4keuw8e9gnsQZQgwg4yDOlMZfvIwzEkSOsiU=','Vanya',2,0,1,0,0,0,NULL,NULL,NULL),(8,'asd@hhj.jh','FeKw08M4keuw8e9gnsQZQgwg4yDOlMZfvIwzEkSOsiU=',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(9,'popa@mail.dot','NkSjHwqXVdy8NrpHmCNOwqgzISgWvBHjSWyhef9yBhI=',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(10,'KirrilZabivnoy@pochta.tt','FeKw08M4keuw8e9gnsQZQgwg4yDOlMZfvIwzEkSOsiU=',NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(11,'cemen2000@gmail.com','FeKw08M4keuw8e9gnsQZQgwg4yDOlMZfvIwzEkSOsiU=',NULL,1,0,1,50000,0,0,0,0,0),(12,'SuperIgrok@pochta.ru','FeKw08M4keuw8e9gnsQZQgwg4yDOlMZfvIwzEkSOsiU=',NULL,1,0,1,423467,91,772,283633,956135,1);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -63,4 +63,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-17 13:00:49
+-- Dump completed on 2026-05-04 11:11:54

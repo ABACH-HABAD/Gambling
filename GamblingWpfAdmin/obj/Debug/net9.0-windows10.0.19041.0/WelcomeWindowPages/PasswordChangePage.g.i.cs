@@ -101,7 +101,7 @@ namespace GamblingWpfAdmin.WelcomeWindowPages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GamblingWpfAdmin;component/welcomewindowpages/passwordchangepage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GamblingWpfAdmin;V1.0.0.0;component/welcomewindowpages/passwordchangepage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\WelcomeWindowPages\PasswordChangePage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

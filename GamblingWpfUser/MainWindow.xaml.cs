@@ -1,4 +1,5 @@
 ﻿using BusinessLogic.Auth;
+using BusinessLogic.Token;
 using DataBaseClasses.Entity;
 using GamblingWpfUser.Navigation;
 using GamblingWpfUser.Pages;
@@ -12,16 +13,20 @@ namespace GamblingWpfUser;
 /// </summary>
 public sealed partial class MainWindow : Window
 {
-    public const string IS_NAME = "Оналйн казино NAEBALOVO.NET";
+    public const string IS_NAME = "Оналйн казино «Игровой Центр»";
 
     private INavigationService _navigationService = null!;
-    private ILoginChecker _loginChecker = null!;
+    private IAccountService _accountService = null!;
+    private ITokenStorageService _tokenStorageService = null!;
+
+    internal double CurrentBalance { get; private set; }
 
     public static MainWindow Instance { get; private set; } = null!;
 
     public MainWindow()
     {
         Instance = this;
+        Title = IS_NAME;
 
         InitializeComponent();
     }
@@ -32,11 +37,15 @@ public sealed partial class MainWindow : Window
         _navigationService = App.Services.GetRequiredService<INavigationService>();
         _navigationService.SetFrame(MainFrame);
 
-        _loginChecker = App.Services.GetRequiredService<ILoginChecker>();
-        LoginResult result = await _loginChecker.CheckActiveLoginAsync(null!, 1, null!);
-        if (result.Result)
+        _accountService = App.Services.GetRequiredService<IAccountService>();
+        _tokenStorageService = App.Services.GetRequiredKeyedService<ITokenStorageService>("refresh");
+        string? refreshToken = await _tokenStorageService.GetTokenAsync();
+        if (refreshToken != null)
         {
-            _navigationService.NavigateTo<GamesPage>();
+            LoginResult result = await _accountService.AutoLoginAsync(refreshToken, BusinessLogic.Auth.DeviceType.Windows, null!);
+
+            if (result.Result) _navigationService.NavigateTo<GamesPage>();
+            else _navigationService.NavigateTo<AuthPage>();
         }
         else _navigationService.NavigateTo<AuthPage>();
     }
@@ -46,14 +55,14 @@ public sealed partial class MainWindow : Window
         Application.Current.Shutdown();
     }
 
-    public async void UpdateProfileInfo()
+    public async Task UpdateProfileInfo()
     {
         if (_navigationService.CurrentPageType == typeof(AuthPage) || _navigationService.CurrentPageType == typeof(RegistrationPage)) ProfileInfo.Visibility = Visibility.Hidden;
         else
         {
             ProfileInfo.Visibility = Visibility.Visible;
             IAccountService accountService = App.Services.GetRequiredService<IAccountService>();
-            User? user = await accountService.GetUserData(0);
+            User? user = await accountService.GetUserDataAsync(0);
             if (user != null)
             {
                 if (user.Name == null)
@@ -62,13 +71,33 @@ public sealed partial class MainWindow : Window
                     await accountService.UpdateUserDataAsync(user);
                 }
                 user.Balance ??= 0;
+                CurrentBalance = user.Balance ?? 0;
                 UserName.Text = user.Name;
-                Balance.Text = $"Баланс: {user.Balance}";
+                Balance.Text = $"Баланс: {CurrentBalance}";
             }
         }
     }
 
     private void Back_Click(object sender, RoutedEventArgs e) => _navigationService.NavigateTo<GamesPage>();
 
-    private void MainFrame_Navigated(object sender, System.Windows.Navigation.NavigationEventArgs e) => UpdateProfileInfo();
+    private async void MainFrame_Navigated(object sender, System.Windows.Navigation.NavigationEventArgs e) => await UpdateProfileInfo();
+
+    private void AddToBalance_Click(object sender, RoutedEventArgs e)
+    {
+        PayWindow payWindow = App.Services.GetRequiredService<PayWindow>();
+        payWindow.ShowDialog();
+    }
+
+    public async Task Logout()
+    {
+        await _accountService.LogoutAsync(string.Empty, BusinessLogic.Auth.DeviceType.Windows, null);
+        _navigationService.NavigateTo<AuthPage>();
+    }
+
+    private async void Logout_Click(object sender, RoutedEventArgs e) => await Logout();
+
+    private void ProfileButton_Click(object sender, RoutedEventArgs e)
+    {
+        _navigationService.NavigateTo<ProfilePage>();
+    }
 }

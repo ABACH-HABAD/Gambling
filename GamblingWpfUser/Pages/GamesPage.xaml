@@ -17,7 +17,7 @@
             <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
         <Border
-            BorderThickness="3"
+            BorderThickness="5"
             CornerRadius="20"
             Margin="200,50,200,50" 
             Background="#FF9779AD" 
@@ -37,9 +37,27 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Button Margin="20" x:Name="SlotsButton" Content="Слоты" Grid.Column="0" Click="SlotsButton_Click"/>
-            <Button Margin="20" x:Name="BlackJackButton" Content="Блекджек" Grid.Column="1" Click="BlackJackButton_Click"/>
-            <Button Margin="20" x:Name="Roulette" Content="Рулетка" Grid.Column="2" Click="Roulette_Click"/>
+            <Button 
+                Style="{StaticResource GamePageButton}"
+                x:Name="SlotsButton" 
+                Click="SlotsButton_Click"
+                Grid.Column="0">
+                <Image Stretch="Fill" Source="/Resources/Images/Slots/SlotsMachine.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Button>
+            <Button 
+                Style="{StaticResource GamePageButton}"
+                x:Name="BlackJackButton" 
+                Grid.Column="1" 
+                Click="BlackJackButton_Click">
+                <Image Stretch="Fill" Source="/Resources/Images/Blackjack/CardsDeck.png"/>
+            </Button>
+            <Button 
+                Style="{StaticResource GamePageButton}"
+                x:Name="Roulette" 
+                Grid.Column="2" 
+                Click="Roulette_Click">
+                <Image Stretch="Fill" Source="/Resources/Images/Roulette/Roulette.png"/>
+            </Button>
         </Grid>
     </Grid>
 </Page>

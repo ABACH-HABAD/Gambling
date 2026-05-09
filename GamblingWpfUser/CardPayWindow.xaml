@@ -1,0 +1,194 @@
+﻿<Window x:Class="GamblingWpfUser.PayWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GamblingWpfUser"
+        mc:Ignorable="d"
+        Title="Пополнение баланса" 
+        Height="550" Width="650"
+        ResizeMode="CanMinimize" 
+        Background="#FF5C6D61">
+    <Grid Margin="4">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="13*"/>
+        </Grid.RowDefinitions>
+        <Grid Margin="3">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="6*"/>
+                    <ColumnDefinition Width="10*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock 
+                Style="{StaticResource PayPageTextBlock}" 
+                VerticalAlignment="Center" 
+                HorizontalAlignment="Center">
+                Сумма поплнения:
+                </TextBlock>
+                <TextBox 
+                Style="{StaticResource PayPageTextBox}"
+                Grid.Column="1" 
+                x:Name="PayCount" Margin="5,5,5,5"/>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="6*"/>
+                    <ColumnDefinition Width="10*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock 
+                Style="{StaticResource PayPageTextBlock}" 
+                VerticalAlignment="Center" 
+                HorizontalAlignment="Center">
+                Промокод:
+                </TextBlock>
+                <TextBox 
+                Style="{StaticResource PayPageTextBox}"
+                Grid.Column="1" 
+                x:Name="Promocode" Margin="5,5,5,5"/>
+            </Grid>
+        </Grid>
+        <Border
+            Grid.Row="1" 
+            BorderThickness="4" 
+            Margin="3" 
+            BorderBrush="#FF4C5251"
+            CornerRadius="10"
+            Padding="5">
+            <TabControl 
+            BorderThickness="0"
+            Background="Transparent">
+                <TabItem 
+                    FontSize="15"
+                    Background="Transparent"
+                    BorderBrush="Transparent"
+                    BorderThickness="0" 
+                    Header="Оплата по карте">
+                    <TabItem.Style>
+                        <Style TargetType="TabItem">
+                            <Style.Triggers>
+                                <Trigger Property="IsSelected" Value="True">
+                                    <Setter Property="Background" Value="#2980B9"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TabItem.Style>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="387*"/>
+                            <RowDefinition Height="71*"/>
+                        </Grid.RowDefinitions>
+                        <Grid Margin="20,20,20,20" >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="11*"/>
+                                <ColumnDefinition Width="4*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Column="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <Grid Grid.Row="0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+                                    <TextBlock 
+                                Grid.Row="0" 
+                                Style="{StaticResource PayPageTextBlock}">
+                                Номер карты:
+                                    </TextBlock>
+                                    <TextBox Grid.Row="1" 
+                                    TextChanged="CardNumber_TextChanged"
+                                    Grid.Column="0"
+                                    Style="{StaticResource PayPageTextBox}"
+                                    x:Name="CardNumberText"/>
+
+                                </Grid>
+                                <Grid Grid.Row="1">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+                                    <TextBlock 
+                                Grid.Row="0"  
+                                Style="{StaticResource PayPageTextBlock}">
+                                Месяц/год
+                                    </TextBlock>
+                                    <Grid Grid.Row="1" >
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBox 
+                                    TextChanged="Month_TextChanged"
+                                    Style="{StaticResource PayPageTextBox}"
+                                    Grid.Column="0" 
+                                    x:Name="MonthText"/>
+                                        <TextBox 
+                                    TextChanged="Year_TextChanged"
+                                    Style="{StaticResource PayPageTextBox}"
+                                    Grid.Column="1" 
+                                    x:Name="YearText"/>
+                                    </Grid>
+                                </Grid>
+                                <Grid Grid.Row="2">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+                                    <TextBlock
+                                Grid.Row="0"  Style="{StaticResource PayPageTextBlock}">
+                    Имя фамилия:
+                                    </TextBlock>
+                                    <TextBox 
+                                Style="{StaticResource PayPageTextBox}"
+                                Grid.Row="1" 
+                                x:Name="CardUserText"/>
+                                </Grid>
+                            </Grid>
+                            <Grid MinWidth="150" Grid.Column="1" Margin="0,75,0,75" HorizontalAlignment="Center">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Grid.Row="0" MinWidth="150"  Style="{StaticResource PayPageTextBlock}">
+                  CVV/CVC
+                                </TextBlock>
+                                <TextBox 
+                            Style="{StaticResource PayPageTextBox}" 
+                            Grid.Row="1" 
+                            TextChanged="CvvCvC_TextChanged"
+                            x:Name="CvvCvcTextBox" 
+                                VerticalAlignment="Top" />
+                            </Grid>
+                        </Grid>
+                        <Button 
+                    Style="{StaticResource PayPageButton}" 
+                    Grid.Row="1" 
+                    Name="PayButton"
+                    Margin="200,10,200,10" 
+                    Content="Оплатить" Click="PayButton_Click"/>
+                    </Grid>
+                </TabItem>
+                <TabItem 
+                    Header="Оплата по СБП"
+                    FontSize="15"
+                    BorderThickness="0"
+                    BorderBrush="Transparent"
+                    Background="Transparent">
+                    <Grid>
+                        <Image 
+                    Margin="50"
+                    Source="/Resources/Images/Pay/qr.png"/>
+                    </Grid>
+                </TabItem>
+            </TabControl>
+        </Border>
+    </Grid>
+</Window>

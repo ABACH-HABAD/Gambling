@@ -12,6 +12,8 @@ public interface IUserRepository : IRepository
 
     public User? Login(string username, string hashedPassword);
 
+    public List<User> GetUserList();
+
     public void Update(User user);
 
     public void WriteOffFromBalance(int userId, double value);

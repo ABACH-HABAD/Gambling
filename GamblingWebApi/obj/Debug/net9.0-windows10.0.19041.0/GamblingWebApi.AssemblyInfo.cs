@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GamblingWebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e1b0ebd69486475c5f02db21085660f593a4ee71")]
 [assembly: System.Reflection.AssemblyProductAttribute("GamblingWebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GamblingWebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -70,10 +70,10 @@ E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\ob
 E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\obj\Debug\net9.0-windows10.0.19041.0\staticwebassets.development.json
 E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\obj\Debug\net9.0-windows10.0.19041.0\staticwebassets.build.endpoints.json
 E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\obj\Debug\net9.0-windows10.0.19041.0\swae.build.ex.cache
+E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\obj\Debug\net9.0-windows10.0.19041.0\staticwebassets.upToDateCheck.txt
 E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\obj\Debug\net9.0-windows10.0.19041.0\Gambling.BE6DE1CB.Up2Date
 E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\obj\Debug\net9.0-windows10.0.19041.0\GamblingWebApi.dll
 E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\obj\Debug\net9.0-windows10.0.19041.0\refint\GamblingWebApi.dll
 E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\obj\Debug\net9.0-windows10.0.19041.0\GamblingWebApi.pdb
 E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\obj\Debug\net9.0-windows10.0.19041.0\GamblingWebApi.genruntimeconfig.cache
 E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\obj\Debug\net9.0-windows10.0.19041.0\ref\GamblingWebApi.dll
-E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\obj\Debug\net9.0-windows10.0.19041.0\staticwebassets.upToDateCheck.txt

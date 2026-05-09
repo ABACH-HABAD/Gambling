@@ -1,6 +1,5 @@
-﻿using BusinessLogic;
-using DataBaseClasses;
-using DataBaseClasses.Repository.Interfaces;
+﻿using DataBaseClasses;
+using DataBaseClasses.Exceptions;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace TestProject;
@@ -8,33 +7,21 @@ namespace TestProject;
 public abstract class IntegrationDataBaseTest : DependencyOnServicesTest
 {
     protected ApplicationContext _applicationContext = null!;
+    protected DataBasePrepareForTests _dataBasePrepareForTests = null!;
 
-    protected override async Task InitializeAsync()
+    protected override async Task InitializeAsync(Type type = Type.Server)
     {
-        await base.InitializeAsync();
+        await base.InitializeAsync(Type.Server);
 
-        _applicationContext = _serviceProvider.GetService<ApplicationContext>() ?? throw new NoConnectionException();
+        _applicationContext = _serviceProvider.GetRequiredService<ApplicationContext>() ?? throw new NoConnectionException();
 
-        //Пересоздаём БД
-        await _applicationContext.Database.EnsureDeletedAsync();
-        await _applicationContext.Database.EnsureCreatedAsync();
-
-        //Заполняем рыбными данными
-        await SeedTestDataAsync();
+        _dataBasePrepareForTests = new(_applicationContext, _serviceProvider);
+        await ClearDataBaseAsync();
     }
 
-    protected async Task SeedTestDataAsync()
+    protected async Task ClearDataBaseAsync()
     {
-        if (_applicationContext == null) throw new Exception("Подключение к БД не инициализированно! Используйте InitializeAsync()");
-
-        _serviceProvider = TestServiceProvider.Provide();
-
-        List<ISeedable> seedables = [];
-
-        seedables.Add(_serviceProvider.GetRequiredService<IUserStatusesRepository>());
-        seedables.Add(_serviceProvider.GetRequiredService<IGameTypesRepository>());
-        seedables.Add(_serviceProvider.GetRequiredService<IDeviceTypeRepository>());
-
-        foreach (ISeedable seedable in seedables) await seedable.SeedDataAsync();
+        await _dataBasePrepareForTests.CreateTestDataBaseAsync();
+        await _dataBasePrepareForTests.SeedTestDataAsync();
     }
 }

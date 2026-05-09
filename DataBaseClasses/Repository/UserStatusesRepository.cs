@@ -15,6 +15,7 @@ public class UserStatusesRepository(ApplicationContext dataBaseContext) : BaseRe
         _dataBaseContext.User_statuses.Add(new Entity.UserStatus() { Id = 1, Name = "Игрок" });
         _dataBaseContext.User_statuses.Add(new Entity.UserStatus() { Id = 2, Name = "Спонсор" });
         _dataBaseContext.User_statuses.Add(new Entity.UserStatus() { Id = 3, Name = "Админ" });
+        _dataBaseContext.User_statuses.Add(new Entity.UserStatus() { Id = 4, Name = "Заблокирован" });
 
         _dataBaseContext.SaveChanges();
     }
@@ -24,6 +25,7 @@ public class UserStatusesRepository(ApplicationContext dataBaseContext) : BaseRe
         await _dataBaseContext.User_statuses.AddAsync(new Entity.UserStatus() { Id = 1, Name = "Игрок" });
         await _dataBaseContext.User_statuses.AddAsync(new Entity.UserStatus() { Id = 2, Name = "Спонсор" });
         await _dataBaseContext.User_statuses.AddAsync(new Entity.UserStatus() { Id = 3, Name = "Админ" });
+        await _dataBaseContext.User_statuses.AddAsync(new Entity.UserStatus() { Id = 4, Name = "Заблокирован" });
 
         await _dataBaseContext.SaveChangesAsync();
     }

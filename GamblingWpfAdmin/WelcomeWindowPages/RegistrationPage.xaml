@@ -10,75 +10,91 @@
       Title="Страница Регистрации">
 
     <Grid>
-        <StackPanel 
+        <Border
+            CornerRadius="25"
+            BorderThickness="3" 
+            BorderBrush="Black" 
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center">
+            <StackPanel 
+                Margin="15"
             Width="450"
             HorizontalAlignment="Center"
             VerticalAlignment="Center">
-            <Grid Style="{StaticResource WelcomePageGrid}">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="1*"/>
-                    <ColumnDefinition Width="2*"/>
-                </Grid.ColumnDefinitions>
-                <TextBlock
+                <Grid Style="{StaticResource WelcomePageGrid}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock
                     Text="Логин"
                     Style="{StaticResource WelcomePageTextBlock}"/>
-                <TextBox 
+                    <TextBox 
                     Name="Login"
                     Grid.Column="1"
                     Style="{StaticResource WelcomePageTextBox}"/>
-            </Grid>
-            <Grid Style="{StaticResource WelcomePageGrid}">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="1*"/>
-                    <ColumnDefinition Width="2*"/>
-                </Grid.ColumnDefinitions>
-                <TextBlock 
+                </Grid>
+                <Grid Style="{StaticResource WelcomePageGrid}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock 
                     Text="Пароль"
                     Style="{StaticResource WelcomePageTextBlock}"/>
-                <PasswordBox 
+                    <PasswordBox 
                     Name="Password"
                     Grid.Column="1"
                     Style="{StaticResource WelcomePagePasswordBox}"/>
-            </Grid>
-            <Grid Style="{StaticResource WelcomePageGrid}">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="1*"/>
-                    <ColumnDefinition Width="2*"/>
-                </Grid.ColumnDefinitions>
-                <TextBlock 
+                </Grid>
+                <Grid Style="{StaticResource WelcomePageGrid}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock 
                     Text="Повторите"
                     Style="{StaticResource WelcomePageTextBlock}"/>
-                <PasswordBox 
+                    <PasswordBox 
                     Name="RepeatPassword"
                     Grid.Column="1"
                     Style="{StaticResource WelcomePagePasswordBox}"/>
-            </Grid>
-            <easy:Captcha Name="CaptchaPlace"/>
-            <Grid Style="{StaticResource WelcomePageGrid}">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="1*"/>
-                    <ColumnDefinition Width="2*"/>
-                </Grid.ColumnDefinitions>
-                <TextBlock 
+                </Grid>
+                <Border
+                    CornerRadius="10"
+                    BorderThickness="2" 
+                    BorderBrush="Black" 
+                    Margin="0,5,0,5"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+                    <easy:Captcha Name="CaptchaPlace" Margin="5"/>
+                </Border>
+                <Grid Style="{StaticResource WelcomePageGrid}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock 
                     Text="Капча" 
                     Style="{StaticResource WelcomePageTextBlock}"/>
-                <TextBox 
+                    <TextBox 
                     Name="CaptchaAnswer" 
                     Grid.Column="1"
                     Style="{StaticResource WelcomePageTextBox}"/>
-            </Grid>
-            <Button 
+                </Grid>
+                <Button 
                 Grid.Row="0" 
                 x:Name="Registration" 
                 Content="Зерегестрироваться" 
                 Click="Registration_Click"
                 Style="{StaticResource WelcomePageButton}"/>
-            <Button 
+                <Button 
                 Grid.Row="1" 
                 x:Name="Authorization" 
                 Content="Уже есть аккаунт?" 
                 Click="Authorization_Click"
                 Style="{StaticResource WelcomePageButton}"/>
-        </StackPanel>
+            </StackPanel>
+        </Border>
     </Grid>
 </Page>

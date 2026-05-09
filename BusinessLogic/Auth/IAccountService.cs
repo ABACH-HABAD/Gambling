@@ -1,7 +1,4 @@
-﻿using BusinessLogic.Token;
-using DataBaseClasses;
-using DataBaseClasses.Entity;
-using DataBaseClasses.Repository;
+﻿using DataBaseClasses.Entity;
 
 namespace BusinessLogic.Auth;
 
@@ -11,10 +8,13 @@ public interface IAccountService
     public Task<LoginResult> LoginAsync(string login, string password, DeviceType deviceType, string? ip = null, bool loginAsAdmin = false);
     public Task<LoginResult> AutoLoginAsync(string refreshToken, DeviceType deviceType, string? ip = null);
 
-    public Task<bool> CheckRegistrationAsync(string login);
+    public Task LogoutAsync(string refreshToken, DeviceType deviceType, string? ip);
 
-    public Task<User?> GetUserData(int userId);
+    //public Task<bool> CheckRegistrationAsync(string login);
+
+    public Task<User?> GetUserDataAsync(int userId);
     public Task<User?> UpdateUserDataAsync(User user);
+    public Task<List<User>> GetAllUsersAsync(int adminId);
 
-    public Task<bool> TopUpBalance(int userId, double sum);
+    public Task<bool> ChangeBalanceAsync(int userId, double sum);
 }

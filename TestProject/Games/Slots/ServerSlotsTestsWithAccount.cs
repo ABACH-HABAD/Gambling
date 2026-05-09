@@ -1,134 +1,136 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using BusinessLogic.Auth;
+﻿using BusinessLogic.Auth;
+using BusinessLogic.Balance;
 using BusinessLogic.Game.Slots;
-using DataBaseClasses.Repository.Interfaces;
 using DataBaseClasses.Entity;
-/*
-namespace TestProject.Games.Slots
+using DataBaseClasses.Repository;
+using DataBaseClasses.Repository.Interfaces;
+using Microsoft.Extensions.DependencyInjection;
+
+namespace TestProject.Games.Slots;
+
+public class ServerSlotsTestsWithAccount : IntegrationDataBaseTest
 {
-    public class ServerSlotsTestsWithAccount : IntegrationDataBaseTest
+    [OneTimeSetUp]
+    public async Task OneTimeSetup()
     {
-        [OneTimeSetUp]
-        public async Task OneTimeSetup() 
+        await InitializeAsync();
+    }
+
+    [Test]
+    public async Task SpinSlots()
+    {
+        //Arrange
+        IUserRepository userRepository = _serviceProvider.GetRequiredService<IUserRepository>();
+        ISlotsService slotsService = _serviceProvider.GetRequiredService<ISlotsService>();
+        IBalanceService balanceService = _serviceProvider.GetRequiredService<IBalanceService>();
+        string login = "SpinSlotsTestAccount@testmail.com";
+        string password = "AAA123aaa!";
+        double balance = 10;
+        double bet = 10;
+
+        //Act
+        User? user = userRepository.Registrate(login, password);
+        if (user == null)
         {
-            await InitializeAsync();
+            Assert.Fail("Аккаунт не зарегистрирован");
+            return;
         }
+        await balanceService.AddToBalanceAsync(user.Id, balance);
+        SlotGameResult? slotGameResult = await slotsService.Spin(user.Id, bet);
 
-        [Test]
-        public async Task SpinSlots()
+        //Assert
+        if (slotGameResult != null)
         {
-            //Arrange
-            ISlotsService slotsService = _serviceProvider.GetRequiredService<ISlotsService>();
-            IAccountService accountService = _serviceProvider.GetRequiredService<IAccountService>();
-            string login = "SpinSlotsTestAccount@testmail.com";
-            string password = "AAA123aaa!";
-            string repeatPassword = "AAA123aaa!";
-            double balance = 10;
-            double bet = 10;
+            if (slotGameResult.Result == true) Assert.Pass(slotGameResult.Message);
+            else Assert.Fail(slotGameResult.Message);
+        }
+        else Assert.Fail("Игра не запущена");
+    }
 
-            //Act
-            LoginResult loginResult = await accountService.RegistrateAsync(login, password, repeatPassword);
+    [Test]
+    public async Task SpinSlotsWithoutMoney()
+    {
+        //Arrange
+        IUserRepository userRepository = _serviceProvider.GetRequiredService<IUserRepository>();
+        ISlotsService slotsService = _serviceProvider.GetRequiredService<ISlotsService>();
+        string login = "SpinSlotsWithoutMoney@testmail.com";
+        string password = "AAA123aaa!";
+        double bet = 10;
 
-            await accountService.TopUpBalance(loginResult.UserId, balance);
-            SlotGameResult? slotGameResult = await slotsService.Spin(loginResult.UserId, bet);
+        //Act
+        User? user = userRepository.Registrate(login, password);
+        if (user == null)
+        {
+            Assert.Fail("Аккаунт не зарегистрирован");
+            return;
+        }
+        SlotGameResult? slotGameResult = await slotsService.Spin(user.Id, bet);
 
-            //Assert
-            if (slotGameResult != null)
+        //Assert
+        if (slotGameResult != null)
+        {
+            if (slotGameResult.Result == false && slotGameResult.Message == "На балансе недостаточно средств") Assert.Pass(slotGameResult.Message);
+            else Assert.Fail(slotGameResult.Message);
+        }
+        else Assert.Fail("Игра не запущена");
+    }
+
+
+    [Test]
+    public async Task SpinBonusGame()
+    {
+        //Arrange
+        ISlotsService slotsService = _serviceProvider.GetRequiredService<ISlotsService>();
+        IUserRepository userRepository = _serviceProvider.GetRequiredService<IUserRepository>();
+        IBalanceService balanceService = _serviceProvider.GetRequiredService<IBalanceService>();
+        string login = "SpinSlotsBonusGame@testmail.com";
+        string password = "AAA123aaa!";
+        double balance = 10;
+        double bet = 10;
+        int bonusGames = 50;
+
+        //Act
+        User? user = userRepository.Registrate(login, password);
+        if (user == null)
+        {
+            Assert.Fail("Аккаунт не зарегистрирован");
+            return;
+        }
+        userRepository.ChangeSlotsBonusGamesCount(user.Id, bonusGames);
+        await balanceService.AddToBalanceAsync(user.Id, balance);
+
+        SlotGameResult? slotGameResult = await slotsService.Spin(user.Id, bet);
+
+        //Assert
+        if (slotGameResult != null)
+        {
+            if (slotGameResult.Result == true) //игра сыграна
             {
-                if (slotGameResult.Result == true) Assert.Pass(slotGameResult.Message);
-                else Assert.Fail(slotGameResult.Message);
+                if (user.Balance >= balance)  //деньги не списаны 
+                    Assert.Pass(slotGameResult.Message); 
+                else  Assert.Fail("Деньги списаны");
             }
-            else Assert.Fail("Игра не запущена");
+            else Assert.Fail(slotGameResult.Message);
         }
+        else Assert.Fail("Игра не запущена");
+    }
 
-        [Test]
-        public async Task SpinSlotsWithoutMoney()
+    [Test]
+    public async Task SpinSlotsWithoutAccount()
+    {
+        //Arrange
+        ISlotsService slotsService = _serviceProvider.GetRequiredService<ISlotsService>();
+        double bet = 10;
+
+        //Act
+        SlotGameResult? slotGameResult = await slotsService.Spin(0, bet);
+
+        //Assert
+        if (slotGameResult != null)
         {
-            //Arrange
-            ISlotsService slotsService = _serviceProvider.GetRequiredService<ISlotsService>();
-            IAccountService accountService = _serviceProvider.GetRequiredService<IAccountService>();
-            string login = "SpinSlotsWithoutMoney@testmail.com";
-            string password = "AAA123aaa!";
-            string repeatPassword = "AAA123aaa!";
-            double bet = 10;
-
-            //Act
-            LoginResult loginResult = await accountService.RegistrateAsync(login, password, repeatPassword);
-            SlotGameResult? slotGameResult = await slotsService.Spin(loginResult.UserId, bet);
-
-            //Assert
-            if (slotGameResult != null && slotGameResult.Message == "На балансе недостаточно средств")
-            {
-                if (slotGameResult.Result == false) Assert.Pass(slotGameResult.Message);
-                else Assert.Fail(slotGameResult.Message);
-            }
-            else Assert.Fail("Игра не запущена");
+            if (slotGameResult.Result == false && slotGameResult.Message == "Аккаунт не найден #0") Assert.Pass(slotGameResult.Message);
+            else Assert.Fail(slotGameResult.Message);
         }
-
-
-        [Test]
-        public async Task SpinBonusGame()
-        {
-            //Arrange
-            ISlotsService slotsService = _serviceProvider.GetRequiredService<ISlotsService>();
-            IAccountService accountService = _serviceProvider.GetRequiredService<IAccountService>();
-            IUserRepository userRepository = _serviceProvider.GetRequiredService<IUserRepository>();
-            string login = "SpinSlotsBonusGame@testmail.com";
-            string password = "AAA123aaa!";
-            string repeatPassword = "AAA123aaa!";
-            double balance = 10;
-            double bet = 10;
-            int bonusGames = 50;
-
-            //Act
-            LoginResult loginResult = await accountService.RegistrateAsync(login, password, repeatPassword);
-            userRepository.ChangeSlotsBonusGamesCount(loginResult.UserId, bonusGames);
-            await accountService.TopUpBalance(loginResult.UserId, balance);
-
-            SlotGameResult? slotGameResult = await slotsService.Spin(loginResult.UserId, bet);
-
-            //Assert
-            if (slotGameResult != null)
-            {
-                User? user = userRepository.GetWithId(loginResult.UserId);
-                if (user != null)
-                {
-                    if (slotGameResult.Result == true) //игра сыграна
-                    {
-                        if (user.Balance >= balance) //деньги не списаны
-                        {
-                            Assert.Pass(slotGameResult.Message);
-                        }
-                        else
-                        {
-                            Assert.Fail("Деньги списаны");
-                        }
-                    }
-                    else Assert.Fail(slotGameResult.Message);
-                }
-                else Assert.Fail("Аккаунт не найден");
-            }
-            else Assert.Fail("Игра не запущена");
-        }
-
-        [Test]
-        public async Task SpinSlotsWithoutAccount()
-        {
-            //Arrange
-            ISlotsService slotsService = _serviceProvider.GetRequiredService<ISlotsService>();
-            double bet = 10;
-
-            //Act
-            SlotGameResult? slotGameResult = await slotsService.Spin(0, bet);
-
-            //Assert
-            if (slotGameResult != null)
-            {
-                if (slotGameResult.Result == false && slotGameResult.Message == "Аккаунт не найден #0") Assert.Pass(slotGameResult.Message);
-                else Assert.Fail(slotGameResult.Message);
-            }
-            else Assert.Fail("Игра не запущена");
-        }
+        else Assert.Fail("Игра не запущена");
     }
 }
-*/

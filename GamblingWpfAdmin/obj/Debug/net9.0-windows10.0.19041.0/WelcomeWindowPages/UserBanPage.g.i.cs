@@ -93,7 +93,7 @@ namespace GamblingWpfAdmin.WelcomeWindowPages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GamblingWpfAdmin;component/welcomewindowpages/userbanpage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GamblingWpfAdmin;V1.0.0.0;component/welcomewindowpages/userbanpage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\WelcomeWindowPages\UserBanPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

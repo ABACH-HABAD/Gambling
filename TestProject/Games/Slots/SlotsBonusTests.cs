@@ -8,7 +8,7 @@ public class SlotsBonusTests : DependencyOnServicesTest
     [OneTimeSetUp]
     public async Task OneTimeSetUp()
     {
-        await InitializeAsync();
+        await InitializeAsync(Type.Server);
     }
 
     [Test]

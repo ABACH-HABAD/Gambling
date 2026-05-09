@@ -1,21 +1,21 @@
-﻿using BusinessLogic.ApiServices;
+﻿using System.IO;
+using System.Windows;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using BusinessLogic.ApiServices;
 using BusinessLogic.Auth;
-using BusinessLogic.Auth.Validation;
+using BusinessLogic.Balance;
 using BusinessLogic.Captcha;
 using BusinessLogic.Encryption;
 using BusinessLogic.Game.Roulette;
 using BusinessLogic.Game.Slots;
 using BusinessLogic.Token;
+using BusinessLogic.Validation;
 using GamblingWpfUser.Navigation;
 using GamblingWpfUser.Pages;
 using GamblingWpfUser.Pages.Games;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Configuration.Json;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Options;
-using System.IO;
-using System.Windows;
+using BusinessLogic.Profile.Statistics;
 
 namespace GamblingWpfUser;
 
@@ -60,7 +60,11 @@ public partial class App : Application
             services.AddTransient<IPasswordHasher, Encryption>();
             services.AddTransient<IEncryption, Encryption>();
 
+            services.AddScoped<ICardPayService, ClientBalanceService>();
+
+            services.AddTransient<INameValidation, NameValidationService>();
             services.AddTransient<IValidation, EmailValidation>();
+            services.AddTransient<ICardValidation, CardValidationService>();
             services.AddTransient<ITwoPasswordsValidation, PasswordValidation>();
             services.AddScoped<IAccountService, ClientAccountService>();
             services.AddScoped<ILoginChecker, ClientLoginChecker>();
@@ -71,18 +75,22 @@ public partial class App : Application
 
             services.AddScoped<IRouletteService, ClientRouletteService>();
 
+            services.AddTransient<IUserStatisticsService, ClientUserStatisticService>();
+
             services.AddKeyedScoped<ICaptchaService, EasyCaptchaService>("easy");
             services.AddKeyedScoped<ICaptchaService, SimpleCaptchaService>("simple");
 
             services.AddSingleton<INavigationService, NavigationService>();
 
             services.AddSingleton<MainWindow>();
+            services.AddTransient<PayWindow>();
             services.AddSingleton<AuthPage>();
             services.AddSingleton<RegistrationPage>();
             services.AddSingleton<GamesPage>();
             services.AddSingleton<SlotsPage>();
             services.AddSingleton<RoulettePage>();
             services.AddSingleton<BlackjackPage>();
+            services.AddSingleton<ProfilePage>();
 
         });
 

@@ -9,5 +9,6 @@
 //------------------------------------------------------------------------------
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("appsettings.json")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/images/favico.ico")]
 
 

@@ -1,6 +1,11 @@
-﻿namespace BusinessLogic.Game.Blackjack;
+﻿using DataBaseClasses.Repository.Interfaces;
 
-public class ServerBlackjackService : IBlackjackService, IGameService
+namespace BusinessLogic.Game.Blackjack;
+
+public class ServerBlackjackService(
+    IUserRepository userRepository, 
+    IGameRepository gameRepository) 
+    : ServerGameService(userRepository, gameRepository, GameType.Blackjack), IBlackjackService, IGameService
 {
     private readonly Deck deck = new(mix: true);
 

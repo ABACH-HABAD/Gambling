@@ -1,16 +1,19 @@
-﻿using DataBaseClasses;
-using DataBaseClasses.Entity;
-using DataBaseClasses.Repository;
+﻿using DataBaseClasses.Entity;
+using DataBaseClasses.Exceptions;
 using DataBaseClasses.Repository.Interfaces;
 
 namespace BusinessLogic.Game.Slots;
 
-public class ServerSlotsService(IUserRepository userRepository, IGameRepository gameRepository, ISlotsCombinationCounterService slotsCombinationCounterService, ISlotsWinCounterService slotsWinCounterService) : IGameService, ISlotsService
+public class ServerSlotsService(
+    IUserRepository userRepository,
+    IGameRepository gameRepository,
+    ISlotsCombinationCounterService slotsCombinationCounterService,
+    ISlotsWinCounterService slotsWinCounterService)
+    : ServerGameService(userRepository, gameRepository, GameType.Slots), IGameService, ISlotsService
 {
-    private const int GAMETYPE = 1;
     public async Task<bool> HasBonusGames(int userId)
     {
-        User? user = userRepository.GetWithId(userId);
+        User? user = _userRepository.GetWithId(userId);
         if (user != null)
         {
             return user.SlotsBonusCount > 0;
@@ -25,8 +28,8 @@ public class ServerSlotsService(IUserRepository userRepository, IGameRepository 
         //Пытаемся списать ставку
         try
         {
-            if (await HasBonusGames(userId)) userRepository.ChangeSlotsBonusGamesCount(userId, -1);
-            else userRepository.WriteOffFromBalance(userId, bid);
+            if (await HasBonusGames(userId)) _userRepository.ChangeSlotsBonusGamesCount(userId, -1);
+            else _userRepository.WriteOffFromBalance(userId, bid);
         }
         catch (InsufficientFundsException)
         {
@@ -37,7 +40,7 @@ public class ServerSlotsService(IUserRepository userRepository, IGameRepository 
             return new SlotGameResult(false, $"Аккаунт не найден #{userId}", 0, lines);
         }
 
-        User? user = userRepository.GetWithId(userId);
+        User? user = _userRepository.GetWithId(userId);
 
         int totalBonusCount = 0;
         double totalWin = 0;
@@ -70,11 +73,11 @@ public class ServerSlotsService(IUserRepository userRepository, IGameRepository 
         totalWin *= bid;
         totalWin *= user == null ? 1 : (user.Coefficient ?? 1);
 
-        userRepository.UpdateGameStats(userId, isGameWin: totalWin > 0, totalWin > 0 ? totalWin - bid : bid);
-        userRepository.AddToBalance(userId, totalWin);
-        userRepository.ChangeSlotsBonusGamesCount(userId, totalBonusCount);
+        _userRepository.UpdateGameStats(userId, isGameWin: totalWin > 0, totalWin > 0 ? totalWin - bid : bid);
+        _userRepository.AddToBalance(userId, totalWin);
+        _userRepository.ChangeSlotsBonusGamesCount(userId, totalBonusCount);
 
-        gameRepository.AddGame(userId, GAMETYPE, bid, totalWin > 0, totalWin);
+        _gameRepository.AddGame(userId, (int)DefaultGameType, bid, totalWin > 0, totalWin);
 
         return new SlotGameResult(true, $"Вы выиграли: {totalWin} рублей", totalWin, lines);
     }

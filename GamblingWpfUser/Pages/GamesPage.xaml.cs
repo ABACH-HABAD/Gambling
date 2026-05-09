@@ -3,6 +3,7 @@ using System.Windows.Controls;
 using BusinessLogic.Auth;
 using GamblingWpfUser.Navigation;
 using GamblingWpfUser.Pages.Games;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace GamblingWpfUser.Pages;
 
@@ -16,7 +17,7 @@ public partial class GamesPage : Page
 
     public GamesPage(IAccountService accountService)
     {
-        _navigationService = new NavigationService();
+        _navigationService = App.Services.GetRequiredService<INavigationService>();
         _navigationService.SetFrame(MainWindow.Instance.MainFrame);
         _accountService = accountService;
 

@@ -1,5 +1,6 @@
 ﻿using DataBaseClasses.Entity;
 using DataBaseClasses.Repository.Interfaces;
+using DataBaseClasses.Exceptions;
 using Google.Protobuf.WellKnownTypes;
 using System.Xml.Linq;
 
@@ -67,6 +68,13 @@ public class UserRepository(ApplicationContext dataBaseContext) : BaseRepository
         else throw new AccountNotFoundException();
     }
 
+    public List<User> GetUserList()
+    {
+        if (!CheckConncetion()) throw new NoConnectionException();
+
+        return [.. _dataBaseContext.Users];
+    }
+
     public void Update(User userData)
     {
         User user = InnerGetWithId(userData.Id) ?? throw new AccountNotFoundException();
@@ -81,6 +89,7 @@ public class UserRepository(ApplicationContext dataBaseContext) : BaseRepository
     public void WriteOffFromBalance(int userId, double value)
     {
         User user = InnerGetWithId(userId) ?? throw new AccountNotFoundException();
+        if (value < 0) throw new NotPossibleToDepositOrWithdrawNegativeAmountOfFundsException();
         if (user.Balance >= value) user.Balance -= value;
         else throw new InsufficientFundsException();
 
@@ -90,6 +99,7 @@ public class UserRepository(ApplicationContext dataBaseContext) : BaseRepository
     public void AddToBalance(int userId, double value)
     {
         User user = InnerGetWithId(userId) ?? throw new AccountNotFoundException();
+        if (value < 0) throw new NotPossibleToDepositOrWithdrawNegativeAmountOfFundsException();
         user.Balance += value;
 
         _dataBaseContext.SaveChanges();

@@ -10,7 +10,7 @@ public class ServerAccountTests : IntegrationDataBaseTest
     {
         await InitializeAsync();
     }
-
+    
     [Test]
     public async Task RegistrationAccount()
     {
@@ -21,7 +21,8 @@ public class ServerAccountTests : IntegrationDataBaseTest
         string repeatPassword = "AAA123aaa!";
 
         //Act
-        LoginResult loginResult = await accountService.RegistrateAsync(login, password, repeatPassword);
+        LoginResult loginResult = await accountService
+            .RegistrateAsync(login, password, repeatPassword, DeviceType.Windows);
 
         //Assert
         if (loginResult.Result == true) Assert.Pass(loginResult.Message);
@@ -36,12 +37,13 @@ public class ServerAccountTests : IntegrationDataBaseTest
         string login = string.Empty;
         string password = "AAA123aaa!";
         string repeatPassword = "AAA123aaa!";
+        string expectedMessage = "Введите логин";
 
         //Act
-        LoginResult loginResult = await accountService.RegistrateAsync(login, password, repeatPassword);
+        LoginResult loginResult = await accountService.RegistrateAsync(login, password, repeatPassword, DeviceType.Windows);
 
         //Assert
-        if (loginResult.Result == false && loginResult.Message == "Введите логин") Assert.Pass(loginResult.Message);
+        if (loginResult.Result == false && loginResult.Message == expectedMessage) Assert.Pass(loginResult.Message);
         else Assert.Fail(loginResult.Message);
     }
 
@@ -53,12 +55,15 @@ public class ServerAccountTests : IntegrationDataBaseTest
         string login = "ThisIsNotAnEmail";
         string password = "AAA123aaa!";
         string repeatPassword = "AAA123aaa!";
+        string expectedMessage = "Логин должен быть настоящей электронной почтой";
 
         //Act
-        LoginResult loginResult = await accountService.RegistrateAsync(login, password, repeatPassword);
+        LoginResult loginResult = await accountService
+            .RegistrateAsync(login, password, repeatPassword, DeviceType.Windows);
 
         //Assert
-        if (loginResult.Result == false && loginResult.Message == "Логин должен быть настоящей электронной почтой") Assert.Pass(loginResult.Message);
+        if (loginResult.Result == false && loginResult.Message == expectedMessage) 
+            Assert.Pass(loginResult.Message);
         else Assert.Fail(loginResult.Message);
     }
 
@@ -70,12 +75,13 @@ public class ServerAccountTests : IntegrationDataBaseTest
         string login = "AccountWithMismatchedPasswords@testmail.com";
         string password = "AAA123aaa!";
         string repeatPassword = "AnotherPassword";
+        string expectedMessage = "Пароли не совпадают";
 
         //Act
-        LoginResult loginResult = await accountService.RegistrateAsync(login, password, repeatPassword);
+        LoginResult loginResult = await accountService.RegistrateAsync(login, password, repeatPassword, DeviceType.Windows);
 
         //Assert
-        if (loginResult.Result == false && loginResult.Message == "Пароли не совпадают") Assert.Pass(loginResult.Message);
+        if (loginResult.Result == false && loginResult.Message == expectedMessage) Assert.Pass(loginResult.Message);
         else Assert.Fail(loginResult.Message);
     }
 
@@ -87,16 +93,17 @@ public class ServerAccountTests : IntegrationDataBaseTest
         string login = "SameEmail@testmail.com";
         string password = "AAA123aaa!";
         string repeatPassword = "AAA123aaa!";
+        string expectedMessage = "Аккаунт с таким логином уже существует";
 
         //Act
-        LoginResult FirstAcccountLoginResult = await accountService.RegistrateAsync(login, password, repeatPassword);
-        LoginResult SecondAcccountLoginResult = await accountService.RegistrateAsync(login, password, repeatPassword);
+        LoginResult FirstAcccountLoginResult = await accountService.RegistrateAsync(login, password, repeatPassword, DeviceType.Windows);
+        LoginResult SecondAcccountLoginResult = await accountService.RegistrateAsync(login, password, repeatPassword, DeviceType.Windows);
 
         //Assert
         if (
             FirstAcccountLoginResult.Result == true && //первый аккаунт зарегестрирован
             SecondAcccountLoginResult.Result == false && //второй нет
-            SecondAcccountLoginResult.Message == "Аккаунт с таким логином уже существует")
+            SecondAcccountLoginResult.Message == expectedMessage)
             Assert.Pass(SecondAcccountLoginResult.Message);
         else Assert.Fail(SecondAcccountLoginResult.Message);
     }
@@ -111,7 +118,7 @@ public class ServerAccountTests : IntegrationDataBaseTest
         string repeatPassword = "AAA123aaa!";
 
         //Act
-        await accountService.RegistrateAsync(login, password, repeatPassword);
+        await accountService.RegistrateAsync(login, password, repeatPassword, DeviceType.Windows);
         LoginResult loginResult = await accountService.LoginAsync(login, password, DeviceType.Windows);
 
         //Assert
@@ -126,12 +133,13 @@ public class ServerAccountTests : IntegrationDataBaseTest
         IAccountService accountService = _serviceProvider.GetRequiredService<IAccountService>();
         string login = "ThisAccountDoesNotExist@testmail.com";
         string password = "AAA123aaa!";
+        string expectedMessage = "Аккаунт не найден";
 
         //Act
         LoginResult loginResult = await accountService.LoginAsync(login, password, DeviceType.Windows);
 
         //Assert
-        if (loginResult.Result == false && loginResult.Message == "Аккаунт не найден") Assert.Pass(loginResult.Message);
+        if (loginResult.Result == false && loginResult.Message == expectedMessage) Assert.Pass(loginResult.Message);
         else Assert.Fail(loginResult.Message);
     }
 
@@ -144,13 +152,14 @@ public class ServerAccountTests : IntegrationDataBaseTest
         string password = "AAA123aaa!";
         string repeatPassword = "AAA123aaa!";
         string wrongPassword = "WrongPassword";
+        string expectedMessage = "Неверный логин или пароль";
 
         //Act
-        await accountService.RegistrateAsync(login, password, repeatPassword);
+        await accountService.RegistrateAsync(login, password, repeatPassword, DeviceType.Windows);
         LoginResult loginResult = await accountService.LoginAsync(login, wrongPassword, DeviceType.Windows);
 
         //Assert
-        if (loginResult.Result == false && loginResult.Message == "Неверный логин или пароль") Assert.Pass(loginResult.Message);
+        if (loginResult.Result == false && loginResult.Message == expectedMessage) Assert.Pass(loginResult.Message);
         else Assert.Fail(loginResult.Message);
     }
 }

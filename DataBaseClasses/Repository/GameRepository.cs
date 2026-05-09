@@ -1,5 +1,6 @@
 ﻿using DataBaseClasses.Entity;
 using DataBaseClasses.Repository.Interfaces;
+using DataBaseClasses.Exceptions;
 
 namespace DataBaseClasses.Repository;
 
@@ -12,7 +13,7 @@ public class GameRepository(ApplicationContext context, IGameTypesRepository gam
         return _dataBaseContext.Games.Find(id);
     }
 
-    public void AddGame(int playerId, int gameType, double bid, bool isWin, double winAmount)
+    public void AddGame(int playerId, int gameType, double bet, bool isWin, double winAmount)
     {
         if (!gameTypesRepository.HasThisGameType(gameType)) throw new ArgumentException("Укажите действительный тип игры", nameof(gameType));
 
@@ -20,7 +21,7 @@ public class GameRepository(ApplicationContext context, IGameTypesRepository gam
         {
             Player = playerId,
             GameType = gameType,
-            Bid = bid,
+            Bid = bet,
             IsWin = isWin,
             WinAmount = winAmount
         };
@@ -42,4 +43,8 @@ public class GameRepository(ApplicationContext context, IGameTypesRepository gam
 
         _dataBaseContext.SaveChanges();
     }
+
+    public List<Game> GetGames() => [.. _dataBaseContext.Games];
+    public List<Game> GetGames(int gameType) => [.. _dataBaseContext.Games.Where(game => game.GameType == gameType)];
+    public List<Game> GetGames(int playerId, int gameType, bool isWin) => [.. _dataBaseContext.Games.Where(game => game.Player == playerId && game.GameType == gameType && game.IsWin == isWin)];
 }

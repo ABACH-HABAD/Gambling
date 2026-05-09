@@ -1,4 +1,5 @@
 ﻿using DataBaseClasses.Repository.Interfaces;
+using DataBaseClasses.Exceptions;
 
 namespace DataBaseClasses.Repository;
 

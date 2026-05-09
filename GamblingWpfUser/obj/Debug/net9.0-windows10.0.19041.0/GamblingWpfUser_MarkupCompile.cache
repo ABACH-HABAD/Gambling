@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET9_0;NETCOREAPP;WINDOWS;WINDOWS10_0_19041_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS10_0_19041_0_OR_GREATER;WINDOWS10_0_18362_0_OR_GREATER;WINDOWS10_0_17763_0_OR_GREATER;WINDOWS8_0_OR_GREATER;WINDOWS7_0_OR_GREATER
 E:\Разное\Разработка\Диплом\Проект\GamblingWpfUser\App.xaml
-7-1530710403
-11413424753
-20-444352031
+9-203183060
+2-587878333
+221997378721
 250-1279961785
-MainWindow.xaml;Pages\AuthPage.xaml;Pages\GamesPage.xaml;Pages\Games\BlackjackPage.xaml;Pages\Games\RoulettePage.xaml;Pages\Games\SlotsPage.xaml;Pages\RegistrationPage.xaml;
+CardPayWindow.xaml;MainWindow.xaml;Pages\AuthPage.xaml;Pages\GamesPage.xaml;Pages\Games\BlackjackPage.xaml;Pages\Games\RoulettePage.xaml;Pages\Games\SlotsPage.xaml;Pages\ProfilePage.xaml;Pages\RegistrationPage.xaml;
 
 False
 

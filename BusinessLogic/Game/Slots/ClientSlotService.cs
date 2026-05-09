@@ -1,4 +1,5 @@
 ﻿using BusinessLogic.ApiServices;
+using BusinessLogic.ApiServices.Requests;
 using BusinessLogic.Auth;
 using DataBaseClasses.Entity;
 using System.Net.Http.Json;
@@ -6,11 +7,11 @@ using System.Net.Sockets;
 
 namespace BusinessLogic.Game.Slots;
 
-public class ClientSlotsService(IApiClient apiClient, IAccountService accountService) : IGameService, ISlotsService
+public class ClientSlotsService(IApiClient apiClient, IAccountService accountService) : ClientGameService(apiClient, GameType.Slots), IGameService, ISlotsService
 {
     public async Task<bool> HasBonusGames(int userId)
     {
-        User? user = await accountService.GetUserData(userId);
+        User? user = await accountService.GetUserDataAsync(userId);
         if (user != null) return user.SlotsBonusCount > 0;
         else return false;
     }
@@ -21,7 +22,7 @@ public class ClientSlotsService(IApiClient apiClient, IAccountService accountSer
 
         try
         {
-            responseMessage = await apiClient.PostAsync("spinSlots", new { bid, linesCount, columnsCount });
+            responseMessage = await _apiClient.PostAsync("spinSlots", new SlotSpinRequest(bid, linesCount, columnsCount));
         }
         catch (HttpRequestException ex) when (ex.InnerException is SocketException)
         {

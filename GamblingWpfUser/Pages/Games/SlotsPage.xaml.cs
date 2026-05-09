@@ -1,5 +1,5 @@
 ﻿using BusinessLogic.Game.Slots;
-using DataBaseClasses;
+using DataBaseClasses.Exceptions;
 using GamblingWpfUser.Navigation;
 using GamblingWpfUser.SlotsServices;
 using System.Windows;
@@ -18,6 +18,8 @@ public partial class SlotsPage : Page
     private readonly ISlotViewer _slotViewer;
     private readonly IElementAnimator _slotAnimator;
 
+    private readonly List<UIElement> Clickable = [];
+
     public SlotsPage(INavigationService navigationService, ISlotsService slotsService, ISlotsCombinationCounterService slotsCombinationCounterService)
     {
         _navigationService = navigationService;
@@ -27,7 +29,18 @@ public partial class SlotsPage : Page
         _slotViewer = new SlotViewer(_slotAnimator, slotsCombinationCounterService);
 
         InitializeComponent();
+
+        Clickable.Add(Bet100);
+        Clickable.Add(Bet500);
+        Clickable.Add(Bet1000);
+        Clickable.Add(HalfBet);
+        Clickable.Add(MaxBet);
+        Clickable.Add(DropBet);
+        Clickable.Add(Bid);
+        Clickable.Add(Spin);
     }
+
+
 
     private async void Page_Loaded(object sender, RoutedEventArgs e)
     {
@@ -41,12 +54,11 @@ public partial class SlotsPage : Page
 
     private async Task SpinSlots()
     {
-        Bid.IsEnabled = false;
-        Spin.IsEnabled = false;
+        foreach (UIElement element in Clickable) element.IsEnabled = false;
 
         if (await _slotService.HasBonusGames(0)) MessageBox.Show("Запущена бонусная игра");
 
-        if (!double.TryParse(Bid.Text, out double bidValue))
+        if (!double.TryParse(Bid.Text, out double bidValue) || bidValue <= 0)
         {
             MessageBox.Show("Ставка не корректная");
             goto endgame;
@@ -77,7 +89,7 @@ public partial class SlotsPage : Page
             MessageBox.Show($"Во время игры мы зафиксировали попытку вмешательства в игровой процесс!\nДля честности игра была отменена\nВсе средства отправлены на счёт казино\n\nПодробнее:\n{ex.Message}");
             goto endgame;
         }
-        
+
         double duration = 0.01;
         for (double i = 0.6; duration < 0.7; i += 0.015)
         {
@@ -86,17 +98,39 @@ public partial class SlotsPage : Page
             await _slotViewer.ViewSpinSlots(SlotsGrid, await _slotViewer.GetCurrentElements(SlotsGrid), await _slotViewer.ViewSlots(_slotViewer.GenerateRandomSlots()), duration: duration);
         }
         await _slotViewer.ViewSpinSlots(SlotsGrid, await _slotViewer.GetCurrentElements(SlotsGrid), await _slotViewer.ViewSlots(gameResult.Elements, drawCombos: true), duration: 0.8);
-        
+
 
         if (gameResult.Win > 0) MessageBox.Show($"Вы выиграли {gameResult.Win}");
-        MainWindow.Instance.UpdateProfileInfo();
+        await MainWindow.Instance.UpdateProfileInfo();
 
         if (await _slotService.HasBonusGames(0)) await SpinSlots();
 
     endgame:
-        Bid.IsEnabled = true;
-        Spin.IsEnabled = true;
+        foreach (UIElement element in Clickable) element.IsEnabled = true;
 
-        MainWindow.Instance.UpdateProfileInfo();
+        await MainWindow.Instance.UpdateProfileInfo();
     }
+
+    private void AddToBet(double count)
+    {
+        if (double.TryParse(Bid.Text, out double bet))
+        {
+            SetBet(bet + count);
+        }
+        else SetBet(count);
+    }
+
+    private void SetBet(double count) => Bid.Text = count.ToString();
+
+    private void Bet100_Click(object sender, RoutedEventArgs e) => AddToBet(100);
+
+    private void Bet500_Click(object sender, RoutedEventArgs e) => AddToBet(500);
+
+    private void Bet1000_Click(object sender, RoutedEventArgs e) => AddToBet(1000);
+
+    private void HalfBet_Click(object sender, RoutedEventArgs e) => SetBet(Math.Round(MainWindow.Instance.CurrentBalance / 2));
+
+    private void MaxBet_Click(object sender, RoutedEventArgs e) => SetBet(MainWindow.Instance.CurrentBalance);
+
+    private void DropBet_Click(object sender, RoutedEventArgs e) => SetBet(0);
 }

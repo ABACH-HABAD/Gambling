@@ -1,8 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using BusinessLogic.Auth;
 using BusinessLogic.Game.Slots;
-using DataBaseClasses.Repository.Interfaces;
-using DataBaseClasses.Entity;
 
 
 namespace TestProject.Games.Slots;
@@ -12,7 +9,7 @@ public class SlotsComboTests : DependencyOnServicesTest
     [OneTimeSetUp]
     public async Task OneTimeSetUp()
     {
-        await InitializeAsync();
+        await InitializeAsync(Type.Server);
     }
 
     [Test]

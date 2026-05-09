@@ -1,56 +1,100 @@
-﻿using BusinessLogic.Auth;
-using BusinessLogic.Auth.Validation;
-using BusinessLogic.Game.Blackjack;
-using BusinessLogic.Game.Roulette;
-using BusinessLogic.Game.Slots;
-using BusinessLogic.Profile;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using DataBaseClasses;
 using DataBaseClasses.Repository;
 using DataBaseClasses.Repository.Interfaces;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
+using BusinessLogic.ApiServices;
+using BusinessLogic.Auth;
+using BusinessLogic.Game.Blackjack;
+using BusinessLogic.Game.Roulette;
+using BusinessLogic.Game.Slots;
+using BusinessLogic.Token;
+using BusinessLogic.Encryption;
+using BusinessLogic.Validation;
+using BusinessLogic.Balance;
+using BusinessLogic.Profile.Statistics;
 
+namespace TestProject;
 
-namespace TestProject
+public class TestServiceProvider
 {
-    public class TestServiceProvider
+    private static readonly string dataBaseConnectionString = "Server=localhost;Port=3306;User=root;Password=123456789;Database=gambling_testing";
+
+    public static IServiceProvider ProvideServer()
     {
-        public static IServiceProvider Provide()
-        {
-            ServiceCollection services = new();
-            services.AddDbContext<ApplicationContext>();
+        ServiceCollection services = new();
 
-            string dataBaseConnectionString = "Server=localhost;Port=3306;User=root;Password=123456789;Database=gambling_testing";
+        services.AddDbContext<ApplicationContext>();
 
-            services.AddSingleton<string>(dataBaseConnectionString);
-            services.AddDbContext<ApplicationContext>(options => options.UseMySQL(dataBaseConnectionString));
+        services.AddSingleton(new DataBaseConnectionString(dataBaseConnectionString));
+        services.AddDbContext<ApplicationContext>(options => options.UseMySQL(dataBaseConnectionString));
 
-            services.AddScoped<IGameTypesRepository, GameTypesRepository>();
-            services.AddScoped<IDeviceTypeRepository, DeviceTypesRepository>();
-            services.AddScoped<IUserStatusesRepository, UserStatusesRepository>();
-            services.AddScoped<IUserRepository, UserRepository>();
-            services.AddScoped<ISessionRepository, SessionRepository>();
-            services.AddScoped<IGameRepository, GameRepository>();
+        services.AddSingleton(new JwtSettings(key: "TestMethodVetySuperSecretJwtKey123456789", issuer: "TestMethod", audience: "TestMethod", expiryMinutes: 0.01));
+        services.AddKeyedSingleton<ITokenStorageService, AccessTokenStorageService>("access");
+        services.AddKeyedSingleton<ITokenStorageService, RefreshTokenStorageService>("refresh");
+        services.AddSingleton<IApiClient, ApiClient>();
+        services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();
 
-            services.AddScoped<ISlotsWinCounterService, SlotsWinCounterService>();
-            services.AddScoped<ISlotsCombinationCounterService, SlotsCombinationCounterService>();
-            services.AddScoped<ISlotsService, ServerSlotsService>();
+        services.AddScoped<IPromotionalCodesRepository, PromotionalCodesRepository>();
+        services.AddScoped<IGameTypesRepository, GameTypesRepository>();
+        services.AddScoped<IDeviceTypeRepository, DeviceTypesRepository>();
+        services.AddScoped<IUserStatusesRepository, UserStatusesRepository>();
+        services.AddScoped<IUserRepository, UserRepository>();
+        services.AddScoped<ISessionRepository, SessionRepository>();
+        services.AddScoped<IGameRepository, GameRepository>();
 
-            services.AddScoped<IBlackjackService, ServerBlackjackService>();
+        services.AddScoped<ISlotsWinCounterService, SlotsWinCounterService>();
+        services.AddScoped<ISlotsCombinationCounterService, SlotsCombinationCounterService>();
+        services.AddScoped<ISlotsService, ServerSlotsService>();
 
-            services.AddScoped<IRouletteService, ServerRouletterService>();
-            services.AddScoped<IRouletteWinCounterService, ServerRouletteWinCounterService>();
+        services.AddScoped<IBlackjackService, ServerBlackjackService>();
 
-            services.AddTransient<IValidation, EmailValidation>();
-            services.AddTransient<ITwoPasswordsValidation, PasswordValidation>();
-            services.AddScoped<IAccountService, ServerAccountService>();
-            services.AddScoped<ISessionService, ServerSessionService>();
-            services.AddScoped<ILoginChecker, ServerSessionService>();
+        services.AddScoped<IRouletteService, ServerRouletteService>();
+        services.AddScoped<IRouletteWinCounterService, ServerRouletteWinCounterService>();
 
-            services.AddTransient<IUserStatisticsService, UserStatisticsService>();
-            services.AddTransient<IStatisticsService, StatisticsService>();
+        services.AddTransient<ICardValidation, CardValidationService>();
+        services.AddTransient<IValidation, EmailValidation>();
+        services.AddTransient<ITwoPasswordsValidation, PasswordValidation>();
 
-            return services.BuildServiceProvider();
-        }
+        services.AddScoped<IBalanceService, ServerBalanceService>();
+        services.AddScoped<ICardPayService, ServerBalanceService>();
+        services.AddScoped<IAccountService, ServerAccountService>();
+        services.AddScoped<ISessionService, ServerSessionService>();
+        services.AddScoped<ILoginChecker, ServerSessionService>();
+
+        services.AddTransient<IUserStatisticsService, ServerUserStatisticsService>();
+        services.AddTransient<IStatisticsService, StatisticsService>();
+
+        return services.BuildServiceProvider();
+    }
+
+    public static IServiceProvider ProvideClient()
+    {
+        ServiceCollection services = new();
+
+        services.AddKeyedSingleton<ITokenStorageService, AccessTokenStorageService>("access");
+        services.AddKeyedSingleton<ITokenStorageService, RefreshTokenStorageService>("refresh");
+        services.AddSingleton<IApiClient, TestApiCilent>();
+
+        services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();
+        services.AddScoped<IEncryption, Encryption>();
+        services.AddScoped<IPasswordHasher, Encryption>();
+        services.AddScoped<IUserIdExtraction, Encryption>();
+
+        services.AddScoped<ISlotsWinCounterService, SlotsWinCounterService>();
+        services.AddScoped<ISlotsCombinationCounterService, SlotsCombinationCounterService>();
+        services.AddScoped<ISlotsService, ClientSlotsService>();
+
+        services.AddScoped<IRouletteService, ClientRouletteService>();
+
+        services.AddTransient<ICardValidation, CardValidationService>();
+        services.AddTransient<IValidation, EmailValidation>();
+        services.AddTransient<ITwoPasswordsValidation, PasswordValidation>();
+
+        services.AddScoped<ICardPayService, ClientBalanceService>();
+        services.AddScoped<IAccountService, ClientAccountService>();
+        services.AddScoped<ILoginChecker, ClientLoginChecker>();
+
+        return services.BuildServiceProvider();
     }
 }

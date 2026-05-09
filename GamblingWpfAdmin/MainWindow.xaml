@@ -8,9 +8,8 @@
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
         Title="MainWindow" 
-        Height="400" Width="600"
-        Loaded="OnLoaded"
-        Closed="OnClosed">
+        Height="450" Width="600"
+        Loaded="OnLoaded">
     <Grid>
         <Frame Name="MainFrame">
             <Frame.NavigationUIVisibility>Hidden</Frame.NavigationUIVisibility>

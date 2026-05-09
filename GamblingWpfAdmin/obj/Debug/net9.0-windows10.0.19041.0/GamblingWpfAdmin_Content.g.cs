@@ -10,5 +10,6 @@
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("appsettings.development.json")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("appsettings.json")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/images/favicon.ico")]
 
 

@@ -52,7 +52,7 @@ public partial class AuthPage : Page
             return;
         }
 
-        LoginResult loginResult = await _accountService.LoginAsync(Login.Text, Password.Password, DeviceType.AdminApp);
+        LoginResult loginResult = await _accountService.LoginAsync(Login.Text, Password.Password, DeviceType.AdminApp, loginAsAdmin:true);
         if (loginResult.Result)
         {
             MessageBox.Show("Вы вошли");
@@ -60,9 +60,8 @@ public partial class AuthPage : Page
             Login.Text = string.Empty;
             Password.Password = string.Empty;
 
-            DataTablesWindow dataTablesWindow = new();
-            dataTablesWindow.Show();
-            //mainWindow.LoginIntoAdminAccount();
+            MainWindow mainWindow = MainWindow.Instance;
+            mainWindow.LoginIntoAdminAccount();
         }
         else MessageBox.Show(loginResult.Message);
     }

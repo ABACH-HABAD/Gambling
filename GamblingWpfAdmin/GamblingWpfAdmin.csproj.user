@@ -5,16 +5,19 @@
     <Compile Update="DataTablesWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="MilkProduction.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="WelcomeWindowPages\AuthPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="WelcomeWindowPages\PasswordChangePage.xaml.cs">
+    <Compile Update="Windows\BalanceChangeWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="WelcomeWindowPages\UserBanPage.xaml.cs">
+    <Compile Update="Windows\PasswordChangePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\RoleChangeWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\UserBanPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

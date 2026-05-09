@@ -14,7 +14,8 @@ public class JwtTokenGenerator(JwtSettings settings) : IJwtTokenGenerator
         Claim[] claims =
         [
             new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
-            new Claim(ClaimTypes.Email, (user.Email ?? throw new Exception("У пользователя должна быть указана электронная почта")).ToString()),
+            new Claim(ClaimTypes.Email, (user.Email ?? 
+            throw new Exception("У пользователя должна быть указана электронная почта")).ToString()),
             new Claim(ClaimTypes.Role, user.Status.ToString())
         ];
 
@@ -25,7 +26,7 @@ public class JwtTokenGenerator(JwtSettings settings) : IJwtTokenGenerator
             issuer: settings.Issuer,
             audience: settings.Audience,
             claims: claims,
-            expires: DateTime.UtcNow.AddHours(1),
+            expires: DateTime.UtcNow.AddMinutes(settings.ExpiryMinutes),
             signingCredentials: creds
         );
 

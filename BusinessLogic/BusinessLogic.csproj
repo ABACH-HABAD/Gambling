@@ -11,13 +11,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Folder Include="Auth\Validation\" />
 		<Folder Include="Captcha\" />
-		<Folder Include="Game\" />
 		<Folder Include="Game\Blackjack\" />
-		<Folder Include="Game\Roulette\" />
 		<Folder Include="Game\Slots\" />
-		<Folder Include="Profile\" />
 	</ItemGroup>
 
 	<ItemGroup>
