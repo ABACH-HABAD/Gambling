@@ -1,5 +1,11 @@
 E:\Разное\Разработка\Диплом\Проект\TestProject\bin\Debug\net9.0-windows10.0.19041.0\.msCoverageSourceRootsMapping_TestProject
 E:\Разное\Разработка\Диплом\Проект\TestProject\bin\Debug\net9.0-windows10.0.19041.0\CoverletSourceRootsMapping_TestProject
+E:\Разное\Разработка\Диплом\Проект\TestProject\obj\Debug\net9.0-windows10.0.19041.0\TestProject.csproj.AssemblyReference.cache
+E:\Разное\Разработка\Диплом\Проект\TestProject\obj\Debug\net9.0-windows10.0.19041.0\MvcTestingAppManifest.json
+E:\Разное\Разработка\Диплом\Проект\TestProject\obj\Debug\net9.0-windows10.0.19041.0\TestProject.GeneratedMSBuildEditorConfig.editorconfig
+E:\Разное\Разработка\Диплом\Проект\TestProject\obj\Debug\net9.0-windows10.0.19041.0\TestProject.AssemblyInfoInputs.cache
+E:\Разное\Разработка\Диплом\Проект\TestProject\obj\Debug\net9.0-windows10.0.19041.0\TestProject.AssemblyInfo.cs
+E:\Разное\Разработка\Диплом\Проект\TestProject\obj\Debug\net9.0-windows10.0.19041.0\TestProject.csproj.CoreCompileInputs.cache
 E:\Разное\Разработка\Диплом\Проект\TestProject\bin\Debug\net9.0-windows10.0.19041.0\testhost.dll
 E:\Разное\Разработка\Диплом\Проект\TestProject\bin\Debug\net9.0-windows10.0.19041.0\GamblingWebApi.deps.json
 E:\Разное\Разработка\Диплом\Проект\TestProject\bin\Debug\net9.0-windows10.0.19041.0\GamblingWebApi.runtimeconfig.json
@@ -501,12 +507,6 @@ E:\Разное\Разработка\Диплом\Проект\TestProject\bin\D
 E:\Разное\Разработка\Диплом\Проект\TestProject\bin\Debug\net9.0-windows10.0.19041.0\BusinessLogic.pdb
 E:\Разное\Разработка\Диплом\Проект\TestProject\bin\Debug\net9.0-windows10.0.19041.0\DataBaseClasses.pdb
 E:\Разное\Разработка\Диплом\Проект\TestProject\bin\Debug\net9.0-windows10.0.19041.0\GamblingWebApi.pdb
-E:\Разное\Разработка\Диплом\Проект\TestProject\obj\Debug\net9.0-windows10.0.19041.0\TestProject.csproj.AssemblyReference.cache
-E:\Разное\Разработка\Диплом\Проект\TestProject\obj\Debug\net9.0-windows10.0.19041.0\MvcTestingAppManifest.json
-E:\Разное\Разработка\Диплом\Проект\TestProject\obj\Debug\net9.0-windows10.0.19041.0\TestProject.GeneratedMSBuildEditorConfig.editorconfig
-E:\Разное\Разработка\Диплом\Проект\TestProject\obj\Debug\net9.0-windows10.0.19041.0\TestProject.AssemblyInfoInputs.cache
-E:\Разное\Разработка\Диплом\Проект\TestProject\obj\Debug\net9.0-windows10.0.19041.0\TestProject.AssemblyInfo.cs
-E:\Разное\Разработка\Диплом\Проект\TestProject\obj\Debug\net9.0-windows10.0.19041.0\TestProject.csproj.CoreCompileInputs.cache
 E:\Разное\Разработка\Диплом\Проект\TestProject\obj\Debug\net9.0-windows10.0.19041.0\TestProj.121896E9.Up2Date
 E:\Разное\Разработка\Диплом\Проект\TestProject\obj\Debug\net9.0-windows10.0.19041.0\TestProject.dll
 E:\Разное\Разработка\Диплом\Проект\TestProject\obj\Debug\net9.0-windows10.0.19041.0\refint\TestProject.dll

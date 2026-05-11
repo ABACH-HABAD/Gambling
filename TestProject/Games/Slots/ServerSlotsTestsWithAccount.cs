@@ -1,8 +1,6 @@
-﻿using BusinessLogic.Auth;
-using BusinessLogic.Balance;
+﻿using BusinessLogic.Account.Balance;
 using BusinessLogic.Game.Slots;
 using DataBaseClasses.Entity;
-using DataBaseClasses.Repository;
 using DataBaseClasses.Repository.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 

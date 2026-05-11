@@ -1,10 +1,10 @@
 ﻿using System.Windows;
 using Microsoft.Extensions.DependencyInjection;
 using DataBaseClasses.Entity;
-using BusinessLogic.Auth;
 using BusinessLogic.Captcha;
 using GamblingWpfAdmin.CaptchaAdapters;
 using GamblingWpfAdmin.Navigation;
+using BusinessLogic.Account.Auth;
 
 namespace GamblingWpfAdmin.WelcomeWindowPages
 {

@@ -1,6 +1,4 @@
-﻿using BusinessLogic.Auth;
-
-namespace BusinessLogic.Validation;
+﻿namespace BusinessLogic.Validation;
 
 public class PasswordValidation : BaseValidation, IValidation, ITwoPasswordsValidation
 {

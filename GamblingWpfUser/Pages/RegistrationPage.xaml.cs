@@ -1,4 +1,4 @@
-﻿using BusinessLogic.Auth;
+﻿using BusinessLogic.Account.Auth;
 using BusinessLogic.Captcha;
 using GamblingWpfUser.CaptchaAdapters;
 using GamblingWpfUser.Navigation;

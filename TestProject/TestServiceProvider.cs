@@ -4,15 +4,15 @@ using DataBaseClasses;
 using DataBaseClasses.Repository;
 using DataBaseClasses.Repository.Interfaces;
 using BusinessLogic.ApiServices;
-using BusinessLogic.Auth;
 using BusinessLogic.Game.Blackjack;
 using BusinessLogic.Game.Roulette;
 using BusinessLogic.Game.Slots;
 using BusinessLogic.Token;
 using BusinessLogic.Encryption;
 using BusinessLogic.Validation;
-using BusinessLogic.Balance;
-using BusinessLogic.Profile.Statistics;
+using BusinessLogic.Account.Auth;
+using BusinessLogic.Account.Balance;
+using BusinessLogic.Account.Profile.Statistics;
 
 namespace TestProject;
 
@@ -53,7 +53,7 @@ public class TestServiceProvider
         services.AddScoped<IRouletteWinCounterService, ServerRouletteWinCounterService>();
 
         services.AddTransient<ICardValidation, CardValidationService>();
-        services.AddTransient<IValidation, EmailValidation>();
+        services.AddTransient<IEmailValidation, EmailValidation>();
         services.AddTransient<ITwoPasswordsValidation, PasswordValidation>();
 
         services.AddScoped<IBalanceService, ServerBalanceService>();
@@ -88,7 +88,7 @@ public class TestServiceProvider
         services.AddScoped<IRouletteService, ClientRouletteService>();
 
         services.AddTransient<ICardValidation, CardValidationService>();
-        services.AddTransient<IValidation, EmailValidation>();
+        services.AddTransient<IEmailValidation, EmailValidation>();
         services.AddTransient<ITwoPasswordsValidation, PasswordValidation>();
 
         services.AddScoped<ICardPayService, ClientBalanceService>();

@@ -26,11 +26,19 @@ public class UserRepository(ApplicationContext dataBaseContext) : BaseRepository
         return user;
     }
 
+    public bool ComparePassword(int userId, string passwordHash)
+    {
+        User user = InnerGetWithId(userId) ?? throw new AccountNotFoundException();
+        return user.Password == passwordHash;
+    }
+
     public User? FindByEmail(string email)
     {
         if (!CheckConncetion()) throw new NoConnectionException();
 
-        return (_dataBaseContext.Users.FirstOrDefault(user => user.Email == email) ?? throw new AccountNotFoundException()).Clone<User>();
+        User user = (_dataBaseContext.Users.FirstOrDefault(user => user.Email == email) ?? throw new AccountNotFoundException()).Clone<User>();
+        user.Password = null;
+        return user;
     }
 
     public User? Registrate(string email, string hashedPassword)
@@ -62,7 +70,7 @@ public class UserRepository(ApplicationContext dataBaseContext) : BaseRepository
         User? user = FindByEmail(email);
         if (user != null)
         {
-            if (user.Password == hashedPassword) return user;
+            if (ComparePassword(user.Id, hashedPassword)) return user;
             else throw new IncorrectAccountDataException();
         }
         else throw new AccountNotFoundException();
@@ -79,9 +87,11 @@ public class UserRepository(ApplicationContext dataBaseContext) : BaseRepository
     {
         User user = InnerGetWithId(userData.Id) ?? throw new AccountNotFoundException();
 
-        user.Name = userData.Name;
-        user.Status = userData.Status;
-        user.Coefficient = userData.Coefficient;
+        if (userData.Email != null) user.Email = userData.Email;
+        if (userData.Password != null) user.Password = userData.Password;
+        if (userData.Name != null) user.Name = userData.Name;
+        if (userData.Status != 0) user.Status = userData.Status;
+        if (userData.Coefficient != null) user.Coefficient = userData.Coefficient;
 
         _dataBaseContext.SaveChanges();
     }

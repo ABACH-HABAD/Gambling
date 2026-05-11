@@ -1,5 +1,4 @@
-﻿using BusinessLogic.Auth;
-namespace BusinessLogic.Validation;
+﻿namespace BusinessLogic.Validation;
 
 public class NameValidationService : BaseValidation, INameValidation
 {

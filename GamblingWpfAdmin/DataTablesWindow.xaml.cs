@@ -1,11 +1,11 @@
-﻿using BusinessLogic.Auth;
+﻿using System.Windows;
+using System.Windows.Controls;
+using Microsoft.Extensions.DependencyInjection;
 using BusinessLogic.Game;
 using DataBaseClasses.Entity;
 using GamblingWpfAdmin.WelcomeWindowPages;
 using GamblingWpfAdmin.Windows;
-using Microsoft.Extensions.DependencyInjection;
-using System.Windows;
-using System.Windows.Controls;
+using BusinessLogic.Account;
 
 namespace GamblingWpfAdmin
 {
@@ -14,19 +14,28 @@ namespace GamblingWpfAdmin
     /// </summary>
     public partial class DataTablesWindow : Window
     {
-        private readonly IAccountService _accountService;
+        private readonly IAccountDataService _accountDataService;
         private readonly IGameService _gameService;
-        public DataTablesWindow(IAccountService accountService, IGameService gameService)
+        public DataTablesWindow(IAccountDataService accountDataService, IGameService gameService)
         {
-            _accountService = accountService;
+            _accountDataService = accountDataService;
             _gameService = gameService;
             InitializeComponent();
         }
 
         private async void OnLoaded(object sender, RoutedEventArgs e)
         {
-            UsersDataGrid.ItemsSource = await _accountService.GetAllUsersAsync(0);
+            UsersDataGrid.ItemsSource = await _accountDataService.GetAllUsersAsync(0);
             GamesDataGrid.ItemsSource = await _gameService.GetAllGamesAsync(0);
+
+            /*
+            MessageBox.Show("Программа запущена");
+            MessageBox.Show("Успешно подключено к сети");
+            MessageBox.Show("Подключение не найдено");
+            MessageBox.Show("Не удалось найти сервер базы данных");
+            MessageBox.Show("Исключение не обработано: [BalanceCannotBeNegativeException]");
+            MessageBox.Show("Fatal Error: [0x00067 Your computer will self-destruct]");
+            */
         }
 
         private void EditButton_Click(object sender, RoutedEventArgs e)
@@ -60,10 +69,11 @@ namespace GamblingWpfAdmin
         {
             if (sender is Button button)
             {
-                if (button.CommandParameter is User)
+                if (button.CommandParameter is User user)
                 {
-                    RoleChangeWindow userBan = App.Services.GetRequiredService<RoleChangeWindow>();
-                    userBan.ShowDialog();
+                    RoleChangeWindow changeRole = App.Services.GetRequiredService<RoleChangeWindow>();
+                    changeRole.UserContext = user;
+                    changeRole.ShowDialog();
                 }
             }
             else throw new ArgumentException("sender может быть только кнопкой", ((FrameworkElement)sender).Name);
@@ -74,9 +84,10 @@ namespace GamblingWpfAdmin
         {
             if (sender is Button button)
             {
-                if (button.CommandParameter is User)
+                if (button.CommandParameter is User user)
                 {
                     BalanceChangeWindow balanceChange = App.Services.GetRequiredService<BalanceChangeWindow>();
+                    balanceChange.UserContext = user;
                     balanceChange.ShowDialog();
                 }
             }
@@ -88,10 +99,11 @@ namespace GamblingWpfAdmin
         {
             if (sender is Button button)
             {
-                if (button.CommandParameter is User)
+                if (button.CommandParameter is User user)
                 {
-                    PasswordChangeWindow userBan = App.Services.GetRequiredService<PasswordChangeWindow>();
-                    userBan.ShowDialog();
+                    PasswordChangeWindow passwordChange = App.Services.GetRequiredService<PasswordChangeWindow>();
+                    passwordChange.UserContext = user;
+                    passwordChange.ShowDialog();
                 }
             }
             else throw new ArgumentException("sender может быть только кнопкой", ((FrameworkElement)sender).Name);

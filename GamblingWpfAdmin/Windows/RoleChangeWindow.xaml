@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GamblingWpfAdmin.Windows"
         mc:Ignorable="d"
+        Loaded="Window_Loaded"
         Title="Смена роли" Height="225" Width="475">
     <Window.Resources>
         <Style TargetType="ComboBoxItem">

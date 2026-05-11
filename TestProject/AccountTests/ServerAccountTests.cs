@@ -1,4 +1,4 @@
-﻿using BusinessLogic.Auth;
+﻿using BusinessLogic.Account.Auth;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace TestProject.AccountTests;

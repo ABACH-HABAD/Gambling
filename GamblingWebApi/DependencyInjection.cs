@@ -3,14 +3,15 @@ using DataBaseClasses;
 using DataBaseClasses.Exceptions;
 using DataBaseClasses.Repository;
 using DataBaseClasses.Repository.Interfaces;
-using BusinessLogic.Auth;
-using BusinessLogic.Balance;
 using BusinessLogic.Game.Blackjack;
 using BusinessLogic.Game.Roulette;
 using BusinessLogic.Game.Slots;
-using BusinessLogic.Profile.Statistics;
 using BusinessLogic.Validation;
 using BusinessLogic.Game;
+using BusinessLogic.Account.Auth;
+using BusinessLogic.Account.Balance;
+using BusinessLogic.Account.Profile.Statistics;
+using BusinessLogic.Account;
 
 namespace GamblingWebApi;
 
@@ -56,10 +57,11 @@ public static class DependencyInjection
         services.AddScoped<IRouletteWinCounterService, ServerRouletteWinCounterService>();
 
         services.AddTransient<ICardValidation, CardValidationService>();
-        services.AddTransient<IValidation, EmailValidation>();
+        services.AddTransient<IEmailValidation, EmailValidation>();
         services.AddTransient<ITwoPasswordsValidation, PasswordValidation>();
 
         services.AddScoped<IAccountService, ServerAccountService>();
+        services.AddScoped<IAccountDataService, ServerAccountDataService>();
         services.AddScoped<ISessionService, ServerSessionService>();
         services.AddScoped<ILoginChecker, ServerSessionService>();
 

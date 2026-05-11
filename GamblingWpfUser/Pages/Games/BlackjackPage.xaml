@@ -7,7 +7,16 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Блэкджек">
-
+    <Page.Resources>
+        <Style TargetType="TextBlock" x:Name="RouletteTextBlock">
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+    </Page.Resources>
+    <Page.Background>
+        <ImageBrush ImageSource="/Resources/Images/Blackjack/bg-b.png"/>
+    </Page.Background>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="8*"/>
@@ -31,9 +40,39 @@
                     Очки
                 </TextBlock>
             </Grid>
-            <StackPanel Grid.Row="1" Name="EnemyCards">
-
-            </StackPanel>
+            <ItemsControl Grid.Row="1" x:Name="EnemyCardCollection">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border
+                            MinWidth="100"
+                            MaxWidth="500"
+                            Background="White"
+                            BorderBrush="{Binding DisplayColorBrush}"
+                            BorderThickness="3"
+                            CornerRadius="15"
+                            Margin="3"
+                            Padding="3" 
+                            Loaded="Card_Loaded"
+                            DataContext="{Binding}">
+                            <TextBlock 
+                                FontWeight="Bold"
+                                FontSize="25"
+                                Foreground="{Binding DisplayColorBrush}"
+                                Text="{Binding DisplayCard}" 
+                                HorizontalAlignment="Center" 
+                                VerticalAlignment="Center"
+                                Loaded="Card_Loaded"
+                                DataContext="{Binding}">
+                            </TextBlock>
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
         </Grid>
         <Grid Grid.Row="1">
             <Grid.RowDefinitions>
@@ -52,17 +91,100 @@
                     Очки
                 </TextBlock>
             </Grid>
-            <StackPanel Grid.Row="1" Name="YourCards">
-
-            </StackPanel>
+            <ItemsControl Grid.Row="1" x:Name="YourCardCollection">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border
+                            MinWidth="100"
+                            MaxWidth="500"
+                            Background="White"
+                            BorderBrush="{Binding DisplayColorBrush}"
+                            BorderThickness="3"
+                            CornerRadius="15"
+                            Margin="3"
+                            Padding="3" 
+                            Loaded="Card_Loaded"
+                            DataContext="{Binding}">
+                            <TextBlock 
+                                FontWeight="Bold"
+                                FontSize="25"
+                                Foreground="{Binding DisplayColorBrush}"
+                                Text="{Binding DisplayCard}" 
+                                HorizontalAlignment="Center" 
+                                VerticalAlignment="Center"
+                                Loaded="Card_Loaded"
+                                DataContext="{Binding}">
+                            </TextBlock>
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
         </Grid>
-        <Grid Grid.Row="2">
+        <Grid x:Name="MovesButtons" Grid.Row="2" Margin="25" Visibility="Collapsed">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
+                <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Button Grid.Column="0" Content="Взять карту" Name="TakeCard"/>
-            <Button Grid.Column="1" Content="Не брать" Name="Pass"/>
+            <Button Margin="10" Style="{StaticResource BetButton}" Grid.Column="0" Content="Взять карту" Name="TakeCard" Click="TakeCard_Click"/>
+            <Button Margin="10" Style="{StaticResource BetButton}" Grid.Column="1" Content="Не брать" Name="Pass" Click="Pass_Click"/>
+            <Button Margin="10" Style="{StaticResource BetButton}" Grid.Column="2" Content="Удвоить ставку" Name="TakeDouble" Click="TakeDouble_Click"/>
+        </Grid>
+        <Grid x:Name="BetButtons" Grid.Row="2" Margin="25" Visibility="Visible">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="6*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="15*"/>
+                        <ColumnDefinition Width="15*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock 
+                    Grid.Column="0" 
+                    HorizontalAlignment="Right" 
+                    VerticalAlignment="Center" Margin="0,0,5,0">
+                    Поставлено:
+                    </TextBlock>
+                    <TextBox 
+                    Background="#FF0E3A6C"
+                    BorderBrush="#FF021332"
+                    Foreground="White"
+                    x:Name="Bid" 
+                    Grid.Column="1" 
+                    VerticalContentAlignment="Center"
+                    Margin="5,0,5,0"/>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button Style="{StaticResource BetButton}" Grid.Column="0" Content="100" Name="Bet100" Click="Bet100_Click"/>
+                    <Button Style="{StaticResource BetButton}" Grid.Column="1" Content="500" Name="Bet500" Click="Bet500_Click"/>
+                    <Button Style="{StaticResource BetButton}" Grid.Column="2" Content="1000" Name="Bet1000" Click="Bet1000_Click"/>
+                    <Button Style="{StaticResource BetButton}" Grid.Column="3" Content="1/2 Bet" Name="HalfBet" Click="HalfBet_Click"/>
+                    <Button Style="{StaticResource BetButton}" Grid.Column="4" Content="MAXBET" Name="MaxBet" Click="MaxBet_Click"/>
+                    <Button Style="{StaticResource BetButton}" Grid.Column="5" Content="Сброс" Name="DropBet" Click="DropBet_Click"/>
+                </Grid>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Button Style="{StaticResource BetButton}" Grid.Column="5" Content="Играть" Name="Play" Click="Play_Click"/>
+            </Grid>
         </Grid>
     </Grid>
 </Page>

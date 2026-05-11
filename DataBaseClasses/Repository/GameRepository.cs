@@ -1,6 +1,7 @@
 ﻿using DataBaseClasses.Entity;
-using DataBaseClasses.Repository.Interfaces;
 using DataBaseClasses.Exceptions;
+using DataBaseClasses.Repository.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace DataBaseClasses.Repository;
 
@@ -46,5 +47,11 @@ public class GameRepository(ApplicationContext context, IGameTypesRepository gam
 
     public List<Game> GetGames() => [.. _dataBaseContext.Games];
     public List<Game> GetGames(int gameType) => [.. _dataBaseContext.Games.Where(game => game.GameType == gameType)];
+    public List<Game> GetGames(int playerId, int gameType) => [.. _dataBaseContext.Games.Where(game => game.Player == playerId && game.GameType == gameType)];
     public List<Game> GetGames(int playerId, int gameType, bool isWin) => [.. _dataBaseContext.Games.Where(game => game.Player == playerId && game.GameType == gameType && game.IsWin == isWin)];
+
+    public async Task<List<Game>> GetGamesAsync() => await _dataBaseContext.Games.ToListAsync();
+    public async Task<List<Game>> GetGamesAsync(int gameType) => await _dataBaseContext.Games.Where(game => game.GameType == gameType).ToListAsync();
+    public async Task<List<Game>> GetGamesAsync(int playerId, int gameType) => await _dataBaseContext.Games.Where(game => game.Player == playerId && game.GameType == gameType).ToListAsync();
+    public async Task<List<Game>> GetGamesAsync(int playerId, int gameType, bool isWin) => await _dataBaseContext.Games.Where(game => game.Player == playerId && game.GameType == gameType && game.IsWin == isWin).ToListAsync();
 }

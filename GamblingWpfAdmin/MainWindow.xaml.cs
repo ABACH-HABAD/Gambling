@@ -10,7 +10,7 @@ namespace GamblingWpfAdmin;
 /// </summary>
 public partial class MainWindow : Window
 {
-    public const string IS_NAME = "Информационная система"; //ИС Азартные игры (для администраторов)
+    public const string IS_NAME = "ИС Азартные игры (для администраторов)"; //ИС Азартные игры (для администраторов)
 
     public static MainWindow Instance { get; private set; } = null!;
 

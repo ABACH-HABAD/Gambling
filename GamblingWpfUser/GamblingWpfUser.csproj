@@ -12,7 +12,9 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\Blackjack\bg-b.png" />
 	  <None Remove="Resources\Images\Blackjack\CardsDeck.png" />
+	  <None Remove="Resources\Images\Blackjack\CardShirt.png" />
 	  <None Remove="Resources\Images\favico.ico" />
 	  <None Remove="Resources\Images\favico.png" />
 	  <None Remove="Resources\Images\Pay\qr.png" />
@@ -55,7 +57,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Resource Include="Resources\Images\Blackjack\bg-b.png" />
 	  <Resource Include="Resources\Images\Blackjack\CardsDeck.png" />
+	  <Resource Include="Resources\Images\Blackjack\CardShirt.png" />
 	  <Resource Include="Resources\Images\favico.ico" />
 	  <Resource Include="Resources\Images\favico.png" />
 	  <Resource Include="Resources\Images\Pay\qr.png" />

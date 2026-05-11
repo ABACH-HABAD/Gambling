@@ -4,8 +4,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using BusinessLogic.ApiServices;
-using BusinessLogic.Auth;
-using BusinessLogic.Balance;
 using BusinessLogic.Captcha;
 using BusinessLogic.Encryption;
 using BusinessLogic.Game.Roulette;
@@ -15,7 +13,12 @@ using BusinessLogic.Validation;
 using GamblingWpfUser.Navigation;
 using GamblingWpfUser.Pages;
 using GamblingWpfUser.Pages.Games;
-using BusinessLogic.Profile.Statistics;
+using BusinessLogic.Account.Auth;
+using BusinessLogic.Account.Balance;
+using BusinessLogic.Account.Profile.Statistics;
+using BusinessLogic.Account;
+using GamblingWpfUser.Windows;
+using BusinessLogic.Game.Blackjack;
 
 namespace GamblingWpfUser;
 
@@ -63,17 +66,21 @@ public partial class App : Application
             services.AddScoped<ICardPayService, ClientBalanceService>();
 
             services.AddTransient<INameValidation, NameValidationService>();
-            services.AddTransient<IValidation, EmailValidation>();
+            services.AddTransient<IEmailValidation, EmailValidation>();
             services.AddTransient<ICardValidation, CardValidationService>();
             services.AddTransient<ITwoPasswordsValidation, PasswordValidation>();
-            services.AddScoped<IAccountService, ClientAccountService>();
+
             services.AddScoped<ILoginChecker, ClientLoginChecker>();
+            services.AddScoped<IAccountService, ClientAccountService>();
+            services.AddScoped<IAccountDataService, ClientAccountDataService>();
 
             services.AddScoped<ISlotsCombinationCounterService, SlotsCombinationCounterService>();
             services.AddScoped<ISlotsWinCounterService, SlotsWinCounterService>();
             services.AddScoped<ISlotsService, ClientSlotsService>();
 
             services.AddScoped<IRouletteService, ClientRouletteService>();
+
+            services.AddScoped<IBlackjackService, ClientBlackjackService>();
 
             services.AddTransient<IUserStatisticsService, ClientUserStatisticService>();
 
@@ -83,7 +90,7 @@ public partial class App : Application
             services.AddSingleton<INavigationService, NavigationService>();
 
             services.AddSingleton<MainWindow>();
-            services.AddTransient<PayWindow>();
+
             services.AddSingleton<AuthPage>();
             services.AddSingleton<RegistrationPage>();
             services.AddSingleton<GamesPage>();
@@ -91,6 +98,10 @@ public partial class App : Application
             services.AddSingleton<RoulettePage>();
             services.AddSingleton<BlackjackPage>();
             services.AddSingleton<ProfilePage>();
+
+            services.AddTransient<PayWindow>();
+            services.AddTransient<EmailChangeWindow>();
+            services.AddTransient<PasswordChangeWindow>();
 
         });
 

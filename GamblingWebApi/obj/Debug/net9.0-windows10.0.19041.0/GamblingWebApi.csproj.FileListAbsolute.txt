@@ -1,3 +1,10 @@
+E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\obj\Debug\net9.0-windows10.0.19041.0\GamblingWebApi.csproj.AssemblyReference.cache
+E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\obj\Debug\net9.0-windows10.0.19041.0\rpswa.dswa.cache.json
+E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\obj\Debug\net9.0-windows10.0.19041.0\GamblingWebApi.GeneratedMSBuildEditorConfig.editorconfig
+E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\obj\Debug\net9.0-windows10.0.19041.0\GamblingWebApi.AssemblyInfoInputs.cache
+E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\obj\Debug\net9.0-windows10.0.19041.0\GamblingWebApi.AssemblyInfo.cs
+E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\obj\Debug\net9.0-windows10.0.19041.0\GamblingWebApi.csproj.CoreCompileInputs.cache
+E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\obj\Debug\net9.0-windows10.0.19041.0\GamblingWebApi.MvcApplicationPartsAssemblyInfo.cache
 E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\bin\Debug\net9.0-windows10.0.19041.0\appsettings.Development.json
 E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\bin\Debug\net9.0-windows10.0.19041.0\appsettings.json
 E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\bin\Debug\net9.0-windows10.0.19041.0\GamblingWebApi.staticwebassets.endpoints.json
@@ -53,14 +60,7 @@ E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\bi
 E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\bin\Debug\net9.0-windows10.0.19041.0\DataBaseClasses.dll
 E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\bin\Debug\net9.0-windows10.0.19041.0\BusinessLogic.pdb
 E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\bin\Debug\net9.0-windows10.0.19041.0\DataBaseClasses.pdb
-E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\obj\Debug\net9.0-windows10.0.19041.0\GamblingWebApi.csproj.AssemblyReference.cache
-E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\obj\Debug\net9.0-windows10.0.19041.0\rpswa.dswa.cache.json
-E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\obj\Debug\net9.0-windows10.0.19041.0\GamblingWebApi.GeneratedMSBuildEditorConfig.editorconfig
-E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\obj\Debug\net9.0-windows10.0.19041.0\GamblingWebApi.AssemblyInfoInputs.cache
-E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\obj\Debug\net9.0-windows10.0.19041.0\GamblingWebApi.AssemblyInfo.cs
-E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\obj\Debug\net9.0-windows10.0.19041.0\GamblingWebApi.csproj.CoreCompileInputs.cache
 E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\obj\Debug\net9.0-windows10.0.19041.0\GamblingWebApi.MvcApplicationPartsAssemblyInfo.cs
-E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\obj\Debug\net9.0-windows10.0.19041.0\GamblingWebApi.MvcApplicationPartsAssemblyInfo.cache
 E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\obj\Debug\net9.0-windows10.0.19041.0\rjimswa.dswa.cache.json
 E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\obj\Debug\net9.0-windows10.0.19041.0\rjsmrazor.dswa.cache.json
 E:\Разное\Разработка\Диплом\Проект\GamblingWebApi\obj\Debug\net9.0-windows10.0.19041.0\rjsmcshtml.dswa.cache.json

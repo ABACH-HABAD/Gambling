@@ -1,5 +1,4 @@
-﻿using BusinessLogic.Auth;
-using BusinessLogic.Balance;
+﻿using BusinessLogic.Account.Balance;
 using Org.BouncyCastle.Asn1.X509;
 using System.Text.RegularExpressions;
 

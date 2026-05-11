@@ -1,6 +1,6 @@
 ﻿using System.Security.Claims;
+using BusinessLogic.Account.Balance;
 using BusinessLogic.ApiServices.Requests;
-using BusinessLogic.Balance;
 
 namespace GamblingWebApi.Endpoints;
 

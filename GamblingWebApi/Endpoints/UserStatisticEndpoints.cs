@@ -1,7 +1,7 @@
 ﻿using System.Security.Claims;
+using BusinessLogic.Account.Profile.Statistics;
 using BusinessLogic.ApiServices.Requests;
 using BusinessLogic.Game;
-using BusinessLogic.Profile.Statistics;
 
 namespace GamblingWebApi.Endpoints;
 
@@ -9,6 +9,30 @@ public static class UserStatisticEndpoints
 {
     public static void MapUserStatisticEndpoints(this WebApplication app)
     {
+        app.MapGet("/userStatistic", async (HttpContext httpContext, int gameType, IUserStatisticsService userStatisticsService) =>
+        {
+            string? clientIp = httpContext.Connection.RemoteIpAddress?.ToString();
+
+            Console.WriteLine($"Получен запрос /userStatistic с IP: {clientIp}");
+
+            var userIdClaim = httpContext.User.FindFirst(ClaimTypes.NameIdentifier);
+            if (userIdClaim is null)
+                return Results.Unauthorized();
+
+            int userId = int.Parse(userIdClaim.Value);
+
+            try
+            {
+                UserStatisticResult result = await userStatisticsService.GetUserStatisticResultAsync(userId, (GameType)gameType);
+                return Results.Ok(result);
+            }
+            catch
+            {
+                return Results.BadRequest();
+            }
+
+        }).RequireAuthorization();
+
         app.MapGet("/userStatistic/frequency", async (HttpContext httpContext, int gameType, IUserStatisticsService userStatisticsService) =>
         {
             string? clientIp = httpContext.Connection.RemoteIpAddress?.ToString();
@@ -23,7 +47,7 @@ public static class UserStatisticEndpoints
 
             try
             {
-                double result = await userStatisticsService.WinFrequency(userId, (GameType)gameType);
+                double result = await userStatisticsService.GetWinFrequencyAsync(userId, (GameType)gameType);
                 return Results.Ok(result);
             }
             catch
@@ -47,7 +71,7 @@ public static class UserStatisticEndpoints
 
             try
             {
-                return Results.Ok(await userStatisticsService.WinCount(userId, (GameType)gameType));
+                return Results.Ok(await userStatisticsService.GetWinCountAsync(userId, (GameType)gameType));
             }
             catch
             {
@@ -70,7 +94,7 @@ public static class UserStatisticEndpoints
 
             try
             {
-                return Results.Ok(await userStatisticsService.LossCount(userId, (GameType)gameType));
+                return Results.Ok(await userStatisticsService.GetLossCountAsync(userId, (GameType)gameType));
             }
             catch
             {
@@ -93,7 +117,7 @@ public static class UserStatisticEndpoints
 
             try
             {
-                return Results.Ok(await userStatisticsService.TotalCount(userId, (GameType)gameType));
+                return Results.Ok(await userStatisticsService.GetTotalCountAsync(userId, (GameType)gameType));
             }
             catch
             {
@@ -116,7 +140,7 @@ public static class UserStatisticEndpoints
 
             try
             {
-                return Results.Ok(await userStatisticsService.WinBalance(userId, (GameType)gameType));
+                return Results.Ok(await userStatisticsService.GetWinBalanceAsync(userId, (GameType)gameType));
             }
             catch
             {
@@ -139,7 +163,7 @@ public static class UserStatisticEndpoints
 
             try
             {
-                return Results.Ok(await userStatisticsService.LossBalance(userId, (GameType)gameType));
+                return Results.Ok(await userStatisticsService.GetLossBalanceAsync(userId, (GameType)gameType));
             }
             catch
             {
@@ -162,7 +186,7 @@ public static class UserStatisticEndpoints
 
             try
             {
-                return Results.Ok(await userStatisticsService.TotalBalance(userId, (GameType)gameType));
+                return Results.Ok(await userStatisticsService.GetTotalBalanceAsync(userId, (GameType)gameType));
             }
             catch
             {

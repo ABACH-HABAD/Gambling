@@ -213,13 +213,13 @@ namespace GamblingWpfUser.Pages.Games
                 if (TempBid != null)
                 {
                     TempBid.BidCount = bid;
-                    RouletteBid oldBid = RouletteBids.First(bid => bid.Type == TempBid.Type);
+                    RouletteBid? oldBid = RouletteBids.FirstOrDefault(bid => bid.Type == TempBid.Type);
                     if (oldBid != null)
                     {
                         oldBid.BidCount += bid;
                     }
                     else RouletteBids.Add(TempBid);
-                    //Bids.ItemsSource = RouletteBids;
+                    Bids.ItemsSource = RouletteBids;
                     Bids.Items.Refresh();
                 }
                 else MessageBox.Show("Выберите, на что ставить");

@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
-using BusinessLogic.Balance;
+using BusinessLogic.Account.Balance;
 using BusinessLogic.Validation;
 
 namespace GamblingWpfUser

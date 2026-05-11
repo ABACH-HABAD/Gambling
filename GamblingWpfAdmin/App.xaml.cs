@@ -1,6 +1,7 @@
-﻿using BusinessLogic.ApiServices;
-using BusinessLogic.Auth;
-using BusinessLogic.Balance;
+﻿using BusinessLogic.Account;
+using BusinessLogic.Account.Auth;
+using BusinessLogic.Account.Balance;
+using BusinessLogic.ApiServices;
 using BusinessLogic.Captcha;
 using BusinessLogic.Encryption;
 using BusinessLogic.Game;
@@ -64,11 +65,13 @@ public partial class App : Application
 
             services.AddScoped<ICardPayService, ClientBalanceService>();
 
-            services.AddTransient<IValidation, EmailValidation>();
+            services.AddTransient<IEmailValidation, EmailValidation>();
             services.AddTransient<ICardValidation, CardValidationService>();
             services.AddTransient<ITwoPasswordsValidation, PasswordValidation>();
-            services.AddScoped<IAccountService, ClientAccountService>();
+
             services.AddScoped<ILoginChecker, ClientLoginChecker>();
+            services.AddScoped<IAccountService, ClientAccountService>();
+            services.AddScoped<IAccountDataService, ClientAccountDataService>();
 
             services.AddScoped<IGameService, ClientGameService>();
 

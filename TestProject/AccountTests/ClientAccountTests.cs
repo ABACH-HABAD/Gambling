@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using BusinessLogic.Auth;
+using BusinessLogic.Account.Auth;
 
 namespace TestProject.AccountTests;
 

@@ -1,4 +1,4 @@
-﻿using BusinessLogic.Balance;
+﻿using BusinessLogic.Account.Balance;
 
 namespace BusinessLogic.Validation;
 

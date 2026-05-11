@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
-using BusinessLogic.Auth;
+using BusinessLogic.Account.Auth;
 using GamblingWpfUser.Navigation;
 using GamblingWpfUser.Pages.Games;
 using Microsoft.Extensions.DependencyInjection;

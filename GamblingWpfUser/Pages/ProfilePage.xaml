@@ -47,8 +47,8 @@
                             <Button Grid.Column="1" Name="DenyChangeName" Content="Отменить" Style="{StaticResource ProfileButton}" Click="DenyChangeName_Click"/>
                         </Grid>
                     </StackPanel>
-                    <Button Name="ChangeEmail" Content="Сменить электронную почту" Style="{StaticResource ProfileButton}" Click="ChangeName_Click"/>
-                    <Button Name="ChangePassword" Content="Сменить пароль" Style="{StaticResource ProfileButton}" Click="ChangeName_Click"/>
+                    <Button Name="ChangeEmail" Content="Сменить электронную почту" Style="{StaticResource ProfileButton}" Click="ChangeEmail_Click"/>
+                    <Button Name="ChangePassword" Content="Сменить пароль" Style="{StaticResource ProfileButton}" Click="ChangePassword_Click"/>
                 </StackPanel>
             </Grid>
             <Border

@@ -21,6 +21,7 @@ public partial class Program
         app.MapPayEndpoints();
         app.MapGameDataEndpoints();
         app.MapSlotsEndpoints();
+        app.MapBlackjackEndpoints();
         app.MapRouletteEndpoints();
 
         app.Run();

@@ -1,17 +1,17 @@
-﻿using BusinessLogic.ApiServices;
+﻿using BusinessLogic.Account;
+using BusinessLogic.ApiServices;
 using BusinessLogic.ApiServices.Requests;
-using BusinessLogic.Auth;
 using DataBaseClasses.Entity;
 using System.Net.Http.Json;
 using System.Net.Sockets;
 
 namespace BusinessLogic.Game.Slots;
 
-public class ClientSlotsService(IApiClient apiClient, IAccountService accountService) : ClientGameService(apiClient, GameType.Slots), IGameService, ISlotsService
+public class ClientSlotsService(IApiClient apiClient, IAccountDataService accountDataService) : ClientGameService(apiClient, GameType.Slots), IGameService, ISlotsService
 {
     public async Task<bool> HasBonusGames(int userId)
     {
-        User? user = await accountService.GetUserDataAsync(userId);
+        User? user = await accountDataService.GetUserDataAsync(userId);
         if (user != null) return user.SlotsBonusCount > 0;
         else return false;
     }

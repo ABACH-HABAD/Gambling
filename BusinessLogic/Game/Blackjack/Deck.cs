@@ -5,13 +5,13 @@ public class Deck
     private readonly Random random = new();
     private Queue<Card> Cards { get; init; } = [];
 
-    public Deck(bool mix = false)
+    public Deck(bool mix = false, bool isOpen = true)
     {
         foreach (string denomination in Card.DenominationVariants)
         {
             foreach (char suit in Card.SuitVariants)
             {
-                Cards.Enqueue(new Card(denomination, suit));
+                Cards.Enqueue(new Card(denomination, suit, isOpen));
             }
         }
 
@@ -19,6 +19,13 @@ public class Deck
     }
 
     public Card NextCard() => Cards.Dequeue();
+
+    public Card NextCard(bool open)
+    {
+        Card card = Cards.Dequeue();
+        if (open) card.Open();
+        return card;
+    }
 
     public void Shuffle()
     {

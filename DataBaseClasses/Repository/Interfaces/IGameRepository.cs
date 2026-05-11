@@ -10,5 +10,11 @@ public interface IGameRepository : IRepository
 
     public List<Game> GetGames();
     public List<Game> GetGames(int gameType);
+    public List<Game> GetGames(int playerId, int gameType);
     public List<Game> GetGames(int playerId, int gameType, bool isWin);
+
+    public Task<List<Game>> GetGamesAsync();
+    public Task<List<Game>> GetGamesAsync(int gameType);
+    public Task<List<Game>> GetGamesAsync(int playerId, int gameType);
+    public Task<List<Game>> GetGamesAsync(int playerId, int gameType, bool isWin);
 }

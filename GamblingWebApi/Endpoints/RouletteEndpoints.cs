@@ -16,7 +16,7 @@ public static class RouletteEndpoints
 
             var userIdClaim = httpContext.User.FindFirst(ClaimTypes.NameIdentifier);
             if (userIdClaim is null)
-                return Results.Json(new RouletteGameResult(false, "Токен сессии недействителен или остутствует", 0, 0), statusCode: StatusCodes.Status400BadRequest, contentType: "application/json");
+                return Results.Json(new RouletteGameResult(false, "Токен сессии недействителен или остутствует", 0, 0), statusCode: StatusCodes.Status401Unauthorized, contentType: "application/json");
 
             int userId = int.Parse(userIdClaim.Value);
 

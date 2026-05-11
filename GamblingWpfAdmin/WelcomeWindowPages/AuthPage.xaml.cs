@@ -3,8 +3,8 @@ using System.Windows.Controls;
 using Microsoft.Extensions.DependencyInjection;
 using GamblingWpfAdmin.CaptchaAdapters;
 using GamblingWpfAdmin.Navigation;
-using BusinessLogic.Auth;
 using BusinessLogic.Captcha;
+using BusinessLogic.Account.Auth;
 
 namespace GamblingWpfAdmin.WelcomeWindowPages;
 
@@ -14,13 +14,13 @@ namespace GamblingWpfAdmin.WelcomeWindowPages;
 public partial class AuthPage : Page
 {
     private readonly INavigationService _navigationService;
-    private readonly IAccountService _accountService;
+    private readonly IAccountService _accountDataService;
     private readonly ICaptchaService _captchaService;
 
     public AuthPage(INavigationService navigationService, IAccountService accountService, [FromKeyedServices("simple")] ICaptchaService captchaService)
     {
         _navigationService = navigationService;
-        _accountService = accountService;
+        _accountDataService = accountService;
         _captchaService = captchaService;
 
         InitializeComponent();
@@ -52,7 +52,7 @@ public partial class AuthPage : Page
             return;
         }
 
-        LoginResult loginResult = await _accountService.LoginAsync(Login.Text, Password.Password, DeviceType.AdminApp, loginAsAdmin:true);
+        LoginResult loginResult = await _accountDataService.LoginAsync(Login.Text, Password.Password, DeviceType.AdminApp, loginAsAdmin:true);
         if (loginResult.Result)
         {
             MessageBox.Show("Вы вошли");

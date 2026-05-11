@@ -1,10 +1,14 @@
-﻿using BusinessLogic.Auth;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
 namespace BusinessLogic.Validation;
 
-public class EmailValidation : BaseValidation, IValidation
+public partial class EmailValidation : BaseValidation, IEmailValidation
 {
+    protected const string EMAIL_PATTERN = @"\w*@\w*\.\w{2,4}$";
+
+    [GeneratedRegex(EMAIL_PATTERN)]
+    protected static partial Regex EmailRegex();
+
     public override bool Validate(string input, out string error)
     {
         error = string.Empty;
@@ -15,7 +19,7 @@ public class EmailValidation : BaseValidation, IValidation
             return false;
         }
 
-        if (!MyRegex().IsMatch(input))
+        if (!EmailRegex().IsMatch(input))
         {
             error = "Логин должен быть настоящей электронной почтой";
             return false;

@@ -1,0 +1,3 @@
+﻿namespace DataBaseClasses.Exceptions;
+
+public class NotPossibleToDepositOrWithdrawNegativeAmountOfFundsException : DataBaseException;

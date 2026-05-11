@@ -1,4 +1,5 @@
-﻿using BusinessLogic.Auth;
+﻿using BusinessLogic.Account;
+using BusinessLogic.Account.Auth;
 using BusinessLogic.Token;
 using DataBaseClasses.Entity;
 using GamblingWpfUser.Navigation;
@@ -42,7 +43,7 @@ public sealed partial class MainWindow : Window
         string? refreshToken = await _tokenStorageService.GetTokenAsync();
         if (refreshToken != null)
         {
-            LoginResult result = await _accountService.AutoLoginAsync(refreshToken, BusinessLogic.Auth.DeviceType.Windows, null!);
+            LoginResult result = await _accountService.AutoLoginAsync(refreshToken, BusinessLogic.Account.Auth.DeviceType.Windows, null!);
 
             if (result.Result) _navigationService.NavigateTo<GamesPage>();
             else _navigationService.NavigateTo<AuthPage>();
@@ -61,14 +62,14 @@ public sealed partial class MainWindow : Window
         else
         {
             ProfileInfo.Visibility = Visibility.Visible;
-            IAccountService accountService = App.Services.GetRequiredService<IAccountService>();
-            User? user = await accountService.GetUserDataAsync(0);
+            IAccountDataService accountDataService = App.Services.GetRequiredService<IAccountDataService>();
+            User? user = await accountDataService.GetUserDataAsync(0);
             if (user != null)
             {
                 if (user.Name == null)
                 {
                     user.Name = $"ИгрокВКазино{user.Id}";
-                    await accountService.UpdateUserDataAsync(user);
+                    await accountDataService.UpdateUserDataAsync(user);
                 }
                 user.Balance ??= 0;
                 CurrentBalance = user.Balance ?? 0;
@@ -90,7 +91,7 @@ public sealed partial class MainWindow : Window
 
     public async Task Logout()
     {
-        await _accountService.LogoutAsync(string.Empty, BusinessLogic.Auth.DeviceType.Windows, null);
+        await _accountService.LogoutAsync(string.Empty, BusinessLogic.Account.Auth.DeviceType.Windows, null);
         _navigationService.NavigateTo<AuthPage>();
     }
 
