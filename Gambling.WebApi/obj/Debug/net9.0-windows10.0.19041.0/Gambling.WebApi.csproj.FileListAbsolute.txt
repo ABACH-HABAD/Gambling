@@ -74,7 +74,6 @@ E:\Разное\Разработка\Диплом\Проект\Gambling.WebApi\o
 E:\Разное\Разработка\Диплом\Проект\Gambling.WebApi\obj\Debug\net9.0-windows10.0.19041.0\staticwebassets.development.json
 E:\Разное\Разработка\Диплом\Проект\Gambling.WebApi\obj\Debug\net9.0-windows10.0.19041.0\staticwebassets.build.endpoints.json
 E:\Разное\Разработка\Диплом\Проект\Gambling.WebApi\obj\Debug\net9.0-windows10.0.19041.0\swae.build.ex.cache
-E:\Разное\Разработка\Диплом\Проект\Gambling.WebApi\obj\Debug\net9.0-windows10.0.19041.0\staticwebassets.upToDateCheck.txt
 E:\Разное\Разработка\Диплом\Проект\Gambling.WebApi\obj\Debug\net9.0-windows10.0.19041.0\Gambling.33F07105.Up2Date
 E:\Разное\Разработка\Диплом\Проект\Gambling.WebApi\obj\Debug\net9.0-windows10.0.19041.0\Gambling.WebApi.dll
 E:\Разное\Разработка\Диплом\Проект\Gambling.WebApi\obj\Debug\net9.0-windows10.0.19041.0\refint\Gambling.WebApi.dll

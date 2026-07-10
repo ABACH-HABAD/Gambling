@@ -106,3 +106,4 @@ E:\Разное\Разработка\Диплом\Проект\Gambling.Wpf.User
 E:\Разное\Разработка\Диплом\Проект\Gambling.Wpf.User\obj\Debug\net9.0-windows10.0.19041.0\Gambling.Wpf.User.pdb
 E:\Разное\Разработка\Диплом\Проект\Gambling.Wpf.User\obj\Debug\net9.0-windows10.0.19041.0\Gambling.Wpf.User.genruntimeconfig.cache
 E:\Разное\Разработка\Диплом\Проект\Gambling.Wpf.User\obj\Debug\net9.0-windows10.0.19041.0\ref\Gambling.Wpf.User.dll
+E:\Разное\Разработка\Диплом\Проект\Gambling.Wpf.User\obj\Debug\net9.0-windows10.0.19041.0\Gambling.Wpf.User.sourcelink.json

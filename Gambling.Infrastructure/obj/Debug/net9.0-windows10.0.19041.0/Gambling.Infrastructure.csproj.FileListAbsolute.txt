@@ -13,3 +13,4 @@ E:\Разное\Разработка\Диплом\Проект\Gambling.Infrastr
 E:\Разное\Разработка\Диплом\Проект\Gambling.Infrastructure\obj\Debug\net9.0-windows10.0.19041.0\refint\Gambling.Infrastructure.dll
 E:\Разное\Разработка\Диплом\Проект\Gambling.Infrastructure\obj\Debug\net9.0-windows10.0.19041.0\Gambling.Infrastructure.pdb
 E:\Разное\Разработка\Диплом\Проект\Gambling.Infrastructure\obj\Debug\net9.0-windows10.0.19041.0\ref\Gambling.Infrastructure.dll
+E:\Разное\Разработка\Диплом\Проект\Gambling.Infrastructure\obj\Debug\net9.0-windows10.0.19041.0\Gambling.Infrastructure.sourcelink.json

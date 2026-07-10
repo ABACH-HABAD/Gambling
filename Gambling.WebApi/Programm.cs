@@ -38,7 +38,7 @@ public partial class Programm
         //подготовка к запуске
         using (IServiceScope service = app.Services.CreateScope())
         {
-            ApplicationContext context = app.Services.GetRequiredService<ApplicationContext>();
+            ApplicationContext context = service.ServiceProvider.GetRequiredService<ApplicationContext>();
             context.Database.EnsureCreated();
             Console.WriteLine("Приложение успешно запущено!");
         }

@@ -16,5 +16,5 @@ E:\Разное\Разработка\Диплом\Проект\Gambling.Wpf.User
 253-1561962009
 Pages\AuthPage.xaml;Pages\GamesPage.xaml;Pages\Games\BlackjackPage.xaml;Pages\Games\RoulettePage.xaml;Pages\Games\SlotsPage.xaml;Pages\ProfilePage.xaml;Pages\RegistrationPage.xaml;Windows\AuthWindow.xaml;Windows\CardPayWindow.xaml;Windows\EmailChangeWindow.xaml;Windows\PasswordChangeWindow.xaml;
 
-False
+True
 

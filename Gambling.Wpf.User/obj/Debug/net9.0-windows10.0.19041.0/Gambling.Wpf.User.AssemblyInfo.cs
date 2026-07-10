@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Gambling.Wpf.User")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+477284fd2d38c38aa73ffbf97e3fa96dac2731d4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8becbc7400f3b847b5a6b56906ac378d4291591c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Gambling.Wpf.User")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Gambling.Wpf.User")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

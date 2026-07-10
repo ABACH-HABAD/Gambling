@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{238633F3-D745-848E-5BFE-757A8B87F269}|Gambling.WebApi\\Gambling.WebApi.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\gambling.webapi\\programm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{238633F3-D745-848E-5BFE-757A8B87F269}|Gambling.WebApi\\Gambling.WebApi.csproj|solutionrelative:gambling.webapi\\programm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{238633F3-D745-848E-5BFE-757A8B87F269}|Gambling.WebApi\\Gambling.WebApi.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\gambling.webapi\\gambling.webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{238633F3-D745-848E-5BFE-757A8B87F269}|Gambling.WebApi\\Gambling.WebApi.csproj|solutionrelative:gambling.webapi\\gambling.webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B974E43D-A22B-0290-8246-50BB42140653}|Gambling.Wpf.User\\Gambling.Wpf.User.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\gambling.wpf.user\\pages\\profilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B974E43D-A22B-0290-8246-50BB42140653}|Gambling.Wpf.User\\Gambling.Wpf.User.csproj|solutionrelative:gambling.wpf.user\\pages\\profilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -83,20 +91,12 @@
       "RelativeMoniker": "D:0:0:{238633F3-D745-848E-5BFE-757A8B87F269}|Gambling.WebApi\\Gambling.WebApi.csproj|solutionrelative:gambling.webapi\\gambling.webapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{238633F3-D745-848E-5BFE-757A8B87F269}|Gambling.WebApi\\Gambling.WebApi.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\gambling.webapi\\gambling.webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{238633F3-D745-848E-5BFE-757A8B87F269}|Gambling.WebApi\\Gambling.WebApi.csproj|solutionrelative:gambling.webapi\\gambling.webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{238633F3-D745-848E-5BFE-757A8B87F269}|Gambling.WebApi\\Gambling.WebApi.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\gambling.webapi\\gamblingwebapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
       "RelativeMoniker": "D:0:0:{238633F3-D745-848E-5BFE-757A8B87F269}|Gambling.WebApi\\Gambling.WebApi.csproj|solutionrelative:gambling.webapi\\gamblingwebapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{238633F3-D745-848E-5BFE-757A8B87F269}|Gambling.WebApi\\Gambling.WebApi.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\gambling.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{238633F3-D745-848E-5BFE-757A8B87F269}|Gambling.WebApi\\Gambling.WebApi.csproj|solutionrelative:gambling.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{238633F3-D745-848E-5BFE-757A8B87F269}|Gambling.WebApi\\Gambling.WebApi.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\gambling.webapi\\programm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{238633F3-D745-848E-5BFE-757A8B87F269}|Gambling.WebApi\\Gambling.WebApi.csproj|solutionrelative:gambling.webapi\\programm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{83E7FC8C-27BF-453F-BD3B-31B672941ADC}|Gambling.Application.Client\\Gambling.Application.Client.csproj|e:\\\u0440\u0430\u0437\u043D\u043E\u0435\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0434\u0438\u043F\u043B\u043E\u043C\\\u043F\u0440\u043E\u0435\u043A\u0442\\gambling.application.client\\services\\game\\blackjack\\clientblackjackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -924,7 +924,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -936,59 +936,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ApiClient.cs",
-              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.Application.Client\\Services\\ApiServices\\ApiClient.cs",
-              "RelativeDocumentMoniker": "Gambling.Application.Client\\Services\\ApiServices\\ApiClient.cs",
-              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.Application.Client\\Services\\ApiServices\\ApiClient.cs",
-              "RelativeToolTip": "Gambling.Application.Client\\Services\\ApiServices\\ApiClient.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAiwEgAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T07:04:15.361Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ClientBalanceService.cs",
-              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.Application.Client\\Services\\Account\\Balance\\ClientBalanceService.cs",
-              "RelativeDocumentMoniker": "Gambling.Application.Client\\Services\\Account\\Balance\\ClientBalanceService.cs",
-              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.Application.Client\\Services\\Account\\Balance\\ClientBalanceService.cs",
-              "RelativeToolTip": "Gambling.Application.Client\\Services\\Account\\Balance\\ClientBalanceService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBMAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T11:46:15.281Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserDataEndpoints.cs",
-              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.WebApi\\Endpoints\\UserDataEndpoints.cs",
-              "RelativeDocumentMoniker": "Gambling.WebApi\\Endpoints\\UserDataEndpoints.cs",
-              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.WebApi\\Endpoints\\UserDataEndpoints.cs",
-              "RelativeToolTip": "Gambling.WebApi\\Endpoints\\UserDataEndpoints.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwCMAAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T07:20:07.099Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "UserEndpoints.cs",
-              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.WebApi\\Endpoints\\UserEndpoints.cs",
-              "RelativeDocumentMoniker": "Gambling.WebApi\\Endpoints\\UserEndpoints.cs",
-              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.WebApi\\Endpoints\\UserEndpoints.cs",
-              "RelativeToolTip": "Gambling.WebApi\\Endpoints\\UserEndpoints.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T07:20:09.832Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "ChangeNameRequest.cs",
               "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.Application.Core\\Api\\Requests\\ChangeNameRequest.cs",
               "RelativeDocumentMoniker": "Gambling.Application.Core\\Api\\Requests\\ChangeNameRequest.cs",
@@ -996,25 +944,23 @@
               "RelativeToolTip": "Gambling.Application.Core\\Api\\Requests\\ChangeNameRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T16:34:04.148Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-09T16:34:04.148Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ProfilePage.xaml.cs",
               "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.Wpf.User\\Pages\\ProfilePage.xaml.cs",
               "RelativeDocumentMoniker": "Gambling.Wpf.User\\Pages\\ProfilePage.xaml.cs",
               "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.Wpf.User\\Pages\\ProfilePage.xaml.cs",
               "RelativeToolTip": "Gambling.Wpf.User\\Pages\\ProfilePage.xaml.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAowCYAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T07:42:41.862Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-10T07:42:41.862Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "ServerBalanceService.cs",
               "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.Application.Server\\Services\\Account\\Balance\\ServerBalanceService.cs",
               "RelativeDocumentMoniker": "Gambling.Application.Server\\Services\\Account\\Balance\\ServerBalanceService.cs",
@@ -1022,12 +968,11 @@
               "RelativeToolTip": "Gambling.Application.Server\\Services\\Account\\Balance\\ServerBalanceService.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAowCkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T11:30:14.388Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-10T11:30:14.388Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "ServerAccountDataService.cs",
               "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.Application.Server\\Services\\Account\\ServerAccountDataService.cs",
               "RelativeDocumentMoniker": "Gambling.Application.Server\\Services\\Account\\ServerAccountDataService.cs",
@@ -1035,12 +980,84 @@
               "RelativeToolTip": "Gambling.Application.Server\\Services\\Account\\ServerAccountDataService.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAiwCcAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T07:03:17.092Z",
+              "WhenOpened": "2026-07-10T07:03:17.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Programm.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.WebApi\\Programm.cs",
+              "RelativeDocumentMoniker": "Gambling.WebApi\\Programm.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.WebApi\\Programm.cs",
+              "RelativeToolTip": "Gambling.WebApi\\Programm.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAgwBYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T06:47:39.296Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserEndpoints.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.WebApi\\Endpoints\\UserEndpoints.cs",
+              "RelativeDocumentMoniker": "Gambling.WebApi\\Endpoints\\UserEndpoints.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.WebApi\\Endpoints\\UserEndpoints.cs",
+              "RelativeToolTip": "Gambling.WebApi\\Endpoints\\UserEndpoints.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T07:20:09.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserDataEndpoints.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.WebApi\\Endpoints\\UserDataEndpoints.cs",
+              "RelativeDocumentMoniker": "Gambling.WebApi\\Endpoints\\UserDataEndpoints.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.WebApi\\Endpoints\\UserDataEndpoints.cs",
+              "RelativeToolTip": "Gambling.WebApi\\Endpoints\\UserDataEndpoints.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCMAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T07:20:07.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Gambling.WebApi.csproj",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.WebApi\\Gambling.WebApi.csproj",
+              "RelativeDocumentMoniker": "Gambling.WebApi\\Gambling.WebApi.csproj",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.WebApi\\Gambling.WebApi.csproj",
+              "RelativeToolTip": "Gambling.WebApi\\Gambling.WebApi.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-07-09T16:01:33.39Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "ClientBalanceService.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.Application.Client\\Services\\Account\\Balance\\ClientBalanceService.cs",
+              "RelativeDocumentMoniker": "Gambling.Application.Client\\Services\\Account\\Balance\\ClientBalanceService.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.Application.Client\\Services\\Account\\Balance\\ClientBalanceService.cs",
+              "RelativeToolTip": "Gambling.Application.Client\\Services\\Account\\Balance\\ClientBalanceService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBMAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T11:46:15.281Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ApiClient.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.Application.Client\\Services\\ApiServices\\ApiClient.cs",
+              "RelativeDocumentMoniker": "Gambling.Application.Client\\Services\\ApiServices\\ApiClient.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.Application.Client\\Services\\ApiServices\\ApiClient.cs",
+              "RelativeToolTip": "Gambling.Application.Client\\Services\\ApiServices\\ApiClient.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAiwEgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T07:04:15.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "IAccountDataService.cs",
               "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.Application.Core\\Abstractions\\Profile\\IAccountDataService.cs",
               "RelativeDocumentMoniker": "Gambling.Application.Core\\Abstractions\\Profile\\IAccountDataService.cs",
@@ -1048,12 +1065,11 @@
               "RelativeToolTip": "Gambling.Application.Core\\Abstractions\\Profile\\IAccountDataService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T06:58:06.789Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-10T06:58:06.789Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "UserStatisticEndpoints.cs",
               "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.WebApi\\Endpoints\\UserStatisticEndpoints.cs",
               "RelativeDocumentMoniker": "Gambling.WebApi\\Endpoints\\UserStatisticEndpoints.cs",
@@ -1061,12 +1077,11 @@
               "RelativeToolTip": "Gambling.WebApi\\Endpoints\\UserStatisticEndpoints.cs",
               "ViewState": "AgIAAGcAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T07:20:13.433Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-10T07:20:13.433Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.Infrastructure\\Data\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "Gambling.Infrastructure\\Data\\Repositories\\UserRepository.cs",
@@ -1074,12 +1089,11 @@
               "RelativeToolTip": "Gambling.Infrastructure\\Data\\Repositories\\UserRepository.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAADwvxUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T16:26:52.144Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-09T16:26:52.144Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "ClientAccountDataService.cs",
               "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.Application.Client\\Services\\Account\\ClientAccountDataService.cs",
               "RelativeDocumentMoniker": "Gambling.Application.Client\\Services\\Account\\ClientAccountDataService.cs",
@@ -1087,20 +1101,18 @@
               "RelativeToolTip": "Gambling.Application.Client\\Services\\Account\\ClientAccountDataService.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAUwDIAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T11:49:16.076Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-10T11:49:16.076Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "ProfilePage.xaml",
               "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.Wpf.User\\Pages\\ProfilePage.xaml",
               "RelativeDocumentMoniker": "Gambling.Wpf.User\\Pages\\ProfilePage.xaml",
               "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.Wpf.User\\Pages\\ProfilePage.xaml",
               "RelativeToolTip": "Gambling.Wpf.User\\Pages\\ProfilePage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-07-10T11:51:00.544Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-10T11:51:00.544Z"
             },
             {
               "$type": "Document",
@@ -1112,12 +1124,11 @@
               "RelativeToolTip": "Gambling.Application.Client\\Services\\Game\\Blackjack\\ClientBlackjackService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T11:30:33.117Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-10T11:30:33.117Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.WebApi\\appsettings.json",
               "RelativeDocumentMoniker": "Gambling.WebApi\\appsettings.json",
@@ -1125,12 +1136,11 @@
               "RelativeToolTip": "Gambling.WebApi\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-07-10T11:32:02.055Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-10T11:32:02.055Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "AuthWindow.xaml.cs",
               "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.Wpf.User\\Windows\\AuthWindow.xaml.cs",
               "RelativeDocumentMoniker": "Gambling.Wpf.User\\Windows\\AuthWindow.xaml.cs",
@@ -1138,12 +1148,11 @@
               "RelativeToolTip": "Gambling.Wpf.User\\Windows\\AuthWindow.xaml.cs",
               "ViewState": "AgIAADwAAAAAAAAAAAAIwE8AAAByAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T16:18:56.766Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-09T16:18:56.766Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "GamblingWebApi.http",
               "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.WebApi\\GamblingWebApi.http",
               "RelativeDocumentMoniker": "Gambling.WebApi\\GamblingWebApi.http",
@@ -1151,12 +1160,11 @@
               "RelativeToolTip": "Gambling.WebApi\\GamblingWebApi.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2026-07-10T11:32:03.581Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-10T11:32:03.581Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "IApiClient.cs",
               "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.Application.Core\\Abstractions\\Api\\IApiClient.cs",
               "RelativeDocumentMoniker": "Gambling.Application.Core\\Abstractions\\Api\\IApiClient.cs",
@@ -1164,12 +1172,11 @@
               "RelativeToolTip": "Gambling.Application.Core\\Abstractions\\Api\\IApiClient.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T06:49:37.021Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-10T06:49:37.021Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "CardPayWindow.xaml.cs",
               "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.Wpf.User\\Windows\\CardPayWindow.xaml.cs",
               "RelativeDocumentMoniker": "Gambling.Wpf.User\\Windows\\CardPayWindow.xaml.cs",
@@ -1177,24 +1184,22 @@
               "RelativeToolTip": "Gambling.Wpf.User\\Windows\\CardPayWindow.xaml.cs",
               "ViewState": "AgIAADkAAAAAAAAAAAAIwEsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T11:46:39.721Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-10T11:46:39.721Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "Gambling.WebApi",
               "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.WebApi\\Gambling.WebApi.csproj",
               "RelativeDocumentMoniker": "Gambling.WebApi\\Gambling.WebApi.csproj",
               "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.WebApi\\Gambling.WebApi.csproj",
               "RelativeToolTip": "Gambling.WebApi\\Gambling.WebApi.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-07-10T11:32:28.695Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-10T11:32:28.695Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "RegistrationPage.xaml.cs",
               "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.Wpf.Admin\\Pages\\WelcomeWindowPages\\RegistrationPage.xaml.cs",
               "RelativeDocumentMoniker": "Gambling.Wpf.Admin\\Pages\\WelcomeWindowPages\\RegistrationPage.xaml.cs",
@@ -1202,12 +1207,11 @@
               "RelativeToolTip": "Gambling.Wpf.Admin\\Pages\\WelcomeWindowPages\\RegistrationPage.xaml.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAowBsAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T11:33:36.65Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-10T11:33:36.65Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "AuthPage.xaml.cs",
               "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.Wpf.Admin\\Pages\\WelcomeWindowPages\\AuthPage.xaml.cs",
               "RelativeDocumentMoniker": "Gambling.Wpf.Admin\\Pages\\WelcomeWindowPages\\AuthPage.xaml.cs",
@@ -1215,12 +1219,11 @@
               "RelativeToolTip": "Gambling.Wpf.Admin\\Pages\\WelcomeWindowPages\\AuthPage.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T11:33:06.616Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-10T11:33:06.616Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "EasyCaptchaAdapter.cs",
               "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.Wpf.Admin\\Services\\CaptchaAdapters\\EasyCaptchaAdapter.cs",
               "RelativeDocumentMoniker": "Gambling.Wpf.Admin\\Services\\CaptchaAdapters\\EasyCaptchaAdapter.cs",
@@ -1228,8 +1231,7 @@
               "RelativeToolTip": "Gambling.Wpf.Admin\\Services\\CaptchaAdapters\\EasyCaptchaAdapter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T11:34:20.795Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-10T11:34:20.795Z"
             },
             {
               "$type": "Document",
@@ -1241,21 +1243,7 @@
               "RelativeToolTip": "Gambling.Application.Server\\Services\\Account\\Balance\\PromotionalCodes\\ServerPromotionalCodeService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T11:29:56.671Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Gambling.WebApi.csproj",
-              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.WebApi\\Gambling.WebApi.csproj",
-              "RelativeDocumentMoniker": "Gambling.WebApi\\Gambling.WebApi.csproj",
-              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.WebApi\\Gambling.WebApi.csproj",
-              "RelativeToolTip": "Gambling.WebApi\\Gambling.WebApi.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-07-09T16:01:33.39Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-10T11:29:56.671Z"
             },
             {
               "$type": "Document",
@@ -1267,8 +1255,7 @@
               "RelativeToolTip": "Gambling.Application.Core\\Services\\Game\\Blackjack\\BlackjackGameService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T11:29:42.682Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-10T11:29:42.682Z"
             },
             {
               "$type": "Document",
@@ -1296,19 +1283,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Programm.cs",
-              "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.WebApi\\Programm.cs",
-              "RelativeDocumentMoniker": "Gambling.WebApi\\Programm.cs",
-              "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.WebApi\\Programm.cs",
-              "RelativeToolTip": "Gambling.WebApi\\Programm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T06:47:39.296Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 34,
               "Title": "Gambling.Application.Core.csproj",
               "DocumentMoniker": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.Application.Core\\Gambling.Application.Core.csproj",
@@ -1317,8 +1291,7 @@
               "RelativeToolTip": "Gambling.Application.Core\\Gambling.Application.Core.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-07-09T16:31:38.862Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-09T16:31:38.862Z"
             },
             {
               "$type": "Document",
@@ -1354,8 +1327,7 @@
               "RelativeToolTip": "Gambling.Infrastructure\\Gambling.Infrastructure.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-07-09T16:32:01.09Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-09T16:32:01.09Z"
             },
             {
               "$type": "Document",
@@ -1367,8 +1339,7 @@
               "RelativeToolTip": "Gambling.Infrastructure\\Data\\Repositories\\SessionRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T16:26:46.142Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-09T16:26:46.142Z"
             },
             {
               "$type": "Document",
@@ -1380,8 +1351,7 @@
               "RelativeToolTip": "Gambling.Core\\Gambling.Core.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-07-10T08:12:56.88Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-10T08:12:56.88Z"
             },
             {
               "$type": "Document",
@@ -1405,8 +1375,7 @@
               "RelativeToolTip": "Gambling.Application.Server\\Gambling.Application.Server.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-07-09T16:03:38.282Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-09T16:03:38.282Z"
             },
             {
               "$type": "Document",
@@ -1417,8 +1386,7 @@
               "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.Wpf.User\\Windows\\AuthWindow.xaml",
               "RelativeToolTip": "Gambling.Wpf.User\\Windows\\AuthWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-07-10T07:34:06.867Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-10T07:34:06.867Z"
             },
             {
               "$type": "Document",
@@ -1585,8 +1553,7 @@
               "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.Wpf.Admin\\Windows\\UserDataTableWindows\\BalanceChangeWindow.xaml",
               "RelativeToolTip": "Gambling.Wpf.Admin\\Windows\\UserDataTableWindows\\BalanceChangeWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-07-10T08:07:22.252Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-10T08:07:22.252Z"
             },
             {
               "$type": "Document",
@@ -1597,8 +1564,7 @@
               "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.Wpf.Admin\\Windows\\AuthWindow.xaml",
               "RelativeToolTip": "Gambling.Wpf.Admin\\Windows\\AuthWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-07-10T08:06:09.25Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-10T08:06:09.25Z"
             },
             {
               "$type": "Document",
@@ -1729,8 +1695,7 @@
               "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.Wpf.User\\Pages\\Games\\BlackjackPage.xaml",
               "RelativeToolTip": "Gambling.Wpf.User\\Pages\\Games\\BlackjackPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-07-10T07:43:46.612Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-10T07:43:46.612Z"
             },
             {
               "$type": "Document",
@@ -1765,8 +1730,7 @@
               "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.Wpf.User\\Pages\\RegistrationPage.xaml",
               "RelativeToolTip": "Gambling.Wpf.User\\Pages\\RegistrationPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-07-10T07:40:54.389Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-10T07:40:54.389Z"
             },
             {
               "$type": "Document",
@@ -1777,8 +1741,7 @@
               "ToolTip": "E:\\\u0420\u0430\u0437\u043D\u043E\u0435\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430\\\u0414\u0438\u043F\u043B\u043E\u043C\\\u041F\u0440\u043E\u0435\u043A\u0442\\Gambling.Wpf.User\\App.xaml",
               "RelativeToolTip": "Gambling.Wpf.User\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-07-10T07:36:13.166Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-10T07:36:13.166Z"
             },
             {
               "$type": "Document",
@@ -3290,8 +3253,7 @@
               "RelativeToolTip": "Gambling.Wpf.User\\Gambling.Wpf.User.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-07-10T06:44:25.818Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-10T06:44:25.818Z"
             },
             {
               "$type": "Document",
@@ -3303,8 +3265,7 @@
               "RelativeToolTip": "Gambling.Application.Client\\Gambling.Application.Client.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-07-09T16:34:59.14Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-09T16:34:59.14Z"
             },
             {
               "$type": "Document",
@@ -3710,8 +3671,7 @@
               "RelativeToolTip": "Gambling.Test\\Gambling.Test.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-07-09T16:01:23.9Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-09T16:01:23.9Z"
             }
           ]
         }

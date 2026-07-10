@@ -19,3 +19,4 @@ E:\Разное\Разработка\Диплом\Проект\Gambling.Applicat
 E:\Разное\Разработка\Диплом\Проект\Gambling.Application.Client\obj\Debug\net9.0-windows10.0.19041.0\refint\Gambling.Application.Client.dll
 E:\Разное\Разработка\Диплом\Проект\Gambling.Application.Client\obj\Debug\net9.0-windows10.0.19041.0\Gambling.Application.Client.pdb
 E:\Разное\Разработка\Диплом\Проект\Gambling.Application.Client\obj\Debug\net9.0-windows10.0.19041.0\ref\Gambling.Application.Client.dll
+E:\Разное\Разработка\Диплом\Проект\Gambling.Application.Client\obj\Debug\net9.0-windows10.0.19041.0\Gambling.Application.Client.sourcelink.json
