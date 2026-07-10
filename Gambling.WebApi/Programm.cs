@@ -1,4 +1,5 @@
-﻿using Gambling.WebApi.Classes;
+﻿using Gambling.Infrastructure.Data;
+using Gambling.WebApi.Classes;
 using Gambling.WebApi.Endpoints;
 using Gambling.WebApi.Middleware;
 
@@ -35,7 +36,12 @@ public partial class Programm
         app.MapRouletteEndpoints();
 
         //подготовка к запуске
-        Console.WriteLine("Приложение успешно запущено!");
+        using (IServiceScope service = app.Services.CreateScope())
+        {
+            ApplicationContext context = app.Services.GetRequiredService<ApplicationContext>();
+            context.Database.EnsureCreated();
+            Console.WriteLine("Приложение успешно запущено!");
+        }
 
         //запуск
         app.Run();

@@ -81,3 +81,4 @@ E:\Разное\Разработка\Диплом\Проект\Gambling.WebApi\o
 E:\Разное\Разработка\Диплом\Проект\Gambling.WebApi\obj\Debug\net9.0-windows10.0.19041.0\Gambling.WebApi.pdb
 E:\Разное\Разработка\Диплом\Проект\Gambling.WebApi\obj\Debug\net9.0-windows10.0.19041.0\Gambling.WebApi.genruntimeconfig.cache
 E:\Разное\Разработка\Диплом\Проект\Gambling.WebApi\obj\Debug\net9.0-windows10.0.19041.0\ref\Gambling.WebApi.dll
+E:\Разное\Разработка\Диплом\Проект\Gambling.WebApi\obj\Debug\net9.0-windows10.0.19041.0\Gambling.WebApi.sourcelink.json
