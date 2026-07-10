@@ -1,0 +1,15 @@
+E:\Разное\Разработка\Диплом\Проект\Gambling.Infrastructure\obj\Debug\net9.0-windows10.0.19041.0\Gambling.Infrastructure.csproj.AssemblyReference.cache
+E:\Разное\Разработка\Диплом\Проект\Gambling.Infrastructure\obj\Debug\net9.0-windows10.0.19041.0\Gambling.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\Разное\Разработка\Диплом\Проект\Gambling.Infrastructure\obj\Debug\net9.0-windows10.0.19041.0\Gambling.Infrastructure.AssemblyInfoInputs.cache
+E:\Разное\Разработка\Диплом\Проект\Gambling.Infrastructure\obj\Debug\net9.0-windows10.0.19041.0\Gambling.Infrastructure.AssemblyInfo.cs
+E:\Разное\Разработка\Диплом\Проект\Gambling.Infrastructure\obj\Debug\net9.0-windows10.0.19041.0\Gambling.Infrastructure.csproj.CoreCompileInputs.cache
+E:\Разное\Разработка\Диплом\Проект\Gambling.Infrastructure\bin\Debug\net9.0-windows10.0.19041.0\Gambling.Infrastructure.deps.json
+E:\Разное\Разработка\Диплом\Проект\Gambling.Infrastructure\bin\Debug\net9.0-windows10.0.19041.0\Gambling.Infrastructure.dll
+E:\Разное\Разработка\Диплом\Проект\Gambling.Infrastructure\bin\Debug\net9.0-windows10.0.19041.0\Gambling.Infrastructure.pdb
+E:\Разное\Разработка\Диплом\Проект\Gambling.Infrastructure\bin\Debug\net9.0-windows10.0.19041.0\Gambling.Core.dll
+E:\Разное\Разработка\Диплом\Проект\Gambling.Infrastructure\bin\Debug\net9.0-windows10.0.19041.0\Gambling.Core.pdb
+E:\Разное\Разработка\Диплом\Проект\Gambling.Infrastructure\obj\Debug\net9.0-windows10.0.19041.0\Gambling.F2D26980.Up2Date
+E:\Разное\Разработка\Диплом\Проект\Gambling.Infrastructure\obj\Debug\net9.0-windows10.0.19041.0\Gambling.Infrastructure.dll
+E:\Разное\Разработка\Диплом\Проект\Gambling.Infrastructure\obj\Debug\net9.0-windows10.0.19041.0\refint\Gambling.Infrastructure.dll
+E:\Разное\Разработка\Диплом\Проект\Gambling.Infrastructure\obj\Debug\net9.0-windows10.0.19041.0\Gambling.Infrastructure.pdb
+E:\Разное\Разработка\Диплом\Проект\Gambling.Infrastructure\obj\Debug\net9.0-windows10.0.19041.0\ref\Gambling.Infrastructure.dll

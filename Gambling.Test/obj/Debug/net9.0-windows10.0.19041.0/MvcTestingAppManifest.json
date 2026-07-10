@@ -1,0 +1,8 @@
+{
+  "Gambling.Application.Client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "E:\\Разное\\Разработка\\Диплом\\Проект\\Gambling.Application.Client",
+  "Gambling.Application.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "E:\\Разное\\Разработка\\Диплом\\Проект\\Gambling.Application.Core",
+  "Gambling.Application.Server, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "E:\\Разное\\Разработка\\Диплом\\Проект\\Gambling.Application.Server",
+  "Gambling.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "E:\\Разное\\Разработка\\Диплом\\Проект\\Gambling.Core",
+  "Gambling.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "E:\\Разное\\Разработка\\Диплом\\Проект\\Gambling.Infrastructure",
+  "Gambling.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "E:\\Разное\\Разработка\\Диплом\\Проект\\Gambling.WebApi"
+}

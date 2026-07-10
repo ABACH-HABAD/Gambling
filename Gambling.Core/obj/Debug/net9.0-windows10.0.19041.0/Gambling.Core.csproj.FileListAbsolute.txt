@@ -1,0 +1,11 @@
+E:\Разное\Разработка\Диплом\Проект\Gambling.Core\bin\Debug\net9.0-windows10.0.19041.0\Gambling.Core.deps.json
+E:\Разное\Разработка\Диплом\Проект\Gambling.Core\bin\Debug\net9.0-windows10.0.19041.0\Gambling.Core.dll
+E:\Разное\Разработка\Диплом\Проект\Gambling.Core\bin\Debug\net9.0-windows10.0.19041.0\Gambling.Core.pdb
+E:\Разное\Разработка\Диплом\Проект\Gambling.Core\obj\Debug\net9.0-windows10.0.19041.0\Gambling.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\Разное\Разработка\Диплом\Проект\Gambling.Core\obj\Debug\net9.0-windows10.0.19041.0\Gambling.Core.AssemblyInfoInputs.cache
+E:\Разное\Разработка\Диплом\Проект\Gambling.Core\obj\Debug\net9.0-windows10.0.19041.0\Gambling.Core.AssemblyInfo.cs
+E:\Разное\Разработка\Диплом\Проект\Gambling.Core\obj\Debug\net9.0-windows10.0.19041.0\Gambling.Core.csproj.CoreCompileInputs.cache
+E:\Разное\Разработка\Диплом\Проект\Gambling.Core\obj\Debug\net9.0-windows10.0.19041.0\Gambling.Core.dll
+E:\Разное\Разработка\Диплом\Проект\Gambling.Core\obj\Debug\net9.0-windows10.0.19041.0\refint\Gambling.Core.dll
+E:\Разное\Разработка\Диплом\Проект\Gambling.Core\obj\Debug\net9.0-windows10.0.19041.0\Gambling.Core.pdb
+E:\Разное\Разработка\Диплом\Проект\Gambling.Core\obj\Debug\net9.0-windows10.0.19041.0\ref\Gambling.Core.dll

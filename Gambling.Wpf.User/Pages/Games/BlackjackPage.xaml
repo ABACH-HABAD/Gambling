@@ -1,0 +1,214 @@
+﻿<Page x:Class="Gambling.Wpf.User.Pages.Games.BlackjackPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Gambling.Wpf.User.Pages.Games"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Блэкджек"
+      Loaded="Page_Loaded">
+    <Page.Resources>
+        <Style TargetType="TextBlock" x:Name="RouletteTextBlock">
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="20"/>
+        </Style>
+        <Style TargetType="Button" x:Name="BlackjackButton" BasedOn="{StaticResource BetButton}">
+            <Setter Property="FontSize" Value="30"/>
+            <Style.Triggers>
+                <Trigger Property="IsEnabled" Value="True">
+                    <Setter Property="Background" Value="Red"/>
+                    <Setter Property="Foreground" Value="Yellow"/>
+                </Trigger>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="Background" Value="#FF775050"/>
+                    <Setter Property="Foreground" Value="#FF989860"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Page.Resources>
+    <Page.Background>
+        <ImageBrush ImageSource="/Resources/Images/Blackjack/bg-b.png"/>
+    </Page.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="14*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" x:Name="CurrentBet" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Grid Grid.Row="1" Margin="40">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="8*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" VerticalAlignment="Bottom">
+                    Карты противника:
+                    </TextBlock>
+                    <TextBlock Grid.Column="1" x:Name="EnemyScorce" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                    Очки
+                    </TextBlock>
+                </Grid>
+                <ItemsControl Grid.Row="1" x:Name="EnemyCardCollection">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel Orientation="Horizontal"/>
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border
+                            MinWidth="100"
+                            MaxWidth="500"
+                            Background="White"
+                            BorderBrush="{Binding DisplayColorBrush}"
+                            BorderThickness="3"
+                            CornerRadius="15"
+                            Margin="3"
+                            Padding="3" 
+                            Loaded="Card_Loaded"
+                            DataContext="{Binding}">
+                                <TextBlock 
+                                FontWeight="Bold"
+                                FontSize="25"
+                                Foreground="{Binding DisplayColorBrush}"
+                                Text="{Binding DisplayCard}" 
+                                HorizontalAlignment="Center" 
+                                VerticalAlignment="Center"
+                                Loaded="Card_Loaded"
+                                DataContext="{Binding}">
+                                </TextBlock>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="8*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" VerticalAlignment="Bottom">
+                   Ваши карты:
+                    </TextBlock>
+                    <TextBlock Grid.Column="1" x:Name="YourScorce" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                    Очки
+                    </TextBlock>
+                </Grid>
+                <ItemsControl Grid.Row="1" x:Name="YourCardCollection">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel Orientation="Horizontal"/>
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border
+                            MinWidth="100"
+                            MaxWidth="500"
+                            Background="White"
+                            BorderBrush="{Binding DisplayColorBrush}"
+                            BorderThickness="3"
+                            CornerRadius="15"
+                            Margin="3"
+                            Padding="3" 
+                            Loaded="Card_Loaded"
+                            DataContext="{Binding}">
+                                <TextBlock 
+                                FontWeight="Bold"
+                                FontSize="25"
+                                Foreground="{Binding DisplayColorBrush}"
+                                Text="{Binding DisplayCard}" 
+                                HorizontalAlignment="Center" 
+                                VerticalAlignment="Center"
+                                Loaded="Card_Loaded"
+                                DataContext="{Binding}">
+                                </TextBlock>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </Grid>
+        </Grid>
+        <Grid x:Name="MovesButtons" Grid.Row="2" Margin="25" Visibility="Collapsed">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Margin="10" Style="{StaticResource BetButton}" Grid.Column="0" Content="Взять карту" Name="TakeCard" Click="TakeCard_Click"/>
+            <Button Margin="10" Style="{StaticResource BetButton}" Grid.Column="1" Content="Не брать" Name="Pass" Click="Pass_Click"/>
+            <Button Margin="10" Style="{StaticResource BetButton}" Grid.Column="2" Content="Удвоить ставку" Name="TakeDouble" Click="TakeDouble_Click"/>
+        </Grid>
+        <Grid x:Name="BetButtons" Grid.Row="2" Margin="25" Visibility="Visible">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="6*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="15*"/>
+                        <ColumnDefinition Width="15*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock 
+                    Grid.Column="0" 
+                    HorizontalAlignment="Right" 
+                    VerticalAlignment="Center" Margin="0,0,5,0">
+                    Поставлено:
+                    </TextBlock>
+                    <TextBox 
+                    Background="#FF0E3A6C"
+                    BorderBrush="#FF021332"
+                    Foreground="White"
+                    x:Name="Bid" 
+                    FontSize="20"
+                    Grid.Column="1" 
+                    VerticalContentAlignment="Center"
+                    Margin="5,0,5,0"/>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button Style="{StaticResource BetButton}" Grid.Column="0" Content="100" Name="Bet100" Click="Bet100_Click"/>
+                    <Button Style="{StaticResource BetButton}" Grid.Column="1" Content="500" Name="Bet500" Click="Bet500_Click"/>
+                    <Button Style="{StaticResource BetButton}" Grid.Column="2" Content="1000" Name="Bet1000" Click="Bet1000_Click"/>
+                    <Button Style="{StaticResource BetButton}" Grid.Column="3" Content="1/2 Bet" Name="HalfBet" Click="HalfBet_Click"/>
+                    <Button Style="{StaticResource BetButton}" Grid.Column="4" Content="MAXBET" Name="MaxBet" Click="MaxBet_Click"/>
+                    <Button Style="{StaticResource BetButton}" Grid.Column="5" Content="Сброс" Name="DropBet" Click="DropBet_Click"/>
+                </Grid>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Button Style="{StaticResource BetButton}" Grid.Column="5" Content="Играть" Name="Play" Click="Play_Click"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

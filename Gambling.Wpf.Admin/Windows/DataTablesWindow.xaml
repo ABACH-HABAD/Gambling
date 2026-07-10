@@ -1,0 +1,257 @@
+﻿<Window x:Class="Gambling.Wpf.Admin.Windows.DataTablesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gambling.Wpf.Admin.Windows"
+        mc:Ignorable="d"
+        Loaded="OnLoaded"
+        Title="Окно админа" Height="900" Width="1500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="12*"/>
+        </Grid.RowDefinitions>
+        <Grid x:Name="Header" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Horizontal" Margin="5" Grid.Column="0">
+                <Button FontSize="20" Style="{StaticResource DataTableButton}" Content="Обновить данные" Name="UpdateDataButton" Click="UpdateDataButton_Click"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="5" Grid.Column="1" HorizontalAlignment="Right">
+                <TextBlock FontSize="20" VerticalAlignment="Center" Margin="5">
+                    Сейчас в аккаунте Администратор:
+                </TextBlock>
+                <TextBlock x:Name="AdminName" FontSize="20" VerticalAlignment="Center" Margin="5"/>
+                <Button FontSize="20" Style="{StaticResource DataTableButton}" Content="Выйти из акканута" Name="LogoutButton" Click="LogoutButton_Click"/>
+            </StackPanel>
+        </Grid>
+        <TabControl Grid.Row="1">
+            <TabItem Header="Пользователи">
+                <DataGrid
+                    Name="UsersDataGrid"
+                    Style="{StaticResource UserDataGridStyle}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn 
+                                    Header="Id" 
+                                    Binding="{Binding Id}"/>
+                        <DataGridTextColumn 
+                                    Header="Почта" 
+                                    Binding="{Binding Email}"/>
+                        <DataGridTextColumn 
+                                    Header="Имя" 
+                                    Binding="{Binding Name}"/>
+                        <DataGridTextColumn 
+                                    Header="Роль" 
+                                    Binding="{Binding DisplayRole}"/>
+                        <DataGridTextColumn 
+                                    Header="Статус" 
+                                    Binding="{Binding DisplayIsBlocked}"/>
+                        <DataGridTextColumn 
+                                    Header="Баланс" 
+                                    Binding="{Binding Balance}"/>
+                        <DataGridTextColumn 
+                                    Header="Коефициент" 
+                                    Binding="{Binding Coefficient}"/>
+                        <DataGridTextColumn 
+                                    Header="Шанс победы" 
+                                    Binding="{Binding WinCount}"/>
+                        <DataGridTextColumn 
+                                    Header="Выиграно средств" 
+                                    Binding="{Binding WinBalance}"/>
+                        <DataGridTextColumn 
+                                    Header="Проиграно средств" 
+                                    Binding="{Binding LossBalance}"/>
+                        <DataGridTemplateColumn Header="Статистика">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button 
+                                        x:Name="UserStatisticsButton"
+                                        Content="Посмотреть статистику" 
+                                        Style="{StaticResource DataTableButton}"
+                                        Click="UserStatisticsButton_Click">
+                                    </Button>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn Header="Заблокировать">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button 
+                                        Content="{Binding DisplayIsBlockingAction}" 
+                                        Style="{StaticResource DataTableButton}"
+                                        Click="BanButton_Click">
+                                    </Button>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn Header="Пополнить баланс">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button 
+                                        Content="Редактировать" 
+                                        Style="{StaticResource DataTableButton}"
+                                        Click="AddToBalanceButton_Click">
+                                    </Button>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn Header="Сменить роль">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button 
+                                        Content="Сменить роль" 
+                                        Style="{StaticResource DataTableButton}"
+                                        Click="ChangeRoleButton_Click">
+                                    </Button>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn Header="Сбросить пароль">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button 
+                                        Content="Сброс" 
+                                        Style="{StaticResource DataTableButton}"
+                                        Click="ClearPasswordButton_Click">
+                                    </Button>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+            <TabItem Header="Игры">
+                <DataGrid
+                    Name="GamesDataGrid"
+                    Style="{StaticResource GamesDataGridStyle}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn 
+                                    Header="Id" 
+                                    Binding="{Binding Id}"/>
+                        <DataGridTextColumn 
+                                    Header="Тип игры" 
+                                    Binding="{Binding DisplayGameType}"/>
+                        <DataGridTextColumn 
+                                    Header="Ставка" 
+                                    Binding="{Binding Bet}"/>
+                        <DataGridTextColumn 
+                                    Header="Итог" 
+                                    Binding="{Binding DisplayIsWin}"/>
+                        <DataGridTextColumn 
+                                    Header="Выигрыш" 
+                                    Binding="{Binding WinAmount}"/>
+                        <DataGridTextColumn 
+                                    Header="ID Игрока" 
+                                    Binding="{Binding PlayerId}"/>
+                        <DataGridTemplateColumn Header="Данные игрока">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button x:Name="LookPlayerDataButton" Click="LookPlayerDataButton_Click" Content="Посмотреть" Style="{StaticResource DataTableButton}"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+            <TabItem Header="Сессии">
+                <DataGrid
+                    Name="SessionsDataGrid"
+                    Style="{StaticResource SessionsDataGridStyle}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn 
+                                    Header="Id" 
+                                    Binding="{Binding Id}"/>
+                        <DataGridTextColumn 
+                                    Header="Время входа" 
+                                    Binding="{Binding Time}"/>
+                        <DataGridTextColumn 
+                                    Header="Тип устройства" 
+                                    Binding="{Binding DisplayDeviceType}"/>
+                        <DataGridTextColumn 
+                                    Header="IP адрес" 
+                                    Binding="{Binding Ip}"/>
+                        <DataGridTextColumn 
+                                    Header="Статус" 
+                                    Binding="{Binding DisplayIsComplete}"/>
+                        <DataGridTextColumn 
+                                    Header="Id пользователя" 
+                                    Binding="{Binding UserId}"/>
+                        <DataGridTemplateColumn Header="Данные пользователя">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button x:Name="LookUserDataButton" Click="LookUserDataButton_Click" Content="Посмотреть" Style="{StaticResource DataTableButton}"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+            <TabItem Header="Промокоды">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="7*"/>
+                        <RowDefinition Height="101*"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Horizontal" Margin="5" Grid.Row="0">
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
+                            Добавить промокод
+                        </TextBlock>
+                        <TextBox Name="PromocodeText" Margin="5,0,5,0" VerticalAlignment="Center" Width="200"/>
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
+                            Количество использованный
+                        </TextBlock>
+                        <TextBox Name="UsesCountText" Margin="5,0,5,0" VerticalAlignment="Center" Width="75"/>
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
+                            Процентный бонус
+                        </TextBlock>
+                        <TextBox Name="IntersentBonusText" Margin="5,0,5,0" VerticalAlignment="Center" Width="75"/>
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
+                              Количественный бонус
+                        </TextBlock>
+                        <TextBox Name="QuantivativeBonusText" Margin="5,0,5,0" VerticalAlignment="Center" Width="75"/>
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
+                             Бонусные игры
+                        </TextBlock>
+                        <TextBox Name="FreespinsText" Margin="5,0,5,0" VerticalAlignment="Center" Width="75"/>
+                        <Button Style="{StaticResource DataTableButton}" x:Name="AddPromocode" Content="Добавить" VerticalAlignment="Center" Click="AddPromocode_Click"/>
+                    </StackPanel>
+                    <DataGrid
+                        Grid.Row="1"
+                    Name="PromocodesDataGrid"
+                    Style="{StaticResource PromocodesDataGridStyle}">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn 
+                                    Header="Id" 
+                                    Binding="{Binding Id}"/>
+                            <DataGridTextColumn 
+                                    Header="Код" 
+                                    Binding="{Binding Code}"/>
+                            <DataGridTextColumn 
+                                    Header="% Бонус к пополнению" 
+                                    Binding="{Binding InterestBonus}"/>
+                            <DataGridTextColumn 
+                                    Header="Бесплатный баланс" 
+                                    Binding="{Binding QuantitativeBonus}"/>
+                            <DataGridTextColumn 
+                                    Header="Бонусные игры" 
+                                    Binding="{Binding FreeSpins}"/>
+                            <DataGridTextColumn 
+                                    Header="Количество использованний" 
+                                    Binding="{Binding Use}"/>
+                            <DataGridTemplateColumn Header="Активировавшие пользователи">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Button x:Name="CheckUsesButton" Content="Посмотреть" Click="CheckUsesButton_Click" Style="{StaticResource DataTableButton}"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

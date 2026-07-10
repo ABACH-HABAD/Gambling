@@ -1,0 +1,59 @@
+﻿<Window x:Class="Gambling.Wpf.Admin.Windows.UserDataTableWindows.PromocodeActivatesViewerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gambling.Wpf.Admin.Windows.UserDataTableWindows"
+        mc:Ignorable="d"
+        Title="Пользователи, активировавшие промокод" 
+        Height="450" Width="800"
+        ResizeMode="CanMinimize">
+    <Grid>
+        <DataGrid x:Name="UsersDataGrid" Style="{StaticResource UserDataGridStyle}">
+            <DataGrid.Columns>
+                <DataGridTextColumn 
+                                    Header="Id" 
+                                    Binding="{Binding Id}"/>
+                <DataGridTextColumn 
+                                    Header="Почта" 
+                                    Binding="{Binding Email}"/>
+                <DataGridTextColumn 
+                                    Header="Имя" 
+                                    Binding="{Binding Name}"/>
+                <DataGridTextColumn 
+                                    Header="Роль" 
+                                    Binding="{Binding DisplayRole}"/>
+                <DataGridTextColumn 
+                                    Header="Статус" 
+                                    Binding="{Binding DisplayIsBlocked}"/>
+                <DataGridTextColumn 
+                                    Header="Баланс" 
+                                    Binding="{Binding Balance}"/>
+                <DataGridTextColumn 
+                                    Header="Коефициент" 
+                                    Binding="{Binding Coefficient}"/>
+                <DataGridTextColumn 
+                                    Header="Шанс победы" 
+                                    Binding="{Binding WinCount}"/>
+                <DataGridTextColumn 
+                                    Header="Выиграно средств" 
+                                    Binding="{Binding WinBalance}"/>
+                <DataGridTextColumn 
+                                    Header="Проиграно средств" 
+                                    Binding="{Binding LossBalance}"/>
+                <DataGridTemplateColumn Header="Статистика">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button 
+                                        Content="Посмотреть статистику" 
+                                Name="CheckStatistics"
+                                        Style="{StaticResource DataTableButton}"
+                                        Click="CheckStatistics_Click">
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

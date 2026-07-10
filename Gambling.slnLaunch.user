@@ -3,11 +3,11 @@
     "Name": "Админ",
     "Projects": [
       {
-        "Path": "GamblingWebApi\\GamblingWebApi.csproj",
+        "Path": "Gambling.WebApi\\Gambling.WebApi.csproj",
         "Action": "Start"
       },
       {
-        "Path": "GamblingWpfAdmin\\GamblingWpfAdmin.csproj",
+        "Path": "Gambling.Wpf.Admin\\Gambling.Wpf.Admin.csproj",
         "Action": "Start"
       }
     ]
@@ -16,11 +16,11 @@
     "Name": "Пользователь",
     "Projects": [
       {
-        "Path": "GamblingWebApi\\GamblingWebApi.csproj",
+        "Path": "Gambling.WebApi\\Gambling.WebApi.csproj",
         "Action": "Start"
       },
       {
-        "Path": "GamblingWpfUser\\GamblingWpfUser.csproj",
+        "Path": "Gambling.Wpf.User\\Gambling.Wpf.User.csproj",
         "Action": "Start"
       }
     ]

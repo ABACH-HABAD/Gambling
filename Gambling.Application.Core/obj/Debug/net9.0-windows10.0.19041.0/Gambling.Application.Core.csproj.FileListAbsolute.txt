@@ -1,0 +1,17 @@
+E:\Разное\Разработка\Диплом\Проект\Gambling.Application.Core\obj\Debug\net9.0-windows10.0.19041.0\Gambling.Application.Core.csproj.AssemblyReference.cache
+E:\Разное\Разработка\Диплом\Проект\Gambling.Application.Core\obj\Debug\net9.0-windows10.0.19041.0\Gambling.Application.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\Разное\Разработка\Диплом\Проект\Gambling.Application.Core\obj\Debug\net9.0-windows10.0.19041.0\Gambling.Application.Core.AssemblyInfoInputs.cache
+E:\Разное\Разработка\Диплом\Проект\Gambling.Application.Core\obj\Debug\net9.0-windows10.0.19041.0\Gambling.Application.Core.AssemblyInfo.cs
+E:\Разное\Разработка\Диплом\Проект\Gambling.Application.Core\obj\Debug\net9.0-windows10.0.19041.0\Gambling.Application.Core.csproj.CoreCompileInputs.cache
+E:\Разное\Разработка\Диплом\Проект\Gambling.Application.Core\bin\Debug\net9.0-windows10.0.19041.0\Gambling.Application.Core.deps.json
+E:\Разное\Разработка\Диплом\Проект\Gambling.Application.Core\bin\Debug\net9.0-windows10.0.19041.0\Gambling.Application.Core.dll
+E:\Разное\Разработка\Диплом\Проект\Gambling.Application.Core\bin\Debug\net9.0-windows10.0.19041.0\Gambling.Application.Core.pdb
+E:\Разное\Разработка\Диплом\Проект\Gambling.Application.Core\bin\Debug\net9.0-windows10.0.19041.0\Gambling.Core.dll
+E:\Разное\Разработка\Диплом\Проект\Gambling.Application.Core\bin\Debug\net9.0-windows10.0.19041.0\Gambling.Infrastructure.dll
+E:\Разное\Разработка\Диплом\Проект\Gambling.Application.Core\bin\Debug\net9.0-windows10.0.19041.0\Gambling.Core.pdb
+E:\Разное\Разработка\Диплом\Проект\Gambling.Application.Core\bin\Debug\net9.0-windows10.0.19041.0\Gambling.Infrastructure.pdb
+E:\Разное\Разработка\Диплом\Проект\Gambling.Application.Core\obj\Debug\net9.0-windows10.0.19041.0\Gambling.3A7D4364.Up2Date
+E:\Разное\Разработка\Диплом\Проект\Gambling.Application.Core\obj\Debug\net9.0-windows10.0.19041.0\Gambling.Application.Core.dll
+E:\Разное\Разработка\Диплом\Проект\Gambling.Application.Core\obj\Debug\net9.0-windows10.0.19041.0\refint\Gambling.Application.Core.dll
+E:\Разное\Разработка\Диплом\Проект\Gambling.Application.Core\obj\Debug\net9.0-windows10.0.19041.0\Gambling.Application.Core.pdb
+E:\Разное\Разработка\Диплом\Проект\Gambling.Application.Core\obj\Debug\net9.0-windows10.0.19041.0\ref\Gambling.Application.Core.dll
