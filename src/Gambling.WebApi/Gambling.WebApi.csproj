@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+	  <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <StartupObject>Gambling.WebApi.Programm</StartupObject>
+    <ApplicationIcon>Resources\Images\favico.ico</ApplicationIcon>
+    <UserSecretsId>5e18ba49-1bf6-44c1-bad6-17fd1db84099</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Images\favico.png" />
+    <None Remove="Resources\Images\favicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\Images\favico.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.15" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.14" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.23.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gambling.Application.Server\Gambling.Application.Server.csproj" />
+    <ProjectReference Include="..\Gambling.Core\Gambling.Core.csproj" />
+    <ProjectReference Include="..\Gambling.Infrastructure\Gambling.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Images\favico.png" />
+  </ItemGroup>
+
+</Project>

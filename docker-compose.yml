@@ -1,0 +1,55 @@
+﻿name: gambling
+
+services:
+    mysql:
+        image: mysql:8.0
+        container_name: mysql
+        restart: always
+        build:
+            context: .
+            dockerfile: Dockerfile
+        environment:
+            MYSQL_DATABASE: gambling
+            MYSQL_ROOT_PASSWORD: root_secure_password
+            MYSQL_USER: user
+            MYSQL_PASSWORD: 123456789
+        ports:  
+            - "3308:3306"
+        volumes:
+            - ./docker/mysql/init-scripts/01-init.sql:/docker-entrypoint-initdb.d/init.sql
+            - mysql_data:/var/lib/mysql
+        healthcheck:
+            test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p$$MYSQL_ROOT_PASSWORD"]
+            interval: 10s
+            timeout: 5s
+            retries: 20
+            start_period: 30s
+        networks:
+            - gambling_network
+
+    app:
+        image: gambling.webapi
+        container_name: gambling_webapi
+        restart: always
+        build:
+            context: .
+            dockerfile: src/Gambling.WebApi/Dockerfile
+        ports:
+            - "5000:8080"
+        environment:
+            - ConnectionStrings__DefaultConnection=Server=mysql;Port=3306;Database=gambling;User=user;Password=123456789;
+            - ASPNETCORE_ENVIRONMENT=Production
+            - ASPNETCORE_URLS=http://+:8080
+            - ASPNETCORE_HTTP_PORT=8080
+        depends_on:
+            mysql:
+                condition: service_healthy
+        networks:
+            - gambling_network
+
+volumes:
+     mysql_data:
+
+networks:
+    gambling_network:
+        driver: bridge

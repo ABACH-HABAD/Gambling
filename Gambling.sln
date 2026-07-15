@@ -3,23 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
 VisualStudioVersion = 18.3.11408.92
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gambling.Application.Server", "Gambling.Application.Server\Gambling.Application.Server.csproj", "{01E30B25-F83B-04BE-47BF-65C6F329008E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gambling.Application.Server", "src\Gambling.Application.Server\Gambling.Application.Server.csproj", "{01E30B25-F83B-04BE-47BF-65C6F329008E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gambling.Infrastructure", "Gambling.Infrastructure\Gambling.Infrastructure.csproj", "{F83C93C5-E806-114E-B88A-4875F1422B5E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gambling.Infrastructure", "src\Gambling.Infrastructure\Gambling.Infrastructure.csproj", "{F83C93C5-E806-114E-B88A-4875F1422B5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gambling.WebApi", "Gambling.WebApi\Gambling.WebApi.csproj", "{238633F3-D745-848E-5BFE-757A8B87F269}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gambling.WebApi", "src\Gambling.WebApi\Gambling.WebApi.csproj", "{238633F3-D745-848E-5BFE-757A8B87F269}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gambling.Test", "Gambling.Test\Gambling.Test.csproj", "{C393C39E-434B-21C1-6C56-7AC4E694B8B1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gambling.Test", "src\Gambling.Test\Gambling.Test.csproj", "{C393C39E-434B-21C1-6C56-7AC4E694B8B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gambling.Wpf.User", "Gambling.Wpf.User\Gambling.Wpf.User.csproj", "{B974E43D-A22B-0290-8246-50BB42140653}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gambling.Wpf.User", "src\Gambling.Wpf.User\Gambling.Wpf.User.csproj", "{B974E43D-A22B-0290-8246-50BB42140653}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gambling.Wpf.Admin", "Gambling.Wpf.Admin\Gambling.Wpf.Admin.csproj", "{C9AADD97-908B-BA30-94F9-A95132021A59}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gambling.Wpf.Admin", "src\Gambling.Wpf.Admin\Gambling.Wpf.Admin.csproj", "{C9AADD97-908B-BA30-94F9-A95132021A59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gambling.Core", "Gambling.Core\Gambling.Core.csproj", "{2D354297-0E29-49AE-B69A-9BBF5375CDC1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gambling.Core", "src\Gambling.Core\Gambling.Core.csproj", "{2D354297-0E29-49AE-B69A-9BBF5375CDC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gambling.Application.Client", "Gambling.Application.Client\Gambling.Application.Client.csproj", "{83E7FC8C-27BF-453F-BD3B-31B672941ADC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gambling.Application.Client", "src\Gambling.Application.Client\Gambling.Application.Client.csproj", "{83E7FC8C-27BF-453F-BD3B-31B672941ADC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gambling.Application.Core", "Gambling.Application.Core\Gambling.Application.Core.csproj", "{071B4356-944B-4716-A14E-40B80EF2CDB5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gambling.Application.Core", "src\Gambling.Application.Core\Gambling.Application.Core.csproj", "{071B4356-944B-4716-A14E-40B80EF2CDB5}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{81DDED9D-158B-E303-5F62-77A2896D2A5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{071B4356-944B-4716-A14E-40B80EF2CDB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{071B4356-944B-4716-A14E-40B80EF2CDB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{071B4356-944B-4716-A14E-40B80EF2CDB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
