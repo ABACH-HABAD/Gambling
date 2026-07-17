@@ -36,6 +36,7 @@ using Gambling.Application.Server.Services.Account.Profile.Statistics;
 using Gambling.Application.Server.Services.Account.Auth;
 using Gambling.Application.Server.Services.Game.Slots;
 using Gambling.Application.Server.Services.Account.Auth.Sessions;
+using Gambling.Application.Client.Services.Encryption;
 
 namespace Gambling.Test;
 

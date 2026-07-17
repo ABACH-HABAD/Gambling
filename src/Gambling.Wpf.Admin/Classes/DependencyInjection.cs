@@ -28,6 +28,7 @@ using Gambling.Wpf.Admin.Services.Navigations;
 using Gambling.Wpf.Admin.WelcomeWindowPages;
 using Gambling.Wpf.Admin.Windows;
 using Gambling.Wpf.Admin.Windows.UserDataTableWindows;
+using Gambling.Application.Client.Services.Encryption;
 
 namespace Gambling.Wpf.Admin.Classes;
 

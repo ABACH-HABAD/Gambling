@@ -2,7 +2,7 @@
 using System.Text;
 using Gambling.Application.Core.Abstractions.Encryptions;
 
-namespace Gambling.Application.Core.Services.Encryption;
+namespace Gambling.Application.Client.Services.Encryption;
 
 public class EncryptionService : IEncryption
 {

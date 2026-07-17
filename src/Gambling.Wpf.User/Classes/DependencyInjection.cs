@@ -30,6 +30,7 @@ using Gambling.Wpf.User.Pages;
 using Gambling.Wpf.User.Pages.Games;
 using Gambling.Wpf.User.Windows;
 using Gambling.Wpf.User.Services.Navigation;
+using Gambling.Application.Client.Services.Encryption;
 
 namespace Gambling.Wpf.User.Classes;
 
