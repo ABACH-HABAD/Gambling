@@ -22,10 +22,7 @@
   
 Выбор запускаемой версии в Visual Studio:  
 <img width="258" height="216" alt="image" src="https://github.com/user-attachments/assets/c60bf40c-bb22-4237-b1ed-1fac9b163b56" />
-  
-Ярлыки:  
-<img width="425" height="134" alt="image" src="https://github.com/user-attachments/assets/f6f0357a-6db2-43c6-970f-1c2db1379433" />  
-  
+   
 Окно авторизации:  
 <img width="791" height="583" alt="image" src="https://github.com/user-attachments/assets/d2698a32-e18d-48c7-80a3-f0d23c101ad0" />  
 
